@@ -45,6 +45,22 @@ function formatDate(value) {
   });
 }
 
+function renderGapMeta(previousPoints, leaderPoints, currentPoints) {
+  const gapPrev = previousPoints === null || previousPoints === undefined
+    ? "Leader"
+    : `-${formatPoints(previousPoints - currentPoints)} vs préc.`;
+  const gapLead = leaderPoints === currentPoints
+    ? "À égalité 1er"
+    : `-${formatPoints(leaderPoints - currentPoints)} vs 1er`;
+
+  return `
+    <span class="points-gap">
+      <span><i class="points-gap-dot"></i>${gapPrev}</span>
+      <span><i class="points-gap-dot"></i>${gapLead}</span>
+    </span>
+  `;
+}
+
 function getLastPlayedPalmaresEntry(data) {
   return [...(data.palmares || [])].filter((entry) => entry.isPlayed).pop() || null;
 }
@@ -79,11 +95,18 @@ function getBadgeClass(rank) {
 }
 
 async function loadData() {
-  const response = await fetch(DATA_PATH, { cache: "no-store" });
-  if (!response.ok) {
-    throw new Error("Impossible de charger les données du site.");
+  try {
+    const response = await fetch(DATA_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error("Impossible de charger les données du site.");
+    }
+    return response.json();
+  } catch (error) {
+    if (window.VELOGAMES_DATA) {
+      return window.VELOGAMES_DATA;
+    }
+    throw error;
   }
-  return response.json();
 }
 
 function setupBackToTop() {
@@ -172,38 +195,57 @@ function renderKpis(data) {
 function renderGlobalRanking(data) {
   const tbody = document.querySelector("[data-global-ranking]");
   if (!tbody) return;
-  const maxPoints = Math.max(...data.home.globalRanking.map((player) => player.points), 1);
+  const ranking = data.home.globalRanking;
+  const maxPoints = Math.max(...ranking.map((player) => player.points), 1);
+  const leaderPoints = ranking[0]?.points ?? 0;
 
-  tbody.innerHTML = data.home.globalRanking
-    .map((player) => `
+  tbody.innerHTML = ranking
+    .map((player, index) => {
+      const previousPoints = index === 0 ? null : ranking[index - 1].points;
+      return `
       <tr>
         <td><span class="rank-badge ${getBadgeClass(player.rank)}">${player.rank}</span></td>
         <td>
           <span class="player-name">${player.name}</span>
           <div class="ranking-progress"><div class="ranking-progress-fill" style="width:${(player.points / maxPoints) * 100}%"></div></div>
         </td>
-        <td class="points-cell">${formatPoints(player.points)}</td>
+        <td class="points-cell">
+          <span class="points-main">${formatPoints(player.points)}</span>
+          ${renderGapMeta(previousPoints, leaderPoints, player.points)}
+        </td>
       </tr>
-    `)
+    `;
+    })
     .join("");
 }
 
 function renderTeamRanking(data) {
   const tbody = document.querySelector("[data-team-ranking]");
   if (!tbody) return;
-  const maxPoints = Math.max(...data.home.teamRanking.map((team) => team.points), 1);
+  const ranking = data.home.teamRanking.map((team) => ({
+    ...team,
+    roundedPoints: Math.round(team.points),
+  }));
+  const maxPoints = Math.max(...ranking.map((team) => team.points), 1);
+  const leaderPoints = ranking[0]?.roundedPoints ?? 0;
 
-  tbody.innerHTML = data.home.teamRanking
-    .map((team) => `
+  tbody.innerHTML = ranking
+    .map((team, index) => {
+      const previousPoints = index === 0 ? null : ranking[index - 1].roundedPoints;
+      return `
       <tr>
         <td><span class="rank-badge ${getBadgeClass(team.rank)}">${team.rank}</span></td>
         <td>
           <span class="player-name">${team.name}</span>
           <div class="ranking-progress"><div class="ranking-progress-fill is-team" style="width:${(team.points / maxPoints) * 100}%"></div></div>
         </td>
-        <td class="points-cell">${Math.round(team.points)}</td>
+        <td class="points-cell">
+          <span class="points-main">${team.roundedPoints}</span>
+          ${renderGapMeta(previousPoints, leaderPoints, team.roundedPoints)}
+        </td>
       </tr>
-    `)
+    `;
+    })
     .join("");
 }
 

@@ -545,6 +545,35 @@ img {
   font-variant-numeric: tabular-nums;
 }
 
+.points-main {
+  display: block;
+}
+
+.points-gap {
+  display: grid;
+  gap: 2px;
+  margin-top: 6px;
+  justify-items: end;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.points-gap span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 0;
+}
+
+.points-gap-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(23, 63, 116, 0.28);
+}
+
 .chart-card {
   margin-top: 16px;
 }
