@@ -296,6 +296,36 @@ img {
   font-size: 14px;
 }
 
+.palmares-stats {
+  display: grid;
+  gap: 12px;
+}
+
+.palmares-stat {
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.palmares-stat small {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 800;
+  color: rgba(255, 254, 248, 0.7);
+}
+
+.palmares-stat strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #fffef8;
+}
+
 .section {
   margin-top: 18px;
   padding: 26px;

@@ -218,22 +218,10 @@ function renderUpcomingHome(data) {
 
 function buildColors(count) {
   const palette = [
-    "#173f74",
-    "#c99800",
-    "#2e72cf",
-    "#bf6a31",
-    "#6783a2",
-    "#9a2d3a",
-    "#1f7a5c",
-    "#6a52a3",
-    "#af7f10",
-    "#476785",
-    "#cf5645",
-    "#6d7f95",
-    "#3c4c61",
-    "#8f5d28",
-    "#3a8aa6",
-    "#7b6e58",
+    "#173f74", "#c99800", "#2e72cf", "#bf6a31",
+    "#6783a2", "#9a2d3a", "#1f7a5c", "#6a52a3",
+    "#af7f10", "#476785", "#cf5645", "#6d7f95",
+    "#3c4c61", "#8f5d28", "#3a8aa6", "#7b6e58",
   ];
   return Array.from({ length: count }, (_, index) => palette[index % palette.length]);
 }
@@ -364,9 +352,7 @@ function renderPointsChart(data) {
   const canvas = document.querySelector("#pointsChart");
   if (!canvas || !window.Chart) return;
 
-  const playedIndexes = data.home.progression.courses
-    .map((course, index) => (course.played ? index : -1))
-    .filter((index) => index >= 0);
+  const playedIndexes = data.home.progression.courses.map((course, index) => (course.played ? index : -1)).filter((index) => index >= 0);
   const courses = playedIndexes.map((index) => data.home.progression.courses[index]);
   const playerOrder = data.home.globalRanking.map((player) => player.name);
   const playerMap = new Map(data.home.progression.players.map((player) => [player.name, player]));
@@ -409,10 +395,7 @@ function renderPointsChart(data) {
     options: {
       maintainAspectRatio: false,
       responsive: true,
-      interaction: {
-        mode: "nearest",
-        intersect: false,
-      },
+      interaction: { mode: "nearest", intersect: false },
       plugins: {
         legend: {
           position: "bottom",
@@ -427,11 +410,7 @@ function renderPointsChart(data) {
             boxWidth: theme.legendBoxWidth,
             padding: 16,
             color: theme.legendColor,
-            font: {
-              family: "Arial",
-              size: 12,
-              weight: "700",
-            },
+            font: { family: "Arial", size: 12, weight: "700" },
           },
         },
         tooltip: {
@@ -446,11 +425,7 @@ function renderPointsChart(data) {
       },
       scales: {
         x: {
-          ticks: {
-            color: "rgba(0,0,0,0)",
-            maxRotation: 0,
-            minRotation: 0,
-          },
+          ticks: { color: "rgba(0,0,0,0)", maxRotation: 0, minRotation: 0 },
           border: { display: false },
           grid: { display: false },
         },
@@ -458,20 +433,12 @@ function renderPointsChart(data) {
           grace: "10%",
           ticks: { display: false },
           border: { display: false },
-          grid: {
-            color: theme.gridColor,
-            lineWidth: theme.gridWidth,
-          },
+          grid: { color: theme.gridColor, lineWidth: theme.gridWidth },
         },
       },
-      layout: {
-        padding: { bottom: 34 },
-      },
+      layout: { padding: { bottom: 34 } },
     },
-    plugins: [
-      createBackdropPlugin(theme),
-      createCourseLogosPlugin(courses, logoByCourse, labelToPalmares, theme),
-    ],
+    plugins: [createBackdropPlugin(theme), createCourseLogosPlugin(courses, logoByCourse, labelToPalmares, theme)],
   });
 }
 
@@ -479,9 +446,7 @@ function renderPositionChart(data) {
   const canvas = document.querySelector("#positionChart");
   if (!canvas || !window.Chart) return;
 
-  const playedIndexes = data.home.progression.courses
-    .map((course, index) => (course.played ? index : -1))
-    .filter((index) => index >= 0);
+  const playedIndexes = data.home.progression.courses.map((course, index) => (course.played ? index : -1)).filter((index) => index >= 0);
   const courses = playedIndexes.map((index) => data.home.progression.courses[index]);
   const rankingsByCourse = playedIndexes.map((index) => data.home.progression.rankingsByCourse[index]);
   const players = data.home.globalRanking.map((player) => player.name);
@@ -520,10 +485,7 @@ function renderPositionChart(data) {
     options: {
       maintainAspectRatio: false,
       responsive: true,
-      interaction: {
-        mode: "nearest",
-        intersect: false,
-      },
+      interaction: { mode: "nearest", intersect: false },
       plugins: {
         legend: {
           position: "bottom",
@@ -538,11 +500,7 @@ function renderPositionChart(data) {
             boxWidth: theme.legendBoxWidth,
             padding: 16,
             color: theme.legendColor,
-            font: {
-              family: "Arial",
-              size: 12,
-              weight: "700",
-            },
+            font: { family: "Arial", size: 12, weight: "700" },
           },
         },
         tooltip: {
@@ -557,11 +515,7 @@ function renderPositionChart(data) {
       },
       scales: {
         x: {
-          ticks: {
-            color: "rgba(0,0,0,0)",
-            maxRotation: 0,
-            minRotation: 0,
-          },
+          ticks: { color: "rgba(0,0,0,0)", maxRotation: 0, minRotation: 0 },
           border: { display: false },
           grid: { display: false },
         },
@@ -572,20 +526,12 @@ function renderPositionChart(data) {
           grace: 0.3,
           ticks: { display: false },
           border: { display: false },
-          grid: {
-            color: theme.gridColor,
-            lineWidth: theme.gridWidth,
-          },
+          grid: { color: theme.gridColor, lineWidth: theme.gridWidth },
         },
       },
-      layout: {
-        padding: { bottom: 34 },
-      },
+      layout: { padding: { bottom: 34 } },
     },
-    plugins: [
-      createBackdropPlugin(theme),
-      createCourseLogosPlugin(courses, logoByCourse, labelToPalmares, theme),
-    ],
+    plugins: [createBackdropPlugin(theme), createCourseLogosPlugin(courses, logoByCourse, labelToPalmares, theme)],
   });
 }
 
@@ -593,6 +539,15 @@ function renderPalmaresPage(data) {
   const entries = data.palmares || [];
   const playedEntries = entries.filter((entry) => entry.isPlayed);
   const upcomingEntries = entries.filter((entry) => !entry.isPlayed);
+  const palmaresPlayers = (data.details || []).map((player) => {
+    const summary = computePlayerSummary(player);
+    return {
+      name: player.name,
+      wins: summary.wins,
+      podiums: summary.podiums,
+      lasts: playedEntries.filter((entry) => entry.last === player.name).length,
+    };
+  });
 
   const placeMeta = {
     first: { label: "1er", icon: "🏆", className: "is-first" },
@@ -604,10 +559,22 @@ function renderPalmaresPage(data) {
   const playedCountNode = document.querySelector("[data-palmares-count]");
   const upcomingCountNode = document.querySelector("[data-upcoming-count]");
   const lastWinnerNode = document.querySelector("[data-last-winner]");
+  const mostWinsNode = document.querySelector("[data-palmares-most-wins]");
+  const mostPodiumsNode = document.querySelector("[data-palmares-most-podiums]");
+  const mostLastsNode = document.querySelector("[data-palmares-most-lasts]");
+  const topWins = Math.max(...palmaresPlayers.map((player) => player.wins), 0);
+  const topPodiums = Math.max(...palmaresPlayers.map((player) => player.podiums), 0);
+  const topLasts = Math.max(...palmaresPlayers.map((player) => player.lasts), 0);
+  const mostWinsNames = palmaresPlayers.filter((player) => player.wins === topWins && topWins > 0).map((player) => player.name).join(", ") || "Aucun";
+  const mostPodiumsNames = palmaresPlayers.filter((player) => player.podiums === topPodiums && topPodiums > 0).map((player) => player.name).join(", ") || "Aucun";
+  const mostLastsNames = palmaresPlayers.filter((player) => player.lasts === topLasts && topLasts > 0).map((player) => player.name).join(", ") || "Aucun";
 
   if (playedCountNode) playedCountNode.textContent = String(playedEntries.length);
   if (upcomingCountNode) upcomingCountNode.textContent = String(upcomingEntries.length);
   if (lastWinnerNode) lastWinnerNode.textContent = playedEntries.length ? playedEntries[playedEntries.length - 1].first : "Aucun vainqueur";
+  if (mostWinsNode) mostWinsNode.textContent = mostWinsNames;
+  if (mostPodiumsNode) mostPodiumsNode.textContent = mostPodiumsNames;
+  if (mostLastsNode) mostLastsNode.textContent = mostLastsNames;
 
   const tableMarkup = playedEntries
     .map((entry) => {
@@ -834,9 +801,7 @@ function setupSectionNav() {
     const offset = window.scrollY + 180;
     let active = sections[0];
     sections.forEach((section) => {
-      if (section.target.offsetTop <= offset) {
-        active = section;
-      }
+      if (section.target.offsetTop <= offset) active = section;
     });
     sections.forEach((section) => {
       section.link.classList.toggle("is-active", section === active);
