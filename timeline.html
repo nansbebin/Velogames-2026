@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline - Classement VELOGAMES - Saison 2026</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="./assets/js/app.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-kicker">Velogames 2026</div>
+        <h1 class="brand-title" data-site-title>Classement VELOGAMES - Saison 2026</h1>
+      </div>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a class="nav-link" href="./index.html">Accueil</a>
+        <a class="nav-link" href="./palmares.html">Palmarès</a>
+        <a class="nav-link is-active" href="./timeline.html">Timeline</a>
+        <a class="nav-link" href="./details.html">Détails</a>
+      </nav>
+      <div class="meta-pill">
+        <span class="meta-label">Dernière mise à jour</span>
+        <span class="meta-value" data-last-updated>Chargement...</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="hero-kicker">Saison 2026</div>
+            <h2>TIMELINE</h2>
+            <p class="hero-copy-text">Lecture continue de la saison, course après course, avec le podium, les écarts et les bascules du classement.</p>
+            <div class="hero-badges">
+              <span class="badge">Courses jouées : <strong data-timeline-played>0</strong></span>
+              <span class="badge">Courses à venir : <strong data-timeline-upcoming>0</strong></span>
+              <span class="badge">Leader actuel : <strong data-timeline-leader>Chargement...</strong></span>
+              <span class="badge">Dernière course : <strong data-timeline-last-course>Chargement...</strong></span>
+            </div>
+          </div>
+          <aside class="hero-callout">
+            <div class="hero-callout-label">Moment de saison</div>
+            <div class="hero-callout-value" data-timeline-callout-main>—</div>
+            <div class="hero-callout-copy" data-timeline-callout-copy>Chargement...</div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Repères de saison</h2>
+          </div>
+        </div>
+        <div class="kpi-grid">
+          <article class="kpi-card">
+            <div class="kpi-label">Leader le plus fréquent</div>
+            <div class="kpi-value kpi-value-name" data-timeline-frequent-leader>—</div>
+            <div class="kpi-subvalue" data-timeline-frequent-leader-copy>Chargement...</div>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-label">Changements de leader</div>
+            <div class="kpi-value" data-timeline-leader-changes>0</div>
+            <div class="kpi-subvalue">Nombre de bascules en tête depuis le début de saison.</div>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-label">Joueur le plus victorieux</div>
+            <div class="kpi-value kpi-value-name" data-timeline-most-wins>—</div>
+            <div class="kpi-subvalue" data-timeline-most-wins-copy>Chargement...</div>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-label">Prochaine course</div>
+            <div class="kpi-value kpi-value-name" data-timeline-next-race>—</div>
+            <div class="kpi-subvalue">Prochaine échéance dans l’ordre du calendrier.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Frise des courses</h2>
+          </div>
+        </div>
+        <div class="timeline-shell" data-timeline-list></div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">À venir</h2>
+          </div>
+        </div>
+        <div class="upcoming-grid" data-timeline-upcoming-grid></div>
+        <p class="section-copy" data-page-error hidden></p>
+      </section>
+    </main>
+  </div>
+  <button class="back-to-top" type="button" aria-label="Revenir en haut de page" data-back-to-top>↑</button>
+</body>
+</html>

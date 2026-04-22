@@ -8,6 +8,27 @@ function getDisplayCourseName(name) {
   return map.get(name) || name;
 }
 
+function normalizeCourseKey(name) {
+  const map = new Map([
+    ["Santos Tour Down Under", "Down Under"],
+    ["Tour Down Under", "Down Under"],
+    ["Down Under", "Down Under"],
+    ["Itzulia Basque Country", "Itzulia"],
+    ["Itzulia", "Itzulia"],
+    ["Tour de Romandie", "Romandie"],
+    ["Romandie", "Romandie"],
+    ["La Vuelta Femenina", "Vuelta Fem"],
+    ["Vuelta Femenina", "Vuelta Fem"],
+    ["Vuelta Fem", "Vuelta Fem"],
+    ["Tour de Romandie Femmes", "Tour Romandie Femmes"],
+    ["Romandie Femmes", "Tour Romandie Femmes"],
+    ["Critérium du Dauphiné", "Critérium"],
+    ["Tour Auvergne Rhône Alpes", "Critérium"],
+    ["Critérium", "Critérium"],
+  ]);
+  return map.get(name) || name;
+}
+
 function formatPoints(value) {
   return new Intl.NumberFormat("fr-FR", {
     maximumFractionDigits: Number.isInteger(value) ? 0 : 2,
@@ -624,6 +645,172 @@ function renderPalmaresPage(data) {
   }
 }
 
+function renderTimelinePage(data) {
+  const playedEntries = (data.palmares || []).filter((entry) => entry.isPlayed);
+  const upcomingEntries = (data.palmares || []).filter((entry) => !entry.isPlayed);
+  const ranking = data.home.globalRanking || [];
+  const leader = ranking[0] || null;
+  const runnerUp = ranking[1] || null;
+  const players = data.details || [];
+  const timelineNode = document.querySelector("[data-timeline-list]");
+  const upcomingGrid = document.querySelector("[data-timeline-upcoming-grid]");
+  const progressionCourses = (data.home.progression && data.home.progression.courses) || [];
+  const rankingsByCourse = (data.home.progression && data.home.progression.rankingsByCourse) || [];
+  const progressionPlayers = (data.home.progression && data.home.progression.players) || [];
+
+  const setText = (selector, value) => {
+    const node = document.querySelector(selector);
+    if (node) node.textContent = value;
+  };
+
+  function findCourseIndex(courseName) {
+    const normalized = normalizeCourseKey(courseName);
+    return progressionCourses.findIndex((course) => normalizeCourseKey(course.name) === normalized);
+  }
+
+  function getLeaderAfterCourse(courseIndex) {
+    if (courseIndex < 0 || !rankingsByCourse[courseIndex] || !rankingsByCourse[courseIndex].ranks) {
+      return null;
+    }
+    const entries = Object.entries(rankingsByCourse[courseIndex].ranks)
+      .filter(([, rankValue]) => typeof rankValue === "number")
+      .sort((a, b) => a[1] - b[1]);
+    return entries[0] ? entries[0][0] : null;
+  }
+
+  function getGapAfterCourse(courseIndex) {
+    if (courseIndex < 0) return null;
+    const totals = progressionPlayers
+      .map((player) => ({
+        name: player.name,
+        total: Array.isArray(player.totals) ? (player.totals[courseIndex] || 0) : 0,
+      }))
+      .sort((a, b) => b.total - a.total);
+    if (totals.length < 2) return null;
+    return {
+      first: totals[0],
+      second: totals[1],
+      gap: totals[0].total - totals[1].total,
+    };
+  }
+
+  function getBiggestMove(courseIndex) {
+    if (courseIndex <= 0) return null;
+    const previous = (rankingsByCourse[courseIndex - 1] && rankingsByCourse[courseIndex - 1].ranks) || {};
+    const current = (rankingsByCourse[courseIndex] && rankingsByCourse[courseIndex].ranks) || {};
+    const moves = Object.keys(current)
+      .filter((name) => typeof current[name] === "number" && typeof previous[name] === "number")
+      .map((name) => ({
+        name,
+        move: previous[name] - current[name],
+      }))
+      .sort((a, b) => b.move - a.move);
+    return moves[0] || null;
+  }
+
+  const leaderHistory = [];
+  playedEntries.forEach((entry) => {
+    const courseIndex = findCourseIndex(entry.course);
+    const leaderAfter = getLeaderAfterCourse(courseIndex);
+    if (leaderAfter) leaderHistory.push(leaderAfter);
+  });
+
+  const leaderCounts = leaderHistory.reduce((acc, name) => {
+    acc.set(name, (acc.get(name) || 0) + 1);
+    return acc;
+  }, new Map());
+  const frequentLeader = [...leaderCounts.entries()].sort((a, b) => b[1] - a[1])[0];
+  const leaderChanges = leaderHistory.reduce((count, name, index) => {
+    if (index === 0) return 0;
+    return count + (leaderHistory[index - 1] !== name ? 1 : 0);
+  }, 0);
+  const winLeader = players
+    .map((player) => ({ name: player.name, wins: computePlayerSummary(player).wins }))
+    .sort((a, b) => (b.wins - a.wins) || a.name.localeCompare(b.name, "fr"))[0];
+
+  setText("[data-timeline-played]", String(playedEntries.length));
+  setText("[data-timeline-upcoming]", String(upcomingEntries.length));
+  setText("[data-timeline-leader]", leader ? leader.name : "—");
+  setText("[data-timeline-last-course]", playedEntries.length ? getDisplayCourseName(playedEntries[playedEntries.length - 1].course) : "—");
+  setText("[data-timeline-callout-main]", leader ? leader.name : "—");
+  setText(
+    "[data-timeline-callout-copy]",
+    leader && runnerUp
+      ? `${leader.name} mène actuellement avec ${formatPoints(leader.points)} points, soit ${formatPoints(leader.points - runnerUp.points)} points d’avance sur ${runnerUp.name}.`
+      : "Classement en attente."
+  );
+  setText("[data-timeline-frequent-leader]", frequentLeader ? frequentLeader[0] : "—");
+  setText(
+    "[data-timeline-frequent-leader-copy]",
+    frequentLeader ? `${frequentLeader[1]} course${frequentLeader[1] > 1 ? "s" : ""} en tête` : "Aucune domination enregistrée"
+  );
+  setText("[data-timeline-leader-changes]", String(leaderChanges));
+  setText("[data-timeline-most-wins]", winLeader ? winLeader.name : "—");
+  setText(
+    "[data-timeline-most-wins-copy]",
+    winLeader ? `${winLeader.wins} victoire${winLeader.wins > 1 ? "s" : ""}` : "Aucune victoire"
+  );
+  setText("[data-timeline-next-race]", upcomingEntries[0] ? getDisplayCourseName(upcomingEntries[0].course) : "Saison complète");
+
+  if (timelineNode) {
+    timelineNode.innerHTML = playedEntries
+      .map((entry) => {
+        const courseIndex = findCourseIndex(entry.course);
+        const leaderAfter = getLeaderAfterCourse(courseIndex);
+        const gapAfter = getGapAfterCourse(courseIndex);
+        const biggestMove = getBiggestMove(courseIndex);
+
+        return `
+          <article class="timeline-item">
+            <div class="timeline-top">
+              <div class="timeline-course">
+                ${entry.logo ? `<img src="${entry.logo}" alt="${entry.course}">` : ""}
+                <div>
+                  <small>Course jouée</small>
+                  <strong>${getDisplayCourseName(entry.course)}</strong>
+                </div>
+              </div>
+              <div class="timeline-status">Jouée</div>
+            </div>
+            <div class="timeline-grid">
+              <div class="timeline-block">
+                <h3>Résultat</h3>
+                <ul>
+                  <li><span class="timeline-badge is-first">🏆 Vainqueur</span><strong>${entry.first || "—"}</strong></li>
+                  <li><span class="timeline-badge">🥈 2e</span><strong>${entry.second || "—"}</strong></li>
+                  <li><span class="timeline-badge">🥉 3e</span><strong>${entry.third || "—"}</strong></li>
+                  <li><span class="timeline-badge is-last">● Dernière place</span><strong>${entry.last || "—"}</strong></li>
+                </ul>
+              </div>
+              <div class="timeline-block">
+                <h3>Impact classement</h3>
+                <ul>
+                  <li><strong>Leader après course :</strong><span>${leaderAfter || "—"}</span></li>
+                  <li><strong>Écart en tête :</strong><span>${gapAfter ? `${formatPoints(gapAfter.gap)} pts entre ${gapAfter.first.name} et ${gapAfter.second.name}` : "—"}</span></li>
+                  <li><strong>Plus grosse progression :</strong><span>${biggestMove && biggestMove.move > 0 ? `${biggestMove.name} (+${biggestMove.move})` : "Aucun mouvement majeur"}</span></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        `;
+      })
+      .join("");
+  }
+
+  if (upcomingGrid) {
+    upcomingGrid.innerHTML = upcomingEntries
+      .map((entry) => `
+        <article class="upcoming-card">
+          ${entry.logo ? `<img src="${entry.logo}" alt="${entry.course}">` : ""}
+          <div class="upcoming-card-text">
+            <strong>${getDisplayCourseName(entry.course)}</strong>
+          </div>
+        </article>
+      `)
+      .join("");
+  }
+}
+
 function getCourseLogoMap(data) {
   const logos = new Map();
   (data.home.progression.courses || []).forEach((course) => {
@@ -815,9 +1002,10 @@ function setupSectionNav() {
 async function boot() {
   const hasHome = Boolean(document.querySelector("[data-global-ranking]"));
   const hasPalmares = Boolean(document.querySelector("[data-palmares-table]"));
+  const hasTimeline = Boolean(document.querySelector("[data-timeline-list]"));
   const hasDetails = Boolean(document.querySelector("[data-details-player-cards]"));
 
-  if (!hasHome && !hasPalmares && !hasDetails) return;
+  if (!hasHome && !hasPalmares && !hasTimeline && !hasDetails) return;
 
   try {
     const data = await loadData();
@@ -836,6 +1024,10 @@ async function boot() {
 
     if (hasPalmares) {
       renderPalmaresPage(data);
+    }
+
+    if (hasTimeline) {
+      renderTimelinePage(data);
     }
 
     if (hasDetails) {
