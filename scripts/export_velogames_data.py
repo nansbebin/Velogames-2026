@@ -75,6 +75,8 @@ def build_logo_map() -> dict[str, str]:
         "tour-romandie-femmes": "tour-de-romandie-femmes",
         "tour-de-romandie-feminin": "tour-de-romandie-femmes",
         "romandie-femmes": "tour-de-romandie-femmes",
+        "vuelta": "la-vuelta",
+        "la-vuelta": "la-vuelta",
         "vuelta-fem": "lvf23-logo-positivo-color-rgb",
         "vuelta-femenina": "lvf23-logo-positivo-color-rgb",
         "la-vuelta-femenina": "lvf23-logo-positivo-color-rgb",

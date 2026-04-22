@@ -2,8 +2,8 @@
   "meta": {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
-    "lastUpdated": "2026-04-22T14:10:46",
-    "generatedAt": "2026-04-22T14:10:55",
+    "lastUpdated": "2026-04-22T15:53:50",
+    "generatedAt": "2026-04-22T17:55:23",
     "playersCount": 16,
     "coursesCount": 19,
     "playedCoursesCount": 6
@@ -197,7 +197,7 @@
         {
           "name": "Vuelta",
           "slug": "vuelta",
-          "logo": null,
+          "logo": "./assets/course-logos/La Vuelta.png",
           "played": false
         },
         {
@@ -1177,7 +1177,7 @@
     {
       "course": "Vuelta",
       "slug": "vuelta",
-      "logo": null,
+      "logo": "./assets/course-logos/La Vuelta.png",
       "first": null,
       "second": null,
       "third": null,
