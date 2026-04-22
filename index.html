@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classement VELOGAMES - Saison 2026</title>
-  <link rel="stylesheet" href="./assets/css/styles.css?v=20260422e">
+  <title>Classement général individuel - Classement VELOGAMES - Saison 2026</title>
+  <link rel="stylesheet" href="./assets/css/styles.css?v=20260422g">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
-  <script src="./assets/data/velogames-data.js?v=20260422e" defer></script>
-  <script src="./assets/js/app.js?v=20260422e" defer></script>
+  <script src="./assets/data/velogames-data.js?v=20260422g" defer></script>
+  <script src="./assets/js/app.js?v=20260422g" defer></script>
 </head>
 <body>
   <div class="site-shell">
@@ -17,7 +17,8 @@
         <h1 class="brand-title" data-site-title>Classement VELOGAMES - Saison 2026</h1>
       </div>
       <nav class="nav-links" aria-label="Navigation principale">
-        <a class="nav-link is-active" href="./index.html">Accueil</a>
+        <a class="nav-link is-active" href="./index.html">Classement général individuel</a>
+        <a class="nav-link" href="./teams.html">Classement général par équipes</a>
         <a class="nav-link" href="./palmares.html">Palmarès</a>
         <a class="nav-link" href="./timeline.html">Timeline</a>
         <a class="nav-link" href="./details.html">Détails</a>
@@ -33,7 +34,7 @@
         <div class="hero-grid">
           <div class="hero-copy">
             <div class="hero-kicker">Saison 2026</div>
-            <h2>CLASSEMENT GÉNÉRAL</h2>
+            <h2>CLASSEMENT GÉNÉRAL INDIVIDUEL</h2>
             <div class="hero-badges">
               <span class="badge is-leader">Leader actuel : <strong data-leader-name>Chargement...</strong></span>
               <span class="badge">Dernière course intégrée : <strong data-last-race>Chargement...</strong></span>
@@ -80,43 +81,23 @@
       </section>
 
       <section class="section">
-        <div class="content-grid">
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <h3 class="panel-title">Classement général</h3>
-              </div>
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3 class="panel-title">Classement général individuel</h3>
             </div>
-            <table class="ranking-table">
-              <thead>
-                <tr>
-                  <th>Rang</th>
-                  <th>Joueur</th>
-                  <th style="text-align:right;">Points</th>
-                </tr>
-              </thead>
-              <tbody data-global-ranking></tbody>
-            </table>
-          </article>
-
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <h3 class="panel-title">Classement par équipe</h3>
-              </div>
-            </div>
-            <table class="ranking-table">
-              <thead>
-                <tr>
-                  <th>Rang</th>
-                  <th>Équipe</th>
-                  <th style="text-align:right;">Points</th>
-                </tr>
-              </thead>
-              <tbody data-team-ranking></tbody>
-            </table>
-          </article>
-        </div>
+          </div>
+          <table class="ranking-table">
+            <thead>
+              <tr>
+                <th>Rang</th>
+                <th>Joueur</th>
+                <th style="text-align:right;">Points</th>
+              </tr>
+            </thead>
+            <tbody data-global-ranking></tbody>
+          </table>
+        </article>
       </section>
 
       <section class="section">

@@ -3,7 +3,7 @@ window.VELOGAMES_DATA = {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
     "lastUpdated": "2026-04-22T15:53:50",
-    "generatedAt": "2026-04-22T17:55:23",
+    "generatedAt": "2026-04-22T18:11:37",
     "playersCount": 16,
     "coursesCount": 19,
     "playedCoursesCount": 6
@@ -106,6 +106,98 @@ window.VELOGAMES_DATA = {
         "rank": 3,
         "name": "PRODUIT",
         "points": 346.67
+      }
+    ],
+    "teamBreakdown": [
+      {
+        "name": "SALES",
+        "members": [
+          {
+            "name": "Quentin",
+            "total": 1615
+          },
+          {
+            "name": "Damien",
+            "total": 1580
+          },
+          {
+            "name": "Émilien",
+            "total": 1068
+          },
+          {
+            "name": "Lucie",
+            "total": 856
+          },
+          {
+            "name": "Stella",
+            "total": 830
+          },
+          {
+            "name": "Agathe",
+            "total": 633
+          },
+          {
+            "name": "Ema",
+            "total": 335
+          }
+        ],
+        "total": 6917,
+        "average": 988.14,
+        "leader": "Quentin",
+        "leaderPoints": 1615,
+        "leaderShare": 23.35
+      },
+      {
+        "name": "PRODUIT",
+        "members": [
+          {
+            "name": "Sacha",
+            "total": 890
+          },
+          {
+            "name": "Guillemette",
+            "total": 150
+          },
+          {
+            "name": "Aude",
+            "total": 0
+          }
+        ],
+        "total": 1040,
+        "average": 346.67,
+        "leader": "Sacha",
+        "leaderPoints": 890,
+        "leaderShare": 85.58
+      },
+      {
+        "name": "ÉTUDES",
+        "members": [
+          {
+            "name": "Nans",
+            "total": 1410
+          },
+          {
+            "name": "Mathis",
+            "total": 1293
+          },
+          {
+            "name": "Robin",
+            "total": 960
+          },
+          {
+            "name": "Charles",
+            "total": 535
+          },
+          {
+            "name": "Orlane",
+            "total": 301
+          }
+        ],
+        "total": 4499,
+        "average": 899.8,
+        "leader": "Nans",
+        "leaderPoints": 1410,
+        "leaderShare": 31.34
       }
     ],
     "progression": {

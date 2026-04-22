@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classement général par équipes - Classement VELOGAMES - Saison 2026</title>
+  <link rel="stylesheet" href="./assets/css/styles.css?v=20260422g">
+  <script src="./assets/data/velogames-data.js?v=20260422g" defer></script>
+  <script src="./assets/js/app.js?v=20260422g" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-kicker">Velogames 2026</div>
+        <h1 class="brand-title" data-site-title>Classement VELOGAMES - Saison 2026</h1>
+      </div>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a class="nav-link" href="./index.html">Classement général individuel</a>
+        <a class="nav-link is-active" href="./teams.html">Classement général par équipes</a>
+        <a class="nav-link" href="./palmares.html">Palmarès</a>
+        <a class="nav-link" href="./timeline.html">Timeline</a>
+        <a class="nav-link" href="./details.html">Détails</a>
+      </nav>
+      <div class="meta-pill">
+        <span class="meta-label">Dernière mise à jour</span>
+        <span class="meta-value" data-last-updated>Chargement...</span>
+      </div>
+    </header>
+
+    <main data-team-page>
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h2>CLASSEMENT GÉNÉRAL PAR ÉQUIPES</h2>
+            <div class="hero-badges">
+              <span class="badge">Équipe leader : <strong data-team-best-team>Chargement...</strong></span>
+              <span class="badge">Écart en tête : <strong data-team-gap>Chargement...</strong></span>
+              <span class="badge">Meilleur contributeur : <strong data-team-best-player>Chargement...</strong></span>
+              <span class="badge">Part du leader : <strong data-team-best-share>Chargement...</strong></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Classement des équipes</h2>
+            <p class="section-copy">Vision synthétique des écarts, de la moyenne par membre et du poids du meilleur joueur de chaque équipe.</p>
+          </div>
+        </div>
+        <div class="teams-grid" data-teams-grid></div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Contribution des membres</h2>
+            <p class="section-copy">Chaque carte montre le poids d’un joueur dans son équipe et le niveau de dépendance de l’équipe à ce profil.</p>
+          </div>
+        </div>
+        <div class="details-controls teams-filters" data-team-filters>
+          <button class="player-chip is-active" type="button" data-team-filter="all">Toutes</button>
+          <button class="player-chip" type="button" data-team-filter="SALES">Sales</button>
+          <button class="player-chip" type="button" data-team-filter="ÉTUDES">Études</button>
+          <button class="player-chip" type="button" data-team-filter="PRODUIT">Produit</button>
+        </div>
+        <div class="teams-members-grid" data-team-members-grid></div>
+        <p class="section-copy" data-page-error hidden></p>
+      </section>
+    </main>
+  </div>
+  <button class="back-to-top" type="button" aria-label="Revenir en haut de page" data-back-to-top>↑</button>
+</body>
+</html>

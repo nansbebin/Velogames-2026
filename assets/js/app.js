@@ -249,6 +249,127 @@ function renderTeamRanking(data) {
     .join("");
 }
 
+function renderTeamsPage(data) {
+  const ranking = data.home.teamRanking || [];
+  const breakdown = data.home.teamBreakdown || [];
+  const teams = ranking
+    .map((team) => {
+      const detail = breakdown.find((entry) => entry.name === team.name) || {
+        members: [],
+        average: 0,
+        leader: null,
+        leaderPoints: 0,
+        leaderShare: 0,
+      };
+      return {
+        ...team,
+        roundedPoints: Math.round(team.points),
+        average: detail.average || 0,
+        roundedAverage: Math.round(detail.average || 0),
+        totalPoints: detail.total || 0,
+        leader: detail.leader || null,
+        leaderPoints: detail.leaderPoints || 0,
+        roundedLeaderPoints: Math.round(detail.leaderPoints || 0),
+        leaderShare: detail.leaderShare || 0,
+        members: detail.members || [],
+      };
+    })
+    .sort((a, b) => a.rank - b.rank);
+
+  const allMembers = teams.flatMap((team) =>
+    team.members.map((member) => ({
+      ...member,
+      teamName: team.name,
+      teamPoints: team.totalPoints,
+      teamAverage: team.average,
+    }))
+  );
+
+  const bestTeam = teams[0] || null;
+  const secondTeam = teams[1] || null;
+  const bestMember = [...allMembers].sort((a, b) => b.total - a.total)[0] || null;
+  const maxTeamPoints = Math.max(...teams.map((team) => team.points), 1);
+
+  const setText = (selector, value) => {
+    const node = document.querySelector(selector);
+    if (node) node.textContent = value;
+  };
+
+  setText("[data-team-best-team]", bestTeam ? bestTeam.name : "—");
+  setText("[data-team-gap]", bestTeam && secondTeam ? `${formatPoints(Math.round(bestTeam.points) - Math.round(secondTeam.points))} pts` : "—");
+  setText("[data-team-best-player]", bestMember ? bestMember.name : "—");
+  setText("[data-team-best-share]", bestTeam ? `${Math.round(bestTeam.leaderShare)} %` : "—");
+
+  const teamsGrid = document.querySelector("[data-teams-grid]");
+  if (teamsGrid) {
+    teamsGrid.innerHTML = teams
+      .map((team, index) => {
+        const previousPoints = index === 0 ? null : teams[index - 1].points;
+        return `
+          <article class="teams-team-card">
+            <div class="teams-team-rank ${getBadgeClass(team.rank)}">${team.rank}</div>
+            <div class="teams-team-name">${team.name}</div>
+            <div class="teams-team-points">${team.roundedPoints} points</div>
+            <div class="teams-progress"><div class="teams-progress-fill" style="width:${(team.points / maxTeamPoints) * 100}%"></div></div>
+            <div class="teams-team-meta">
+              <div class="teams-meta-row"><span>Moyenne par membre</span><strong>${team.roundedAverage}</strong></div>
+              <div class="teams-meta-row"><span>Meilleur contributeur</span><strong>${team.leader || "—"}</strong></div>
+              <div class="teams-meta-row"><span>Part du leader</span><strong>${Math.round(team.leaderShare)} %</strong></div>
+              <div class="teams-meta-row"><span>Écart avec l’équipe précédente</span><strong>${previousPoints === null ? "Leader" : `${formatPoints(Math.round(previousPoints) - team.roundedPoints)} pts`}</strong></div>
+            </div>
+          </article>
+        `;
+      })
+      .join("");
+  }
+
+  const membersGrid = document.querySelector("[data-team-members-grid]");
+  const renderMembers = (filter = "all") => {
+    if (!membersGrid) return;
+    const members = allMembers
+      .filter((member) => filter === "all" || member.teamName === filter)
+      .sort((a, b) => (b.total / Math.max(b.teamPoints, 1)) - (a.total / Math.max(a.teamPoints, 1)));
+
+    membersGrid.innerHTML = members
+      .map((member) => {
+        const share = member.teamPoints > 0 ? (member.total / member.teamPoints) * 100 : 0;
+        const teamMembers = teams.find((team) => team.name === member.teamName)?.members || [];
+        const teamPosition = teamMembers.findIndex((entry) => entry.name === member.name) + 1;
+        return `
+          <article class="teams-member-card">
+            <div class="teams-member-top">
+              <div>
+                <div class="teams-member-name">${member.name}</div>
+                <div class="teams-member-team">${member.teamName}</div>
+              </div>
+              <div class="teams-member-score">${Math.round(member.total)}</div>
+            </div>
+            <div class="teams-member-share">
+              <div class="teams-share-row"><span>Contribution à l’équipe</span><strong>${Math.round(share)} %</strong></div>
+              <div class="teams-share-bar"><div class="teams-share-fill" style="width:${share}%"></div></div>
+              <div class="teams-share-row"><span>Position dans l’équipe</span><strong>${teamPosition}</strong></div>
+            </div>
+          </article>
+        `;
+      })
+      .join("");
+  };
+
+  renderMembers();
+
+  const filters = document.querySelector("[data-team-filters]");
+  if (filters) {
+    filters.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-team-filter]");
+      if (!button) return;
+      filters.querySelectorAll("[data-team-filter]").forEach((node) => {
+        node.classList.toggle("is-active", node === button);
+      });
+      renderMembers(button.dataset.teamFilter);
+    });
+  }
+}
+
 function renderLogoStrip(data) {
   const container = document.querySelector("[data-logo-strip]");
   if (!container) return;
@@ -1043,11 +1164,12 @@ function setupSectionNav() {
 
 async function boot() {
   const hasHome = Boolean(document.querySelector("[data-global-ranking]"));
+  const hasTeams = Boolean(document.querySelector("[data-team-page]"));
   const hasPalmares = Boolean(document.querySelector("[data-palmares-table]"));
   const hasTimeline = Boolean(document.querySelector("[data-timeline-list]"));
   const hasDetails = Boolean(document.querySelector("[data-details-player-cards]"));
 
-  if (!hasHome && !hasPalmares && !hasTimeline && !hasDetails) return;
+  if (!hasHome && !hasTeams && !hasPalmares && !hasTimeline && !hasDetails) return;
 
   try {
     const data = await loadData();
@@ -1066,6 +1188,10 @@ async function boot() {
 
     if (hasPalmares) {
       renderPalmaresPage(data);
+    }
+
+    if (hasTeams) {
+      renderTeamsPage(data);
     }
 
     if (hasTimeline) {

@@ -126,6 +126,48 @@ def read_team_ranking(details_sheet):
     return teams
 
 
+def read_team_breakdown(details_sheet):
+    team_rows = {
+        "SALES": range(5, 12),
+        "PRODUIT": range(12, 15),
+        "ÉTUDES": range(15, 20),
+    }
+
+    teams = []
+    for name, rows in team_rows.items():
+        members = []
+        for row in rows:
+            player_name = details_sheet.cell(row, 2).value
+            total = clean_number(details_sheet.cell(row, 42).value) or 0
+            if player_name:
+                members.append(
+                    {
+                        "name": str(player_name),
+                        "total": total,
+                    }
+                )
+
+        members.sort(key=lambda item: item["total"], reverse=True)
+        total = sum(member["total"] for member in members)
+        average = round(total / len(members), 2) if members else 0
+        leader = members[0] if members else None
+        leader_share = round((leader["total"] / total) * 100, 2) if leader and total else 0
+
+        teams.append(
+            {
+                "name": name,
+                "members": members,
+                "total": total,
+                "average": average,
+                "leader": leader["name"] if leader else None,
+                "leaderPoints": leader["total"] if leader else 0,
+                "leaderShare": leader_share,
+            }
+        )
+
+    return teams
+
+
 def read_course_headers(details_sheet):
     courses = []
     for col in range(3, 41, 2):
@@ -316,6 +358,7 @@ def build_payload():
         "home": {
             "globalRanking": read_global_ranking(details_sheet),
             "teamRanking": read_team_ranking(details_sheet),
+            "teamBreakdown": read_team_breakdown(details_sheet),
             "progression": progression,
         },
         "palmares": read_palmares_from_details(details_sheet, logo_map),
