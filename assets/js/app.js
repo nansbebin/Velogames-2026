@@ -64,9 +64,6 @@ function getBadgeClass(rank) {
 }
 
 async function loadData() {
-  if (window.VELOGAMES_DATA) {
-    return window.VELOGAMES_DATA;
-  }
   const response = await fetch(DATA_PATH, { cache: "no-store" });
   if (!response.ok) {
     throw new Error("Impossible de charger les données du site.");
