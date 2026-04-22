@@ -2,14 +2,69 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=./index.html#palmares">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirection vers le palmares</title>
-  <script>
-    window.location.replace("./index.html#palmares");
-  </script>
+  <title>Palmarès - Classement VELOGAMES - Saison 2026</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="./assets/data/velogames-data.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
 </head>
 <body>
-  <p>Redirection vers le palmares...</p>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-kicker">Velogames 2026</div>
+        <h1 class="brand-title" data-site-title>Classement VELOGAMES - Saison 2026</h1>
+      </div>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a class="nav-link" href="./index.html">Accueil</a>
+        <a class="nav-link is-active" href="./palmares.html">Palmarès</a>
+        <a class="nav-link" href="./details.html">Détails</a>
+      </nav>
+      <div class="meta-pill">
+        <span class="meta-label">Dernière mise à jour</span>
+        <span class="meta-value" data-last-updated>Chargement...</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="hero-kicker">Saison 2026</div>
+            <h2>PALMARÈS</h2>
+            <div class="hero-badges">
+              <span class="badge">Courses jouées: <strong data-palmares-count>0</strong></span>
+              <span class="badge">Courses à venir: <strong data-upcoming-count>0</strong></span>
+              <span class="badge">Dernier vainqueur: <strong data-last-winner>Chargement...</strong></span>
+            </div>
+          </div>
+          <aside class="hero-callout">
+            <div class="hero-callout-label">Saison</div>
+            <div class="hero-callout-value">2026</div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Palmarès</h2>
+          </div>
+        </div>
+        <div class="palmares-list" data-palmares-table></div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Courses à venir</h2>
+          </div>
+        </div>
+        <div class="upcoming-grid" data-upcoming-races></div>
+        <p class="section-copy" data-page-error hidden></p>
+      </section>
+    </main>
+  </div>
+  <button class="back-to-top" type="button" aria-label="Revenir en haut de page" data-back-to-top>↑</button>
 </body>
 </html>
