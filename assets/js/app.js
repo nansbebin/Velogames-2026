@@ -51,15 +51,9 @@ function computePlayerSummary(player) {
 }
 
 function getBadgeClass(rank) {
-  if (rank === 1) {
-    return "is-rank-1";
-  }
-  if (rank === 2) {
-    return "is-rank-2";
-  }
-  if (rank === 3) {
-    return "is-rank-3";
-  }
+  if (rank === 1) return "is-rank-1";
+  if (rank === 2) return "is-rank-2";
+  if (rank === 3) return "is-rank-3";
   return "";
 }
 
@@ -73,9 +67,7 @@ async function loadData() {
 
 function setupBackToTop() {
   const button = document.querySelector("[data-back-to-top]");
-  if (!button) {
-    return;
-  }
+  if (!button) return;
 
   const toggleVisibility = () => {
     button.classList.toggle("is-visible", window.scrollY > 320);
@@ -92,12 +84,8 @@ function setupBackToTop() {
 function renderMeta(data) {
   const titleNode = document.querySelector("[data-site-title]");
   const lastUpdatedNode = document.querySelector("[data-last-updated]");
-  if (titleNode) {
-    titleNode.textContent = data.meta.siteTitle;
-  }
-  if (lastUpdatedNode) {
-    lastUpdatedNode.textContent = formatDate(data.meta.lastUpdated);
-  }
+  if (titleNode) titleNode.textContent = data.meta.siteTitle;
+  if (lastUpdatedNode) lastUpdatedNode.textContent = formatDate(data.meta.lastUpdated);
 }
 
 function renderHero(data) {
@@ -109,16 +97,11 @@ function renderHero(data) {
   const nextRace = document.querySelector("[data-next-race]");
   const playedCount = document.querySelector("[data-played-count]");
   const gapCopy = document.querySelector("[data-leader-gap-copy]");
-  const progression = data.home.progression;
   const lastPlayedCourse = getLastPlayedPalmaresEntry(data);
   const nextUpcomingCourse = getNextUpcomingPalmaresEntry(data);
 
-  if (leaderPoints) {
-    leaderPoints.textContent = formatPoints(leader.points);
-  }
-  if (leaderName) {
-    leaderName.textContent = leader.name;
-  }
+  if (leaderPoints) leaderPoints.textContent = formatPoints(leader.points);
+  if (leaderName) leaderName.textContent = leader.name;
   if (lastRace) {
     lastRace.textContent = lastPlayedCourse ? getDisplayCourseName(lastPlayedCourse.course) : "Aucune course jouée";
   }
@@ -155,160 +138,126 @@ function renderKpis(data) {
     leaderPodiums: document.querySelector("[data-kpi-leader-podiums]"),
   };
 
-  if (nodes.mostWinsPlayer) {
-    nodes.mostWinsPlayer.textContent = mostWinsPlayer ? mostWinsPlayer.name : "—";
-  }
+  if (nodes.mostWinsPlayer) nodes.mostWinsPlayer.textContent = mostWinsPlayer ? mostWinsPlayer.name : "—";
   if (nodes.mostWinsCount) {
     const wins = mostWinsPlayer ? mostWinsPlayer.wins : 0;
     nodes.mostWinsCount.textContent = `${wins} victoire${wins > 1 ? "s" : ""}`;
   }
-  if (nodes.leaderGap) {
-    nodes.leaderGap.textContent = `${formatPoints(leaderGap)} pts`;
-  }
-  if (nodes.podiumSpread) {
-    nodes.podiumSpread.textContent = `${formatPoints(podiumSpread)} pts`;
-  }
-  if (nodes.leaderPodiums) {
-    nodes.leaderPodiums.textContent = String(leaderSummary.podiums);
-  }
+  if (nodes.leaderGap) nodes.leaderGap.textContent = `${formatPoints(leaderGap)} pts`;
+  if (nodes.podiumSpread) nodes.podiumSpread.textContent = `${formatPoints(podiumSpread)} pts`;
+  if (nodes.leaderPodiums) nodes.leaderPodiums.textContent = String(leaderSummary.podiums);
 }
 
 function renderGlobalRanking(data) {
   const tbody = document.querySelector("[data-global-ranking]");
-  if (!tbody) {
-    return;
-  }
+  if (!tbody) return;
   const maxPoints = Math.max(...data.home.globalRanking.map((player) => player.points), 1);
 
   tbody.innerHTML = data.home.globalRanking
-    .map((player) => {
-      const topClass = getBadgeClass(player.rank);
-      const width = (player.points / maxPoints) * 100;
-      return `
-        <tr>
-          <td><span class="rank-badge ${topClass}">${player.rank}</span></td>
-          <td>
-            <span class="player-name">${player.name}</span>
-            <div class="ranking-progress"><div class="ranking-progress-fill" style="width:${width}%"></div></div>
-          </td>
-          <td class="points-cell">${formatPoints(player.points)}</td>
-        </tr>
-      `;
-    })
+    .map((player) => `
+      <tr>
+        <td><span class="rank-badge ${getBadgeClass(player.rank)}">${player.rank}</span></td>
+        <td>
+          <span class="player-name">${player.name}</span>
+          <div class="ranking-progress"><div class="ranking-progress-fill" style="width:${(player.points / maxPoints) * 100}%"></div></div>
+        </td>
+        <td class="points-cell">${formatPoints(player.points)}</td>
+      </tr>
+    `)
     .join("");
 }
 
 function renderTeamRanking(data) {
   const tbody = document.querySelector("[data-team-ranking]");
-  if (!tbody) {
-    return;
-  }
+  if (!tbody) return;
   const maxPoints = Math.max(...data.home.teamRanking.map((team) => team.points), 1);
 
   tbody.innerHTML = data.home.teamRanking
-    .map(
-      (team) => `
-        <tr>
-          <td><span class="rank-badge ${getBadgeClass(team.rank)}">${team.rank}</span></td>
-          <td>
-            <span class="player-name">${team.name}</span>
-            <div class="ranking-progress"><div class="ranking-progress-fill is-team" style="width:${(team.points / maxPoints) * 100}%"></div></div>
-          </td>
-          <td class="points-cell">${Math.round(team.points)}</td>
-        </tr>
-      `,
-    )
+    .map((team) => `
+      <tr>
+        <td><span class="rank-badge ${getBadgeClass(team.rank)}">${team.rank}</span></td>
+        <td>
+          <span class="player-name">${team.name}</span>
+          <div class="ranking-progress"><div class="ranking-progress-fill is-team" style="width:${(team.points / maxPoints) * 100}%"></div></div>
+        </td>
+        <td class="points-cell">${Math.round(team.points)}</td>
+      </tr>
+    `)
     .join("");
 }
 
 function renderLogoStrip(data) {
   const container = document.querySelector("[data-logo-strip]");
-  if (!container) {
-    return;
-  }
+  if (!container) return;
 
   container.innerHTML = data.home.progression.courses
     .filter((course) => course.played)
-    .map((course) => {
-      const logo = course.logo
-        ? `<img src="${course.logo}" alt="${course.name}">`
-        : "";
-      return `
-        <div class="logo-card">
-          ${logo}
-          <span>${getDisplayCourseName(course.name)}</span>
-        </div>
-      `;
-    })
+    .map((course) => `
+      <div class="logo-card">
+        ${course.logo ? `<img src="${course.logo}" alt="${course.name}">` : ""}
+        <span>${getDisplayCourseName(course.name)}</span>
+      </div>
+    `)
     .join("");
 }
 
 function renderUpcomingHome(data) {
   const container = document.querySelector("[data-upcoming-home]");
-  if (!container) {
-    return;
-  }
+  if (!container) return;
 
   container.innerHTML = (data.palmares || [])
     .filter((entry) => !entry.isPlayed)
-    .map((entry) => {
-      const logo = entry.logo ? `<img src="${entry.logo}" alt="${entry.course}">` : "";
-      return `
-        <div class="logo-card">
-          ${logo}
-          <span>${getDisplayCourseName(entry.course)}</span>
-        </div>
-      `;
-    })
+    .map((entry) => `
+      <div class="logo-card">
+        ${entry.logo ? `<img src="${entry.logo}" alt="${entry.course}">` : ""}
+        <span>${getDisplayCourseName(entry.course)}</span>
+      </div>
+    `)
     .join("");
 }
 
 function buildColors(count) {
   const palette = [
-    "#111318",
-    "#f0c419",
-    "#2d6cdf",
-    "#139067",
-    "#ce4c25",
-    "#7c53c3",
-    "#6b7280",
-    "#df8d00",
-    "#8b1e3f",
-    "#0e7490",
-    "#6d4c41",
-    "#b91c1c",
-    "#166534",
-    "#1d4ed8",
-    "#9a3412",
-    "#5b21b6",
+    "#173f74",
+    "#c99800",
+    "#2e72cf",
+    "#bf6a31",
+    "#6783a2",
+    "#9a2d3a",
+    "#1f7a5c",
+    "#6a52a3",
+    "#af7f10",
+    "#476785",
+    "#cf5645",
+    "#6d7f95",
+    "#3c4c61",
+    "#8f5d28",
+    "#3a8aa6",
+    "#7b6e58",
   ];
   return Array.from({ length: count }, (_, index) => palette[index % palette.length]);
 }
 
 function withAlpha(color, alpha) {
-  if (!color.startsWith("#")) {
-    return color;
-  }
+  if (!color.startsWith("#")) return color;
   const value = color.slice(1);
-  const normalized = value.length === 3
-    ? value.split("").map((char) => char + char).join("")
-    : value;
+  const normalized = value.length === 3 ? value.split("").map((char) => char + char).join("") : value;
   const r = parseInt(normalized.slice(0, 2), 16);
   const g = parseInt(normalized.slice(2, 4), 16);
   const b = parseInt(normalized.slice(4, 6), 16);
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
-function applyLegendHighlight(chart, colorMap) {
+function applyLegendHighlight(chart, colorMap, theme = {}) {
   const selectedIndex = chart.$selectedDatasetIndex ?? null;
   chart.data.datasets.forEach((dataset, index) => {
-    const baseColor = colorMap.get(dataset.label) || "#111318";
+    const baseColor = colorMap.get(dataset.label) || "#173f74";
     const dimmed = selectedIndex !== null && selectedIndex !== index;
-    dataset.borderColor = dimmed ? withAlpha(baseColor, 0.18) : baseColor;
-    dataset.backgroundColor = dimmed ? withAlpha(baseColor, 0.18) : baseColor;
-    dataset.borderWidth = selectedIndex === null ? 2 : (selectedIndex === index ? 4 : 1.25);
-    dataset.pointRadius = selectedIndex === null ? 2 : (selectedIndex === index ? 3 : 1);
-    dataset.pointHoverRadius = selectedIndex === null ? 4 : (selectedIndex === index ? 5 : 2);
+    dataset.borderColor = dimmed ? withAlpha(baseColor, theme.dimAlpha ?? 0.14) : baseColor;
+    dataset.backgroundColor = dimmed ? withAlpha(baseColor, theme.dimAlpha ?? 0.14) : baseColor;
+    dataset.borderWidth = selectedIndex === null ? (theme.borderWidth ?? 2.7) : (selectedIndex === index ? (theme.focusWidth ?? 4.6) : (theme.dimWidth ?? 1.35));
+    dataset.pointRadius = selectedIndex === null ? (theme.pointRadius ?? 1.9) : (selectedIndex === index ? (theme.focusPointRadius ?? 3.2) : (theme.dimPointRadius ?? 0.8));
+    dataset.pointHoverRadius = selectedIndex === null ? (theme.pointHoverRadius ?? 4.4) : (selectedIndex === index ? (theme.focusHoverRadius ?? 5.5) : (theme.dimHoverRadius ?? 2));
   });
   chart.update();
 }
@@ -319,11 +268,101 @@ function getPlayerColorMap(data) {
   return new Map(players.map((name, index) => [name, colors[index]]));
 }
 
+function createBackdropPlugin(theme = {}) {
+  return {
+    id: `chartBackdrop-${Math.random().toString(36).slice(2, 8)}`,
+    beforeDraw(chart) {
+      const { ctx, chartArea } = chart;
+      if (!chartArea) return;
+      const { left, top, width, height } = chartArea;
+      const gradient = ctx.createLinearGradient(0, top, 0, top + height);
+      gradient.addColorStop(0, theme.bgTop || "rgba(255,255,255,0.85)");
+      gradient.addColorStop(1, theme.bgBottom || "rgba(255,248,233,0.88)");
+      ctx.save();
+      ctx.fillStyle = gradient;
+      ctx.fillRect(left, top, width, height);
+      if (theme.glow) {
+        const glow = ctx.createRadialGradient(
+          left + width * theme.glow.x,
+          top + height * theme.glow.y,
+          10,
+          left + width * theme.glow.x,
+          top + height * theme.glow.y,
+          width * 0.45,
+        );
+        glow.addColorStop(0, theme.glow.color);
+        glow.addColorStop(1, "rgba(255,255,255,0)");
+        ctx.fillStyle = glow;
+        ctx.fillRect(left, top, width, height);
+      }
+      ctx.restore();
+    },
+  };
+}
+
+function createCourseLogosPlugin(courses, logoByCourse, labelToPalmares, theme = {}) {
+  const imageCache = new Map();
+  return {
+    id: `courseLogos-${Math.random().toString(36).slice(2, 8)}`,
+    afterDraw(chart) {
+      const xScale = chart.scales.x;
+      const areaBottom = chart.chartArea.bottom;
+      const ctx = chart.ctx;
+      courses.forEach((course, index) => {
+        const palmaresName = labelToPalmares.get(course.name) || course.name;
+        const logo = logoByCourse.get(palmaresName);
+        if (!logo) return;
+        const x = xScale.getPixelForValue(index);
+        let img = imageCache.get(logo);
+        if (!img) {
+          img = new Image();
+          img.src = logo;
+          imageCache.set(logo, img);
+        }
+        const logoW = theme.logoW ?? 34;
+        const logoH = theme.logoH ?? 24;
+        const logoY = theme.logoY ?? 10;
+        const draw = () => ctx.drawImage(img, x - (logoW / 2), areaBottom + logoY, logoW, logoH);
+        if (img.complete) draw();
+        else img.onload = draw;
+      });
+    },
+  };
+}
+
+function getChartTheme() {
+  return {
+    borderWidth: 2.7,
+    focusWidth: 4.6,
+    dimWidth: 1.35,
+    pointRadius: 1.9,
+    focusPointRadius: 3.2,
+    dimPointRadius: 0.8,
+    pointHoverRadius: 4.4,
+    focusHoverRadius: 5.5,
+    dimHoverRadius: 2,
+    dimAlpha: 0.14,
+    tension: 0.26,
+    legendColor: "#44536b",
+    legendBoxWidth: 28,
+    tooltipBg: "#112036",
+    tooltipTitle: "#fff8df",
+    tooltipBody: "#f4efe3",
+    tooltipBorder: "rgba(255,211,61,0.35)",
+    gridColor: "rgba(17,32,54,0.08)",
+    gridWidth: 1,
+    bgTop: "rgba(255,255,255,0.85)",
+    bgBottom: "rgba(255,248,233,0.88)",
+    glow: { x: 0.88, y: 0.02, color: "rgba(255,211,61,0.18)" },
+    logoW: 34,
+    logoH: 24,
+    logoY: 10,
+  };
+}
+
 function renderPointsChart(data) {
   const canvas = document.querySelector("#pointsChart");
-  if (!canvas || !window.Chart) {
-    return;
-  }
+  if (!canvas || !window.Chart) return;
 
   const playedIndexes = data.home.progression.courses
     .map((course, index) => (course.played ? index : -1))
@@ -344,6 +383,7 @@ function renderPointsChart(data) {
     ["Vuelta Fem", "Vuelta Femenina"],
     ["Critérium", "Critérium du Dauphiné"],
   ]);
+  const theme = getChartTheme();
 
   new Chart(canvas, {
     type: "line",
@@ -357,12 +397,12 @@ function renderPointsChart(data) {
           data: playedIndexes.map((courseIndex) => player.totals[courseIndex]),
           borderColor: color,
           backgroundColor: color,
-          borderWidth: 2,
-          pointRadius: 2,
-          pointHoverRadius: 4,
+          borderWidth: theme.borderWidth,
+          pointRadius: theme.pointRadius,
+          pointHoverRadius: theme.pointHoverRadius,
           pointHitRadius: 10,
           clip: 8,
-          tension: 0.28,
+          tension: theme.tension,
         };
       }),
     },
@@ -378,17 +418,30 @@ function renderPointsChart(data) {
           position: "bottom",
           onClick(_event, legendItem, legend) {
             const chart = legend.chart;
-            chart.$selectedDatasetIndex = chart.$selectedDatasetIndex === legendItem.datasetIndex
-              ? null
-              : legendItem.datasetIndex;
-            applyLegendHighlight(chart, colorMap);
+            chart.$selectedDatasetIndex = chart.$selectedDatasetIndex === legendItem.datasetIndex ? null : legendItem.datasetIndex;
+            applyLegendHighlight(chart, colorMap, theme);
           },
           labels: {
             usePointStyle: true,
-            boxWidth: 10,
+            pointStyle: "line",
+            boxWidth: theme.legendBoxWidth,
             padding: 16,
-            color: "#5f5a52",
+            color: theme.legendColor,
+            font: {
+              family: "Arial",
+              size: 12,
+              weight: "700",
+            },
           },
+        },
+        tooltip: {
+          backgroundColor: theme.tooltipBg,
+          titleColor: theme.tooltipTitle,
+          bodyColor: theme.tooltipBody,
+          borderColor: theme.tooltipBorder,
+          borderWidth: 1,
+          padding: 12,
+          displayColors: true,
         },
       },
       scales: {
@@ -398,53 +451,33 @@ function renderPointsChart(data) {
             maxRotation: 0,
             minRotation: 0,
           },
-          grid: {
-            display: false,
-          },
+          border: { display: false },
+          grid: { display: false },
         },
         y: {
-          grace: "5%",
-          ticks: {
-            display: false,
-          },
+          grace: "10%",
+          ticks: { display: false },
+          border: { display: false },
           grid: {
-            color: "rgba(25,25,25,0.08)",
+            color: theme.gridColor,
+            lineWidth: theme.gridWidth,
           },
         },
       },
       layout: {
-        padding: {
-          bottom: 34,
-        },
+        padding: { bottom: 34 },
       },
     },
-    plugins: [{
-      id: "courseLogosPoints",
-      afterDraw(chart) {
-        const xScale = chart.scales.x;
-        const areaBottom = chart.chartArea.bottom;
-        const ctx = chart.ctx;
-        courses.forEach((course, index) => {
-          const palmaresName = labelToPalmares.get(course.name) || course.name;
-          const logo = logoByCourse.get(palmaresName);
-          if (!logo) return;
-          const x = xScale.getPixelForValue(index);
-          const img = new Image();
-          img.src = logo;
-          const draw = () => ctx.drawImage(img, x - 16, areaBottom + 8, 32, 22);
-          if (img.complete) draw();
-          else img.onload = draw;
-        });
-      },
-    }],
+    plugins: [
+      createBackdropPlugin(theme),
+      createCourseLogosPlugin(courses, logoByCourse, labelToPalmares, theme),
+    ],
   });
 }
 
 function renderPositionChart(data) {
   const canvas = document.querySelector("#positionChart");
-  if (!canvas || !window.Chart) {
-    return;
-  }
+  if (!canvas || !window.Chart) return;
 
   const playedIndexes = data.home.progression.courses
     .map((course, index) => (course.played ? index : -1))
@@ -465,6 +498,7 @@ function renderPositionChart(data) {
     ["Vuelta Fem", "Vuelta Femenina"],
     ["Critérium", "Critérium du Dauphiné"],
   ]);
+  const theme = getChartTheme();
 
   new Chart(canvas, {
     type: "line",
@@ -475,9 +509,9 @@ function renderPositionChart(data) {
         data: rankingsByCourse.map((course) => course.ranks[name]),
         borderColor: colorMap.get(name),
         backgroundColor: colorMap.get(name),
-        borderWidth: 2,
-        pointRadius: 2,
-        pointHoverRadius: 4,
+        borderWidth: theme.borderWidth,
+        pointRadius: theme.pointRadius,
+        pointHoverRadius: theme.pointHoverRadius,
         pointHitRadius: 10,
         clip: 8,
         tension: 0.22,
@@ -495,17 +529,30 @@ function renderPositionChart(data) {
           position: "bottom",
           onClick(_event, legendItem, legend) {
             const chart = legend.chart;
-            chart.$selectedDatasetIndex = chart.$selectedDatasetIndex === legendItem.datasetIndex
-              ? null
-              : legendItem.datasetIndex;
-            applyLegendHighlight(chart, colorMap);
+            chart.$selectedDatasetIndex = chart.$selectedDatasetIndex === legendItem.datasetIndex ? null : legendItem.datasetIndex;
+            applyLegendHighlight(chart, colorMap, theme);
           },
           labels: {
             usePointStyle: true,
-            boxWidth: 10,
+            pointStyle: "line",
+            boxWidth: theme.legendBoxWidth,
             padding: 16,
-            color: "#5f5a52",
+            color: theme.legendColor,
+            font: {
+              family: "Arial",
+              size: 12,
+              weight: "700",
+            },
           },
+        },
+        tooltip: {
+          backgroundColor: theme.tooltipBg,
+          titleColor: theme.tooltipTitle,
+          bodyColor: theme.tooltipBody,
+          borderColor: theme.tooltipBorder,
+          borderWidth: 1,
+          padding: 12,
+          displayColors: true,
         },
       },
       scales: {
@@ -515,48 +562,30 @@ function renderPositionChart(data) {
             maxRotation: 0,
             minRotation: 0,
           },
-          grid: {
-            display: false,
-          },
+          border: { display: false },
+          grid: { display: false },
         },
         y: {
           reverse: true,
           min: 1,
           max: data.meta.playersCount,
           grace: 0.3,
-          ticks: {
-            display: false,
-          },
+          ticks: { display: false },
+          border: { display: false },
           grid: {
-            color: "rgba(25,25,25,0.08)",
+            color: theme.gridColor,
+            lineWidth: theme.gridWidth,
           },
         },
       },
       layout: {
-        padding: {
-          bottom: 34,
-        },
+        padding: { bottom: 34 },
       },
     },
-    plugins: [{
-      id: "courseLogosPositions",
-      afterDraw(chart) {
-        const xScale = chart.scales.x;
-        const areaBottom = chart.chartArea.bottom;
-        const ctx = chart.ctx;
-        courses.forEach((course, index) => {
-          const palmaresName = labelToPalmares.get(course.name) || course.name;
-          const logo = logoByCourse.get(palmaresName);
-          if (!logo) return;
-          const x = xScale.getPixelForValue(index);
-          const img = new Image();
-          img.src = logo;
-          const draw = () => ctx.drawImage(img, x - 16, areaBottom + 8, 32, 22);
-          if (img.complete) draw();
-          else img.onload = draw;
-        });
-      },
-    }],
+    plugins: [
+      createBackdropPlugin(theme),
+      createCourseLogosPlugin(courses, logoByCourse, labelToPalmares, theme),
+    ],
   });
 }
 
@@ -566,78 +595,52 @@ function renderPalmaresPage(data) {
   const upcomingEntries = entries.filter((entry) => !entry.isPlayed);
 
   const placeMeta = {
-    first: {
-      label: "1er",
-      icon: "🏆",
-      className: "is-first",
-    },
-    second: {
-      label: "2e",
-      icon: "🥈",
-      className: "is-second",
-    },
-    third: {
-      label: "3e",
-      icon: "🥉",
-      className: "is-third",
-    },
-    last: {
-      label: "Dernière place",
-      icon: "◉",
-      className: "is-last",
-    },
+    first: { label: "1er", icon: "🏆", className: "is-first" },
+    second: { label: "2e", icon: "🥈", className: "is-second" },
+    third: { label: "3e", icon: "🥉", className: "is-third" },
+    last: { label: "Dernière place", icon: "◉", className: "is-last" },
   };
 
   const playedCountNode = document.querySelector("[data-palmares-count]");
   const upcomingCountNode = document.querySelector("[data-upcoming-count]");
   const lastWinnerNode = document.querySelector("[data-last-winner]");
 
-  if (playedCountNode) {
-    playedCountNode.textContent = String(playedEntries.length);
-  }
-  if (upcomingCountNode) {
-    upcomingCountNode.textContent = String(upcomingEntries.length);
-  }
-  if (lastWinnerNode) {
-    lastWinnerNode.textContent = playedEntries.length ? playedEntries[playedEntries.length - 1].first : "Aucun vainqueur";
-  }
+  if (playedCountNode) playedCountNode.textContent = String(playedEntries.length);
+  if (upcomingCountNode) upcomingCountNode.textContent = String(upcomingEntries.length);
+  if (lastWinnerNode) lastWinnerNode.textContent = playedEntries.length ? playedEntries[playedEntries.length - 1].first : "Aucun vainqueur";
 
   const tableMarkup = playedEntries
-      .map((entry) => {
-        const logo = entry.logo
-          ? `<div class="palmares-course-logo"><img src="${entry.logo}" alt="${entry.course}"></div>`
-          : "";
-        return `
-          <article class="palmares-row">
-            <div class="palmares-course">
-              ${logo}
-              <div class="palmares-course-name">${getDisplayCourseName(entry.course)}</div>
-            </div>
-            <div class="palmares-cell ${placeMeta.first.className}">
-              <span class="palmares-cell-label"><span class="palmares-cell-icon">${placeMeta.first.icon}</span>${placeMeta.first.label}</span>
-              <span class="palmares-cell-value">${entry.first ?? "—"}</span>
-            </div>
-            <div class="palmares-cell ${placeMeta.second.className}">
-              <span class="palmares-cell-label"><span class="palmares-cell-icon">${placeMeta.second.icon}</span>${placeMeta.second.label}</span>
-              <span class="palmares-cell-value">${entry.second ?? "—"}</span>
-            </div>
-            <div class="palmares-cell ${placeMeta.third.className}">
-              <span class="palmares-cell-label"><span class="palmares-cell-icon">${placeMeta.third.icon}</span>${placeMeta.third.label}</span>
-              <span class="palmares-cell-value">${entry.third ?? "—"}</span>
-            </div>
-            <div class="palmares-cell ${placeMeta.last.className}">
-              <span class="palmares-cell-label"><span class="palmares-cell-icon">${placeMeta.last.icon}</span>${placeMeta.last.label}</span>
-              <span class="palmares-cell-value">${entry.last ?? "—"}</span>
-            </div>
-          </article>
-        `;
-      })
-      .join("");
+    .map((entry) => {
+      const logo = entry.logo ? `<div class="palmares-course-logo"><img src="${entry.logo}" alt="${entry.course}"></div>` : "";
+      return `
+        <article class="palmares-row">
+          <div class="palmares-course">
+            ${logo}
+            <div class="palmares-course-name">${getDisplayCourseName(entry.course)}</div>
+          </div>
+          <div class="palmares-cell ${placeMeta.first.className}">
+            <span class="palmares-cell-label"><span class="palmares-cell-icon">${placeMeta.first.icon}</span>${placeMeta.first.label}</span>
+            <span class="palmares-cell-value">${entry.first ?? "—"}</span>
+          </div>
+          <div class="palmares-cell ${placeMeta.second.className}">
+            <span class="palmares-cell-label"><span class="palmares-cell-icon">${placeMeta.second.icon}</span>${placeMeta.second.label}</span>
+            <span class="palmares-cell-value">${entry.second ?? "—"}</span>
+          </div>
+          <div class="palmares-cell ${placeMeta.third.className}">
+            <span class="palmares-cell-label"><span class="palmares-cell-icon">${placeMeta.third.icon}</span>${placeMeta.third.label}</span>
+            <span class="palmares-cell-value">${entry.third ?? "—"}</span>
+          </div>
+          <div class="palmares-cell ${placeMeta.last.className}">
+            <span class="palmares-cell-label"><span class="palmares-cell-icon">${placeMeta.last.icon}</span>${placeMeta.last.label}</span>
+            <span class="palmares-cell-value">${entry.last ?? "—"}</span>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
 
   const tableContainer = document.querySelector("[data-palmares-table]");
-  if (tableContainer) {
-    tableContainer.innerHTML = tableMarkup;
-  }
+  if (tableContainer) tableContainer.innerHTML = tableMarkup;
 
   const upcomingContainer = document.querySelector("[data-upcoming-races]");
   if (upcomingContainer) {
@@ -663,15 +666,9 @@ function getCourseLogoMap(data) {
 }
 
 function getRankIcon(rank) {
-  if (rank === 1) {
-    return "🏆";
-  }
-  if (rank === 2) {
-    return "🥈";
-  }
-  if (rank === 3) {
-    return "🥉";
-  }
+  if (rank === 1) return "🏆";
+  if (rank === 2) return "🥈";
+  if (rank === 3) return "🥉";
   return "";
 }
 
@@ -680,9 +677,7 @@ function formatRankLabel(rank) {
     return "—";
   }
   const icon = getRankIcon(rank);
-  if (!icon) {
-    return String(rank);
-  }
+  if (!icon) return String(rank);
   return `<span class="details-rank-icon">${icon}</span>${rank}`;
 }
 
@@ -707,15 +702,9 @@ function renderDetailsPage(data) {
   const logoMap = getCourseLogoMap(data);
   const playedCourses = data.home.progression.courses.filter((course) => course.played);
 
-  if (playerCountNode) {
-    playerCountNode.textContent = String(players.length);
-  }
-  if (playedCoursesNode) {
-    playedCoursesNode.textContent = String(data.meta.playedCoursesCount);
-  }
-  if (leaderNode) {
-    leaderNode.textContent = players[0]?.name ?? "—";
-  }
+  if (playerCountNode) playerCountNode.textContent = String(players.length);
+  if (playedCoursesNode) playedCoursesNode.textContent = String(data.meta.playedCoursesCount);
+  if (leaderNode) leaderNode.textContent = players[0]?.name ?? "—";
 
   if (cardsContainer) {
     cardsContainer.innerHTML = players
@@ -739,33 +728,20 @@ function renderDetailsPage(data) {
 
   if (chipsContainer) {
     chipsContainer.innerHTML = players
-      .map(
-        (player, index) => `<button class="player-chip ${index === 0 ? "is-active" : ""}" type="button" data-player-name="${player.name}">${player.name}</button>`,
-      )
+      .map((player, index) => `<button class="player-chip ${index === 0 ? "is-active" : ""}" type="button" data-player-name="${player.name}">${player.name}</button>`)
       .join("");
   }
 
   const updateFocus = (playerName) => {
     const player = players.find((entry) => entry.name === playerName) || players[0];
     const summary = computePlayerSummary(player);
-    if (focusName) {
-      focusName.textContent = player.name;
-    }
-    if (focusSub) {
-      focusSub.textContent = `${formatPoints(player.total)} points au total sur la saison en cours.`;
-    }
-    if (focusKpis.total) {
-      focusKpis.total.textContent = formatPoints(player.total);
-    }
-    if (focusKpis.wins) {
-      focusKpis.wins.textContent = String(summary.wins);
-    }
-    if (focusKpis.podiums) {
-      focusKpis.podiums.textContent = String(summary.podiums);
-    }
-    if (focusKpis.dns) {
-      focusKpis.dns.textContent = String(summary.dns);
-    }
+    if (focusName) focusName.textContent = player.name;
+    if (focusSub) focusSub.textContent = `${formatPoints(player.total)} points au total sur la saison en cours.`;
+    if (focusKpis.total) focusKpis.total.textContent = formatPoints(player.total);
+    if (focusKpis.wins) focusKpis.wins.textContent = String(summary.wins);
+    if (focusKpis.podiums) focusKpis.podiums.textContent = String(summary.podiums);
+    if (focusKpis.dns) focusKpis.dns.textContent = String(summary.dns);
+
     if (resultsContainer) {
       resultsContainer.innerHTML = playedCourses
         .map((course) => {
@@ -779,7 +755,7 @@ function renderDetailsPage(data) {
                 <strong>${getDisplayCourseName(course.name)}</strong>
               </div>
               <div class="details-result-values">
-                <span class="details-value-pill ${points === 0 ? "is-zero" : ""}">Rang: ${formatRankLabel(rank)}</span>
+                <span class="details-value-pill ${points === 0 ? "is-zero" : ""}">Rang : ${formatRankLabel(rank)}</span>
                 <span class="details-value-pill ${points === 0 ? "is-zero" : ""}">${formatPoints(points)} pts</span>
               </div>
             </article>
@@ -796,9 +772,7 @@ function renderDetailsPage(data) {
   if (chipsContainer) {
     chipsContainer.addEventListener("click", (event) => {
       const button = event.target.closest("[data-player-name]");
-      if (!button) {
-        return;
-      }
+      if (!button) return;
       updateFocus(button.dataset.playerName);
     });
   }
@@ -845,9 +819,7 @@ function renderDetailsPage(data) {
 
 function setupSectionNav() {
   const navLinks = Array.from(document.querySelectorAll('.nav-link[href^="#"]'));
-  if (!navLinks.length) {
-    return;
-  }
+  if (!navLinks.length) return;
 
   const sections = navLinks
     .map((link) => {
@@ -856,20 +828,16 @@ function setupSectionNav() {
     })
     .filter(Boolean);
 
-  if (!sections.length) {
-    return;
-  }
+  if (!sections.length) return;
 
   const updateActiveSection = () => {
     const offset = window.scrollY + 180;
     let active = sections[0];
-
     sections.forEach((section) => {
       if (section.target.offsetTop <= offset) {
         active = section;
       }
     });
-
     sections.forEach((section) => {
       section.link.classList.toggle("is-active", section === active);
     });
@@ -884,9 +852,7 @@ async function boot() {
   const hasPalmares = Boolean(document.querySelector("[data-palmares-table]"));
   const hasDetails = Boolean(document.querySelector("[data-details-player-cards]"));
 
-  if (!hasHome && !hasPalmares && !hasDetails) {
-    return;
-  }
+  if (!hasHome && !hasPalmares && !hasDetails) return;
 
   try {
     const data = await loadData();
