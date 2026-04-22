@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classement VELOGAMES - Saison 2026</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+  <script src="./assets/data/velogames-data.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-kicker">Velogames 2026</div>
+        <h1 class="brand-title" data-site-title>Classement VELOGAMES - Saison 2026</h1>
+      </div>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a class="nav-link is-active" href="#accueil">Accueil</a>
+        <a class="nav-link" href="#palmares">Palmarès</a>
+        <a class="nav-link" href="#details">Détails</a>
+      </nav>
+      <div class="meta-pill">
+        <span class="meta-label">Dernière mise à jour</span>
+        <span class="meta-value" data-last-updated>Chargement...</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="hero-kicker">Saison 2026</div>
+            <h2>CLASSEMENT GÉNÉRAL</h2>
+            <div class="hero-badges">
+              <span class="badge is-leader">Leader actuel : <strong data-leader-name>Chargement...</strong></span>
+              <span class="badge">Dernière course intégrée : <strong data-last-race>Chargement...</strong></span>
+              <span class="badge">Prochaine course : <strong data-next-race>Chargement...</strong></span>
+              <span class="badge" data-played-count>Chargement...</span>
+            </div>
+          </div>
+          <aside class="hero-callout">
+            <div class="hero-callout-label">Score du leader</div>
+            <div class="hero-callout-value" data-leader-points>0</div>
+            <div class="hero-callout-copy" data-leader-gap-copy></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Chiffres Clés</h2>
+          </div>
+        </div>
+        <div class="kpi-grid">
+          <article class="kpi-card">
+            <div class="kpi-label">Joueur le plus victorieux</div>
+            <div class="kpi-value kpi-value-name" data-kpi-most-wins-player>—</div>
+            <div class="kpi-subvalue" data-kpi-most-wins-count>0 victoire</div>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-label">Écart leader / 2e</div>
+            <div class="kpi-value" data-kpi-gap>0</div>
+            <div class="kpi-subvalue">Lecture immédiate de la tension en tête.</div>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-label">Écart 2e / 3e</div>
+            <div class="kpi-value" data-kpi-podium-spread>0</div>
+            <div class="kpi-subvalue">Mesure du duel pour le podium.</div>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-label">Podiums du leader</div>
+            <div class="kpi-value" data-kpi-leader-podiums>0</div>
+            <div class="kpi-subvalue">Régularité du leader sur les courses déjà jouées.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="content-grid">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3 class="panel-title">Classement général</h3>
+              </div>
+            </div>
+            <table class="ranking-table">
+              <thead>
+                <tr>
+                  <th>Rang</th>
+                  <th>Joueur</th>
+                  <th style="text-align:right;">Points</th>
+                </tr>
+              </thead>
+              <tbody data-global-ranking></tbody>
+            </table>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3 class="panel-title">Classement par équipe</h3>
+              </div>
+              <div class="panel-meta">Moyenne</div>
+            </div>
+            <table class="ranking-table">
+              <thead>
+                <tr>
+                  <th>Rang</th>
+                  <th>Équipe</th>
+                  <th style="text-align:right;">Points</th>
+                </tr>
+              </thead>
+              <tbody data-team-ranking></tbody>
+            </table>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Évolutions</h2>
+          </div>
+        </div>
+        <div class="content-grid content-grid-stack">
+          <article class="panel chart-card">
+            <div class="panel-header">
+              <div>
+                <h3 class="panel-title">Évolution des positions</h3>
+              </div>
+            </div>
+            <div class="chart-wrap">
+              <canvas id="positionChart"></canvas>
+            </div>
+          </article>
+          <article class="panel chart-card">
+            <div class="panel-header">
+              <div>
+                <h3 class="panel-title">Évolution des points</h3>
+              </div>
+            </div>
+            <div class="chart-wrap">
+              <canvas id="pointsChart"></canvas>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Courses déjà jouées</h2>
+          </div>
+        </div>
+        <div class="logo-strip" data-logo-strip></div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Courses à venir</h2>
+          </div>
+        </div>
+        <div class="logo-strip" data-upcoming-home></div>
+      </section>
+
+      <section class="hero" id="palmares">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="hero-kicker">Saison 2026</div>
+            <h2>PALMARÈS</h2>
+            <div class="hero-badges">
+              <span class="badge">Courses jouées: <strong data-palmares-count>0</strong></span>
+              <span class="badge">Courses à venir: <strong data-upcoming-count>0</strong></span>
+              <span class="badge">Dernier vainqueur: <strong data-last-winner>Chargement...</strong></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Palmarès</h2>
+          </div>
+        </div>
+        <div class="palmares-list" data-palmares-table></div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Courses à venir</h2>
+          </div>
+        </div>
+        <div class="upcoming-grid" data-upcoming-races></div>
+      </section>
+
+      <section class="hero" id="details">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="hero-kicker">Saison 2026</div>
+            <h2>DÉTAILS</h2>
+            <div class="hero-badges">
+              <span class="badge">Joueurs: <strong data-details-player-count>0</strong></span>
+              <span class="badge">Courses jouées: <strong data-details-played-courses>0</strong></span>
+              <span class="badge">Leader actuel: <strong data-details-leader>Chargement...</strong></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Vue d'ensemble</h2>
+          </div>
+        </div>
+        <div class="details-player-grid" data-details-player-cards></div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Focus joueur</h2>
+          </div>
+        </div>
+        <div class="details-controls" data-player-chips></div>
+        <div class="player-focus">
+          <div class="player-focus-header">
+            <div>
+              <h3 class="player-focus-name" data-focus-name>Chargement...</h3>
+              <p class="player-focus-sub" data-focus-sub></p>
+            </div>
+          </div>
+          <div class="player-focus-kpis">
+            <div class="player-focus-kpi">
+              <strong data-focus-total>0</strong>
+              <span>Points</span>
+            </div>
+            <div class="player-focus-kpi">
+              <strong data-focus-wins>0</strong>
+              <span>Victoires</span>
+            </div>
+            <div class="player-focus-kpi">
+              <strong data-focus-podiums>0</strong>
+              <span>Podiums</span>
+            </div>
+            <div class="player-focus-kpi">
+              <strong data-focus-dns>0</strong>
+              <span>DNS</span>
+            </div>
+          </div>
+          <div class="details-results-grid" data-focus-results></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Tableau détaillé</h2>
+            <p class="section-copy">Rang et points par joueur sur toutes les courses déjà jouées.</p>
+          </div>
+        </div>
+        <div class="details-table-shell">
+          <table class="details-table">
+            <thead data-details-table-head></thead>
+            <tbody data-details-table-body></tbody>
+          </table>
+        </div>
+        <p class="section-copy" data-page-error hidden></p>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+  </div>
+  <button class="back-to-top" type="button" aria-label="Revenir en haut de page" data-back-to-top>↑</button>
+</body>
+</html>
