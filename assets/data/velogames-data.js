@@ -2,78 +2,78 @@ window.VELOGAMES_DATA = {
   "meta": {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
-    "lastUpdated": "2026-04-28T18:36:48",
-    "generatedAt": "2026-04-28T18:37:07",
+    "lastUpdated": "2026-05-04T08:38:15",
+    "generatedAt": "2026-05-04T08:38:27",
     "playersCount": 16,
-    "coursesCount": 19,
+    "coursesCount": 18,
     "playedCoursesCount": 7
   },
   "home": {
     "globalRanking": [
       {
         "rank": 1,
-        "name": "Damien",
-        "points": 2080
+        "name": "Quentin",
+        "points": 1840
       },
       {
         "rank": 2,
         "name": "Pierre",
-        "points": 1990
+        "points": 1740
       },
       {
         "rank": 3,
-        "name": "Quentin",
-        "points": 1790
+        "name": "Nans",
+        "points": 1735
       },
       {
         "rank": 4,
-        "name": "Nans",
-        "points": 1510
+        "name": "Damien",
+        "points": 1665
       },
       {
         "rank": 5,
-        "name": "Mathis",
-        "points": 1418
+        "name": "Robin",
+        "points": 1460
       },
       {
         "rank": 6,
-        "name": "Émilien",
-        "points": 1393
+        "name": "Mathis",
+        "points": 1363
       },
       {
         "rank": 7,
-        "name": "Lucie",
-        "points": 1131
+        "name": "Émilien",
+        "points": 1243
       },
       {
         "rank": 8,
         "name": "Sacha",
-        "points": 1115
+        "points": 1165
       },
       {
         "rank": 9,
-        "name": "Robin",
-        "points": 1060
+        "name": "Agathe",
+        "points": 1033
       },
       {
         "rank": 10,
-        "name": "Stella",
-        "points": 880
+        "name": "Lucie",
+        "points": 956
       },
       {
         "rank": 11,
-        "name": "Agathe",
-        "points": 733
+        "name": "Stella",
+        "points": 955
       },
       {
         "rank": 12,
         "name": "Charles",
-        "points": 710
+        "points": 595
       },
       {
         "rank": 13,
         "name": "Orlane",
-        "points": 401
+        "points": 351
       },
       {
         "rank": 14,
@@ -95,17 +95,17 @@ window.VELOGAMES_DATA = {
       {
         "rank": 1,
         "name": "SALES",
-        "points": 1191.71
+        "points": 1146.71
       },
       {
         "rank": 2,
         "name": "ÉTUDES",
-        "points": 1019.8
+        "points": 1100.8
       },
       {
         "rank": 3,
         "name": "PRODUIT",
-        "points": 421.67
+        "points": 438.33
       }
     ],
     "teamBreakdown": [
@@ -113,46 +113,46 @@ window.VELOGAMES_DATA = {
         "name": "SALES",
         "members": [
           {
-            "name": "Damien",
-            "total": 2080
+            "name": "Quentin",
+            "total": 1840
           },
           {
-            "name": "Quentin",
-            "total": 1790
+            "name": "Damien",
+            "total": 1665
           },
           {
             "name": "Émilien",
-            "total": 1393
-          },
-          {
-            "name": "Lucie",
-            "total": 1131
-          },
-          {
-            "name": "Stella",
-            "total": 880
+            "total": 1243
           },
           {
             "name": "Agathe",
-            "total": 733
+            "total": 1033
+          },
+          {
+            "name": "Lucie",
+            "total": 956
+          },
+          {
+            "name": "Stella",
+            "total": 955
           },
           {
             "name": "Ema",
             "total": 335
           }
         ],
-        "total": 8342,
-        "average": 1191.71,
-        "leader": "Damien",
-        "leaderPoints": 2080,
-        "leaderShare": 24.93
+        "total": 8027,
+        "average": 1146.71,
+        "leader": "Quentin",
+        "leaderPoints": 1840,
+        "leaderShare": 22.92
       },
       {
         "name": "PRODUIT",
         "members": [
           {
             "name": "Sacha",
-            "total": 1115
+            "total": 1165
           },
           {
             "name": "Guillemette",
@@ -163,41 +163,41 @@ window.VELOGAMES_DATA = {
             "total": 0
           }
         ],
-        "total": 1265,
-        "average": 421.67,
+        "total": 1315,
+        "average": 438.33,
         "leader": "Sacha",
-        "leaderPoints": 1115,
-        "leaderShare": 88.14
+        "leaderPoints": 1165,
+        "leaderShare": 88.59
       },
       {
         "name": "ÉTUDES",
         "members": [
           {
             "name": "Nans",
-            "total": 1510
-          },
-          {
-            "name": "Mathis",
-            "total": 1418
+            "total": 1735
           },
           {
             "name": "Robin",
-            "total": 1060
+            "total": 1460
+          },
+          {
+            "name": "Mathis",
+            "total": 1363
           },
           {
             "name": "Charles",
-            "total": 710
+            "total": 595
           },
           {
             "name": "Orlane",
-            "total": 401
+            "total": 351
           }
         ],
-        "total": 5099,
-        "average": 1019.8,
+        "total": 5504,
+        "average": 1100.8,
         "leader": "Nans",
-        "leaderPoints": 1510,
-        "leaderShare": 29.61
+        "leaderPoints": 1735,
+        "leaderShare": 31.52
       }
     ],
     "progression": {
@@ -243,12 +243,6 @@ window.VELOGAMES_DATA = {
           "slug": "romandie",
           "logo": "./assets/course-logos/Tour de Romandie.png",
           "played": true
-        },
-        {
-          "name": "Vuelta Fem",
-          "slug": "vuelta-fem",
-          "logo": "./assets/course-logos/LVF23_LOGO POSITIVO COLOR RGB.png",
-          "played": false
         },
         {
           "name": "Giro",
@@ -327,19 +321,19 @@ window.VELOGAMES_DATA = {
             970,
             1370,
             1590,
-            1990,
-            1990,
-            1990,
-            1990,
-            1990,
-            1990,
-            1990,
-            1990,
-            1990,
-            1990,
-            1990,
-            1990,
-            1990
+            1740,
+            1740,
+            1740,
+            1740,
+            1740,
+            1740,
+            1740,
+            1740,
+            1740,
+            1740,
+            1740,
+            1740,
+            0
           ]
         },
         {
@@ -351,19 +345,19 @@ window.VELOGAMES_DATA = {
             1000,
             1260,
             1580,
-            2080,
-            2080,
-            2080,
-            2080,
-            2080,
-            2080,
-            2080,
-            2080,
-            2080,
-            2080,
-            2080,
-            2080,
-            2080
+            1665,
+            1665,
+            1665,
+            1665,
+            1665,
+            1665,
+            1665,
+            1665,
+            1665,
+            1665,
+            1665,
+            1665,
+            0
           ]
         },
         {
@@ -375,19 +369,19 @@ window.VELOGAMES_DATA = {
             565,
             633,
             633,
-            733,
-            733,
-            733,
-            733,
-            733,
-            733,
-            733,
-            733,
-            733,
-            733,
-            733,
-            733,
-            733
+            1033,
+            1033,
+            1033,
+            1033,
+            1033,
+            1033,
+            1033,
+            1033,
+            1033,
+            1033,
+            1033,
+            1033,
+            0
           ]
         },
         {
@@ -399,19 +393,19 @@ window.VELOGAMES_DATA = {
             860,
             1000,
             1068,
-            1393,
-            1393,
-            1393,
-            1393,
-            1393,
-            1393,
-            1393,
-            1393,
-            1393,
-            1393,
-            1393,
-            1393,
-            1393
+            1243,
+            1243,
+            1243,
+            1243,
+            1243,
+            1243,
+            1243,
+            1243,
+            1243,
+            1243,
+            1243,
+            1243,
+            0
           ]
         },
         {
@@ -423,19 +417,19 @@ window.VELOGAMES_DATA = {
             800,
             856,
             856,
-            1131,
-            1131,
-            1131,
-            1131,
-            1131,
-            1131,
-            1131,
-            1131,
-            1131,
-            1131,
-            1131,
-            1131,
-            1131
+            956,
+            956,
+            956,
+            956,
+            956,
+            956,
+            956,
+            956,
+            956,
+            956,
+            956,
+            956,
+            0
           ]
         },
         {
@@ -459,7 +453,7 @@ window.VELOGAMES_DATA = {
             335,
             335,
             335,
-            335
+            0
           ]
         },
         {
@@ -471,19 +465,19 @@ window.VELOGAMES_DATA = {
             1035,
             1355,
             1615,
-            1790,
-            1790,
-            1790,
-            1790,
-            1790,
-            1790,
-            1790,
-            1790,
-            1790,
-            1790,
-            1790,
-            1790,
-            1790
+            1840,
+            1840,
+            1840,
+            1840,
+            1840,
+            1840,
+            1840,
+            1840,
+            1840,
+            1840,
+            1840,
+            1840,
+            0
           ]
         },
         {
@@ -495,19 +489,19 @@ window.VELOGAMES_DATA = {
             310,
             430,
             830,
-            880,
-            880,
-            880,
-            880,
-            880,
-            880,
-            880,
-            880,
-            880,
-            880,
-            880,
-            880,
-            880
+            955,
+            955,
+            955,
+            955,
+            955,
+            955,
+            955,
+            955,
+            955,
+            955,
+            955,
+            955,
+            0
           ]
         },
         {
@@ -543,19 +537,19 @@ window.VELOGAMES_DATA = {
             570,
             790,
             890,
-            1115,
-            1115,
-            1115,
-            1115,
-            1115,
-            1115,
-            1115,
-            1115,
-            1115,
-            1115,
-            1115,
-            1115,
-            1115
+            1165,
+            1165,
+            1165,
+            1165,
+            1165,
+            1165,
+            1165,
+            1165,
+            1165,
+            1165,
+            1165,
+            1165,
+            0
           ]
         },
         {
@@ -579,7 +573,7 @@ window.VELOGAMES_DATA = {
             150,
             150,
             150,
-            150
+            0
           ]
         },
         {
@@ -591,19 +585,19 @@ window.VELOGAMES_DATA = {
             1050,
             1230,
             1410,
-            1510,
-            1510,
-            1510,
-            1510,
-            1510,
-            1510,
-            1510,
-            1510,
-            1510,
-            1510,
-            1510,
-            1510,
-            1510
+            1735,
+            1735,
+            1735,
+            1735,
+            1735,
+            1735,
+            1735,
+            1735,
+            1735,
+            1735,
+            1735,
+            1735,
+            0
           ]
         },
         {
@@ -615,19 +609,19 @@ window.VELOGAMES_DATA = {
             375,
             455,
             535,
-            710,
-            710,
-            710,
-            710,
-            710,
-            710,
-            710,
-            710,
-            710,
-            710,
-            710,
-            710,
-            710
+            595,
+            595,
+            595,
+            595,
+            595,
+            595,
+            595,
+            595,
+            595,
+            595,
+            595,
+            595,
+            0
           ]
         },
         {
@@ -639,19 +633,19 @@ window.VELOGAMES_DATA = {
             245,
             245,
             301,
-            401,
-            401,
-            401,
-            401,
-            401,
-            401,
-            401,
-            401,
-            401,
-            401,
-            401,
-            401,
-            401
+            351,
+            351,
+            351,
+            351,
+            351,
+            351,
+            351,
+            351,
+            351,
+            351,
+            351,
+            351,
+            0
           ]
         },
         {
@@ -663,19 +657,19 @@ window.VELOGAMES_DATA = {
             1125,
             1173,
             1293,
-            1418,
-            1418,
-            1418,
-            1418,
-            1418,
-            1418,
-            1418,
-            1418,
-            1418,
-            1418,
-            1418,
-            1418,
-            1418
+            1363,
+            1363,
+            1363,
+            1363,
+            1363,
+            1363,
+            1363,
+            1363,
+            1363,
+            1363,
+            1363,
+            1363,
+            0
           ]
         },
         {
@@ -687,19 +681,19 @@ window.VELOGAMES_DATA = {
             720,
             820,
             960,
-            1060,
-            1060,
-            1060,
-            1060,
-            1060,
-            1060,
-            1060,
-            1060,
-            1060,
-            1060,
-            1060,
-            1060,
-            1060
+            1460,
+            1460,
+            1460,
+            1460,
+            1460,
+            1460,
+            1460,
+            1460,
+            1460,
+            1460,
+            1460,
+            1460,
+            0
           ]
         }
       ],
@@ -840,39 +834,17 @@ window.VELOGAMES_DATA = {
           "course": "Romandie",
           "slug": "romandie",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
-            "Charles": 12,
-            "Orlane": 13,
-            "Ema": 14,
-            "Guillemette": 15,
-            "Aude": 16
-          }
-        },
-        {
-          "course": "Vuelta Fem",
-          "slug": "vuelta-fem",
-          "ranks": {
-            "Damien": 1,
-            "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
-            "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -884,17 +856,17 @@ window.VELOGAMES_DATA = {
           "course": "Giro",
           "slug": "giro",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -906,17 +878,17 @@ window.VELOGAMES_DATA = {
           "course": "Itzulia Women",
           "slug": "itzulia-women",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -928,17 +900,17 @@ window.VELOGAMES_DATA = {
           "course": "Critérium",
           "slug": "criterium",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -950,17 +922,17 @@ window.VELOGAMES_DATA = {
           "course": "Tour de Suisse",
           "slug": "tour-de-suisse",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -972,17 +944,17 @@ window.VELOGAMES_DATA = {
           "course": "Tour de France",
           "slug": "tour-de-france",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -994,17 +966,17 @@ window.VELOGAMES_DATA = {
           "course": "Tour Femmes",
           "slug": "tour-femmes",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -1016,17 +988,17 @@ window.VELOGAMES_DATA = {
           "course": "Vuelta",
           "slug": "vuelta",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -1038,17 +1010,17 @@ window.VELOGAMES_DATA = {
           "course": "Renewi Tour",
           "slug": "renewi-tour",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -1060,17 +1032,17 @@ window.VELOGAMES_DATA = {
           "course": "Tour of Britain",
           "slug": "tour-of-britain",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -1082,17 +1054,17 @@ window.VELOGAMES_DATA = {
           "course": "Tour Romandie Femmes",
           "slug": "tour-romandie-femmes",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -1104,17 +1076,17 @@ window.VELOGAMES_DATA = {
           "course": "Simac Ladies Tour",
           "slug": "simac-ladies-tour",
           "ranks": {
-            "Damien": 1,
+            "Quentin": 1,
             "Pierre": 2,
-            "Quentin": 3,
-            "Nans": 4,
-            "Mathis": 5,
-            "Émilien": 6,
-            "Lucie": 7,
+            "Nans": 3,
+            "Damien": 4,
+            "Robin": 5,
+            "Mathis": 6,
+            "Émilien": 7,
             "Sacha": 8,
-            "Robin": 9,
-            "Stella": 10,
-            "Agathe": 11,
+            "Agathe": 9,
+            "Lucie": 10,
+            "Stella": 11,
             "Charles": 12,
             "Orlane": 13,
             "Ema": 14,
@@ -1190,21 +1162,11 @@ window.VELOGAMES_DATA = {
       "course": "Tour de Romandie",
       "slug": "tour-de-romandie",
       "logo": "./assets/course-logos/Tour de Romandie.png",
-      "first": "Damien",
-      "second": "Pierre",
-      "third": "Émilien",
-      "last": "Stella",
+      "first": "Robin",
+      "second": "Agathe",
+      "third": "Nans",
+      "last": "Orlane",
       "isPlayed": true
-    },
-    {
-      "course": "Vuelta Femenina",
-      "slug": "vuelta-femenina",
-      "logo": "./assets/course-logos/LVF23_LOGO POSITIVO COLOR RGB.png",
-      "first": null,
-      "second": null,
-      "third": null,
-      "last": null,
-      "isPlayed": false
     },
     {
       "course": "Giro",
@@ -1320,7 +1282,7 @@ window.VELOGAMES_DATA = {
   "details": [
     {
       "name": "Pierre",
-      "total": 1990,
+      "total": 1740,
       "results": [
         {
           "course": "Down Under",
@@ -1354,13 +1316,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 2,
-          "points": 400
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 7,
+          "points": 150
         },
         {
           "course": "Giro",
@@ -1421,7 +1378,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Damien",
-      "total": 2080,
+      "total": 1665,
       "results": [
         {
           "course": "Down Under",
@@ -1455,13 +1412,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 1,
-          "points": 500
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 10,
+          "points": 85
         },
         {
           "course": "Giro",
@@ -1522,7 +1474,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Agathe",
-      "total": 733,
+      "total": 1033,
       "results": [
         {
           "course": "Down Under",
@@ -1556,13 +1508,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 9,
-          "points": 100
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 2,
+          "points": 400
         },
         {
           "course": "Giro",
@@ -1623,7 +1570,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Émilien",
-      "total": 1393,
+      "total": 1243,
       "results": [
         {
           "course": "Down Under",
@@ -1657,13 +1604,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 3,
-          "points": 325
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 6,
+          "points": 175
         },
         {
           "course": "Giro",
@@ -1724,7 +1666,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Lucie",
-      "total": 1131,
+      "total": 956,
       "results": [
         {
           "course": "Down Under",
@@ -1758,13 +1700,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 4,
-          "points": 275
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 9,
+          "points": 100
         },
         {
           "course": "Giro",
@@ -1863,11 +1800,6 @@ window.VELOGAMES_DATA = {
           "points": 0
         },
         {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
-        },
-        {
           "course": "Giro",
           "rank": null,
           "points": 0
@@ -1926,7 +1858,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Quentin",
-      "total": 1790,
+      "total": 1840,
       "results": [
         {
           "course": "Down Under",
@@ -1960,13 +1892,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 6,
-          "points": 175
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 5,
+          "points": 225
         },
         {
           "course": "Giro",
@@ -2027,7 +1954,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Stella",
-      "total": 880,
+      "total": 955,
       "results": [
         {
           "course": "Down Under",
@@ -2061,13 +1988,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 13,
-          "points": 50
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 8,
+          "points": 125
         },
         {
           "course": "Giro",
@@ -2166,11 +2088,6 @@ window.VELOGAMES_DATA = {
           "points": 0
         },
         {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
-        },
-        {
           "course": "Giro",
           "rank": null,
           "points": 0
@@ -2229,7 +2146,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Sacha",
-      "total": 1115,
+      "total": 1165,
       "results": [
         {
           "course": "Down Under",
@@ -2263,13 +2180,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 5,
-          "points": 225
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 4,
+          "points": 275
         },
         {
           "course": "Giro",
@@ -2368,11 +2280,6 @@ window.VELOGAMES_DATA = {
           "points": 0
         },
         {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
-        },
-        {
           "course": "Giro",
           "rank": null,
           "points": 0
@@ -2431,7 +2338,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Nans",
-      "total": 1510,
+      "total": 1735,
       "results": [
         {
           "course": "Down Under",
@@ -2465,13 +2372,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 9,
-          "points": 100
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 3,
+          "points": 325
         },
         {
           "course": "Giro",
@@ -2532,7 +2434,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Charles",
-      "total": 710,
+      "total": 595,
       "results": [
         {
           "course": "Down Under",
@@ -2566,13 +2468,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 6,
-          "points": 175
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 12,
+          "points": 60
         },
         {
           "course": "Giro",
@@ -2633,7 +2530,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Orlane",
-      "total": 401,
+      "total": 351,
       "results": [
         {
           "course": "Down Under",
@@ -2667,13 +2564,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 9,
-          "points": 100
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 13,
+          "points": 50
         },
         {
           "course": "Giro",
@@ -2734,7 +2626,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Mathis",
-      "total": 1418,
+      "total": 1363,
       "results": [
         {
           "course": "Down Under",
@@ -2768,13 +2660,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 8,
-          "points": 125
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 11,
+          "points": 70
         },
         {
           "course": "Giro",
@@ -2835,7 +2722,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Robin",
-      "total": 1060,
+      "total": 1460,
       "results": [
         {
           "course": "Down Under",
@@ -2869,13 +2756,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Romandie",
-          "rank": 9,
-          "points": 100
-        },
-        {
-          "course": "Vuelta Fem",
-          "rank": null,
-          "points": 0
+          "rank": 1,
+          "points": 500
         },
         {
           "course": "Giro",

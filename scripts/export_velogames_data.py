@@ -49,6 +49,31 @@ def get_display_course_name(value: str) -> str:
     return COURSE_DISPLAY_NAMES.get(value, value)
 
 
+def find_total_col(details_sheet) -> int:
+    for col in range(1, details_sheet.max_column + 1):
+        value = details_sheet.cell(2, col).value
+        if isinstance(value, str) and value.strip().lower() == "total":
+            return col
+    raise ValueError("Colonne 'Total' introuvable dans l'onglet Détails.")
+
+
+def get_course_blocks(details_sheet):
+    total_col = find_total_col(details_sheet)
+    course_blocks = []
+    for col in range(3, total_col, 2):
+        course_name = details_sheet.cell(2, col).value
+        if not course_name:
+            continue
+        course_blocks.append(
+            {
+                "name": str(course_name),
+                "rankCol": col,
+                "pointsCol": col + 1,
+            }
+        )
+    return course_blocks
+
+
 def build_logo_map() -> dict[str, str]:
     mapping = {}
     if not LOGOS_DIR.exists():
@@ -127,6 +152,7 @@ def read_team_ranking(details_sheet):
 
 
 def read_team_breakdown(details_sheet):
+    total_col = find_total_col(details_sheet)
     team_rows = {
         "SALES": range(5, 12),
         "PRODUIT": range(12, 15),
@@ -138,7 +164,7 @@ def read_team_breakdown(details_sheet):
         members = []
         for row in rows:
             player_name = details_sheet.cell(row, 2).value
-            total = clean_number(details_sheet.cell(row, 42).value) or 0
+            total = clean_number(details_sheet.cell(row, total_col).value) or 0
             if player_name:
                 members.append(
                     {
@@ -169,23 +195,23 @@ def read_team_breakdown(details_sheet):
 
 
 def read_course_headers(details_sheet):
-    courses = []
-    for col in range(3, 41, 2):
-        name = details_sheet.cell(2, col).value
-        if name:
-            courses.append({"name": str(name), "slug": slugify(str(name))})
-    return courses
+    return [
+        {"name": block["name"], "slug": slugify(block["name"])}
+        for block in get_course_blocks(details_sheet)
+    ]
 
 
 def read_progression(details_sheet, logo_map):
     players = []
     courses = []
-    detail_course_cols = list(range(3, 41, 2))
+    course_blocks = get_course_blocks(details_sheet)
     for idx, col in enumerate(range(3, 22)):
         course_name = details_sheet.cell(43, col).value
         if course_name:
             course_slug = slugify(str(course_name))
-            detail_rank_col = detail_course_cols[idx]
+            if idx >= len(course_blocks):
+                continue
+            detail_rank_col = course_blocks[idx]["rankCol"]
             detail_points_col = detail_rank_col + 1
             is_played = False
             for row in range(4, 20):
@@ -232,20 +258,7 @@ def read_progression(details_sheet, logo_map):
 
 def read_palmares_from_details(details_sheet, logo_map):
     entries = []
-    course_blocks = []
-    for col in range(3, 41, 2):
-        course_name = details_sheet.cell(2, col).value
-        if not course_name:
-            continue
-        course_blocks.append(
-            {
-                "name": str(course_name),
-                "rankCol": col,
-                "pointsCol": col + 1,
-            }
-        )
-
-    for block in course_blocks:
+    for block in get_course_blocks(details_sheet):
         course = block["name"]
         official_name = get_display_course_name(course)
         slug = slugify(official_name)
@@ -301,17 +314,8 @@ def read_points_rules(points_sheet):
 
 def read_details(details_sheet):
     player_rows = []
-    course_blocks = []
-    for col in range(3, 41, 2):
-        course_name = details_sheet.cell(2, col).value
-        if course_name:
-            course_blocks.append(
-                {
-                    "name": str(course_name),
-                    "rankCol": col,
-                    "pointsCol": col + 1,
-                }
-            )
+    course_blocks = get_course_blocks(details_sheet)
+    total_col = find_total_col(details_sheet)
 
     for row in range(4, 20):
         player = details_sheet.cell(row, 2).value
@@ -327,7 +331,7 @@ def read_details(details_sheet):
                     or 0,
                 }
             )
-        total = clean_number(details_sheet.cell(row, 42).value) or 0
+        total = clean_number(details_sheet.cell(row, total_col).value) or 0
         player_rows.append({"name": str(player), "total": total, "results": results})
     return player_rows
 
