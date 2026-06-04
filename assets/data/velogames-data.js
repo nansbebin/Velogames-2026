@@ -2,8 +2,8 @@ window.VELOGAMES_DATA = {
   "meta": {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
-    "lastUpdated": "2026-06-01T09:43:54",
-    "generatedAt": "2026-06-01T09:44:14",
+    "lastUpdated": "2026-06-04T09:24:41",
+    "generatedAt": "2026-06-04T09:26:04",
     "playersCount": 16,
     "coursesCount": 18,
     "playedCoursesCount": 8
@@ -259,7 +259,7 @@ window.VELOGAMES_DATA = {
         {
           "name": "Critérium",
           "slug": "criterium",
-          "logo": "./assets/course-logos/Critérium du Dauphiné.png",
+          "logo": null,
           "played": false
         },
         {
@@ -1179,9 +1179,9 @@ window.VELOGAMES_DATA = {
       "isPlayed": true
     },
     {
-      "course": "Itzulia Women",
-      "slug": "itzulia-women",
-      "logo": "./assets/course-logos/Itzulia Women.png",
+      "course": "Giro Women",
+      "slug": "giro-women",
+      "logo": "./assets/course-logos/Giro Women.png",
       "first": null,
       "second": null,
       "third": null,
@@ -1189,9 +1189,9 @@ window.VELOGAMES_DATA = {
       "isPlayed": false
     },
     {
-      "course": "Critérium du Dauphiné",
-      "slug": "criterium-du-dauphine",
-      "logo": "./assets/course-logos/Critérium du Dauphiné.png",
+      "course": "Tour Auvergne Rhône Alpes",
+      "slug": "tour-auvergne-rhone-alpes",
+      "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
       "first": null,
       "second": null,
       "third": null,
@@ -1325,12 +1325,12 @@ window.VELOGAMES_DATA = {
           "points": 285
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -1421,12 +1421,12 @@ window.VELOGAMES_DATA = {
           "points": 235
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -1517,12 +1517,12 @@ window.VELOGAMES_DATA = {
           "points": 155
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -1613,12 +1613,12 @@ window.VELOGAMES_DATA = {
           "points": 180
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -1709,12 +1709,12 @@ window.VELOGAMES_DATA = {
           "points": 340
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -1805,12 +1805,12 @@ window.VELOGAMES_DATA = {
           "points": 0
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -1901,12 +1901,12 @@ window.VELOGAMES_DATA = {
           "points": 130
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -1997,12 +1997,12 @@ window.VELOGAMES_DATA = {
           "points": 600
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -2093,12 +2093,12 @@ window.VELOGAMES_DATA = {
           "points": 0
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -2189,12 +2189,12 @@ window.VELOGAMES_DATA = {
           "points": 750
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -2285,12 +2285,12 @@ window.VELOGAMES_DATA = {
           "points": 495
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -2381,12 +2381,12 @@ window.VELOGAMES_DATA = {
           "points": 90
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -2477,12 +2477,12 @@ window.VELOGAMES_DATA = {
           "points": 415
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -2573,12 +2573,12 @@ window.VELOGAMES_DATA = {
           "points": 110
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -2669,12 +2669,12 @@ window.VELOGAMES_DATA = {
           "points": 1100
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
@@ -2765,12 +2765,12 @@ window.VELOGAMES_DATA = {
           "points": 885
         },
         {
-          "course": "Itzulia Women",
+          "course": "Giro Women",
           "rank": null,
           "points": 0
         },
         {
-          "course": "Critérium",
+          "course": "Tour Auvergne Rhône Alpes",
           "rank": null,
           "points": 0
         },
