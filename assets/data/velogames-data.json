@@ -2,53 +2,53 @@
   "meta": {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
-    "lastUpdated": "2026-06-04T09:24:41",
-    "generatedAt": "2026-06-04T09:26:04",
+    "lastUpdated": "2026-06-08T08:21:09",
+    "generatedAt": "2026-06-08T08:21:26",
     "playersCount": 16,
     "coursesCount": 18,
-    "playedCoursesCount": 8
+    "playedCoursesCount": 9
   },
   "home": {
     "globalRanking": [
       {
         "rank": 1,
         "name": "Mathis",
-        "points": 2463
+        "points": 2738
       },
       {
         "rank": 2,
         "name": "Robin",
-        "points": 2345
+        "points": 2520
       },
       {
         "rank": 3,
         "name": "Pierre",
-        "points": 2025
+        "points": 2350
       },
       {
         "rank": 4,
-        "name": "Quentin",
-        "points": 1970
+        "name": "Nans",
+        "points": 2225
       },
       {
         "rank": 5,
-        "name": "Sacha",
-        "points": 1915
+        "name": "Quentin",
+        "points": 2070
       },
       {
         "rank": 6,
-        "name": "Damien",
-        "points": 1900
+        "name": "Sacha",
+        "points": 2065
       },
       {
         "rank": 7,
-        "name": "Nans",
-        "points": 1825
+        "name": "Stella",
+        "points": 2055
       },
       {
         "rank": 8,
-        "name": "Stella",
-        "points": 1555
+        "name": "Damien",
+        "points": 1900
       },
       {
         "rank": 9,
@@ -57,13 +57,13 @@
       },
       {
         "rank": 10,
-        "name": "Lucie",
-        "points": 1296
+        "name": "Agathe",
+        "points": 1313
       },
       {
         "rank": 11,
-        "name": "Agathe",
-        "points": 1188
+        "name": "Lucie",
+        "points": 1296
       },
       {
         "rank": 12,
@@ -72,18 +72,18 @@
       },
       {
         "rank": 13,
+        "name": "Orlane",
+        "points": 686
+      },
+      {
+        "rank": 14,
         "name": "Guillemette",
         "points": 645
       },
       {
-        "rank": 14,
-        "name": "Orlane",
-        "points": 461
-      },
-      {
         "rank": 15,
         "name": "Ema",
-        "points": 335
+        "points": 420
       },
       {
         "rank": 16,
@@ -95,17 +95,17 @@
       {
         "rank": 1,
         "name": "ÉTUDES",
-        "points": 1620.8
+        "points": 1835.8
       },
       {
         "rank": 2,
         "name": "SALES",
-        "points": 1381
+        "points": 1496.71
       },
       {
         "rank": 3,
         "name": "PRODUIT",
-        "points": 853.33
+        "points": 903.33
       }
     ],
     "teamBreakdown": [
@@ -114,45 +114,45 @@
         "members": [
           {
             "name": "Quentin",
-            "total": 1970
+            "total": 2070
+          },
+          {
+            "name": "Stella",
+            "total": 2055
           },
           {
             "name": "Damien",
             "total": 1900
           },
           {
-            "name": "Stella",
-            "total": 1555
-          },
-          {
             "name": "Émilien",
             "total": 1423
+          },
+          {
+            "name": "Agathe",
+            "total": 1313
           },
           {
             "name": "Lucie",
             "total": 1296
           },
           {
-            "name": "Agathe",
-            "total": 1188
-          },
-          {
             "name": "Ema",
-            "total": 335
+            "total": 420
           }
         ],
-        "total": 9667,
-        "average": 1381.0,
+        "total": 10477,
+        "average": 1496.71,
         "leader": "Quentin",
-        "leaderPoints": 1970,
-        "leaderShare": 20.38
+        "leaderPoints": 2070,
+        "leaderShare": 19.76
       },
       {
         "name": "PRODUIT",
         "members": [
           {
             "name": "Sacha",
-            "total": 1915
+            "total": 2065
           },
           {
             "name": "Guillemette",
@@ -163,26 +163,26 @@
             "total": 0
           }
         ],
-        "total": 2560,
-        "average": 853.33,
+        "total": 2710,
+        "average": 903.33,
         "leader": "Sacha",
-        "leaderPoints": 1915,
-        "leaderShare": 74.8
+        "leaderPoints": 2065,
+        "leaderShare": 76.2
       },
       {
         "name": "ÉTUDES",
         "members": [
           {
             "name": "Mathis",
-            "total": 2463
+            "total": 2738
           },
           {
             "name": "Robin",
-            "total": 2345
+            "total": 2520
           },
           {
             "name": "Nans",
-            "total": 1825
+            "total": 2225
           },
           {
             "name": "Charles",
@@ -190,14 +190,14 @@
           },
           {
             "name": "Orlane",
-            "total": 461
+            "total": 686
           }
         ],
-        "total": 8104,
-        "average": 1620.8,
+        "total": 9179,
+        "average": 1835.8,
         "leader": "Mathis",
-        "leaderPoints": 2463,
-        "leaderShare": 30.39
+        "leaderPoints": 2738,
+        "leaderShare": 29.83
       }
     ],
     "progression": {
@@ -254,7 +254,7 @@
           "name": "Itzulia Women",
           "slug": "itzulia-women",
           "logo": "./assets/course-logos/Itzulia Women.png",
-          "played": false
+          "played": true
         },
         {
           "name": "Critérium",
@@ -323,16 +323,16 @@
             1590,
             1740,
             2025,
-            2025,
-            2025,
-            2025,
-            2025,
-            2025,
-            2025,
-            2025,
-            2025,
-            2025,
-            2025,
+            2350,
+            2350,
+            2350,
+            2350,
+            2350,
+            2350,
+            2350,
+            2350,
+            2350,
+            2350,
             0
           ]
         },
@@ -371,16 +371,16 @@
             633,
             1033,
             1188,
-            1188,
-            1188,
-            1188,
-            1188,
-            1188,
-            1188,
-            1188,
-            1188,
-            1188,
-            1188,
+            1313,
+            1313,
+            1313,
+            1313,
+            1313,
+            1313,
+            1313,
+            1313,
+            1313,
+            1313,
             0
           ]
         },
@@ -443,16 +443,16 @@
             335,
             335,
             335,
-            335,
-            335,
-            335,
-            335,
-            335,
-            335,
-            335,
-            335,
-            335,
-            335,
+            420,
+            420,
+            420,
+            420,
+            420,
+            420,
+            420,
+            420,
+            420,
+            420,
             0
           ]
         },
@@ -467,16 +467,16 @@
             1615,
             1840,
             1970,
-            1970,
-            1970,
-            1970,
-            1970,
-            1970,
-            1970,
-            1970,
-            1970,
-            1970,
-            1970,
+            2070,
+            2070,
+            2070,
+            2070,
+            2070,
+            2070,
+            2070,
+            2070,
+            2070,
+            2070,
             0
           ]
         },
@@ -491,16 +491,16 @@
             830,
             955,
             1555,
-            1555,
-            1555,
-            1555,
-            1555,
-            1555,
-            1555,
-            1555,
-            1555,
-            1555,
-            1555,
+            2055,
+            2055,
+            2055,
+            2055,
+            2055,
+            2055,
+            2055,
+            2055,
+            2055,
+            2055,
             0
           ]
         },
@@ -539,16 +539,16 @@
             890,
             1165,
             1915,
-            1915,
-            1915,
-            1915,
-            1915,
-            1915,
-            1915,
-            1915,
-            1915,
-            1915,
-            1915,
+            2065,
+            2065,
+            2065,
+            2065,
+            2065,
+            2065,
+            2065,
+            2065,
+            2065,
+            2065,
             0
           ]
         },
@@ -587,16 +587,16 @@
             1410,
             1735,
             1825,
-            1825,
-            1825,
-            1825,
-            1825,
-            1825,
-            1825,
-            1825,
-            1825,
-            1825,
-            1825,
+            2225,
+            2225,
+            2225,
+            2225,
+            2225,
+            2225,
+            2225,
+            2225,
+            2225,
+            2225,
             0
           ]
         },
@@ -635,16 +635,16 @@
             301,
             351,
             461,
-            461,
-            461,
-            461,
-            461,
-            461,
-            461,
-            461,
-            461,
-            461,
-            461,
+            686,
+            686,
+            686,
+            686,
+            686,
+            686,
+            686,
+            686,
+            686,
+            686,
             0
           ]
         },
@@ -659,16 +659,16 @@
             1293,
             1363,
             2463,
-            2463,
-            2463,
-            2463,
-            2463,
-            2463,
-            2463,
-            2463,
-            2463,
-            2463,
-            2463,
+            2738,
+            2738,
+            2738,
+            2738,
+            2738,
+            2738,
+            2738,
+            2738,
+            2738,
+            2738,
             0
           ]
         },
@@ -683,16 +683,16 @@
             960,
             1460,
             2345,
-            2345,
-            2345,
-            2345,
-            2345,
-            2345,
-            2345,
-            2345,
-            2345,
-            2345,
-            2345,
+            2520,
+            2520,
+            2520,
+            2520,
+            2520,
+            2520,
+            2520,
+            2520,
+            2520,
+            2520,
             0
           ]
         }
@@ -881,17 +881,17 @@
             "Mathis": 1,
             "Robin": 2,
             "Pierre": 3,
-            "Quentin": 4,
-            "Sacha": 5,
-            "Damien": 6,
-            "Nans": 7,
-            "Stella": 8,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha": 6,
+            "Stella": 7,
+            "Damien": 8,
             "Émilien": 9,
-            "Lucie": 10,
-            "Agathe": 11,
+            "Agathe": 10,
+            "Lucie": 11,
             "Charles": 12,
-            "Guillemette": 13,
-            "Orlane": 14,
+            "Orlane": 13,
+            "Guillemette": 14,
             "Ema": 15,
             "Aude": 16
           }
@@ -903,17 +903,17 @@
             "Mathis": 1,
             "Robin": 2,
             "Pierre": 3,
-            "Quentin": 4,
-            "Sacha": 5,
-            "Damien": 6,
-            "Nans": 7,
-            "Stella": 8,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha": 6,
+            "Stella": 7,
+            "Damien": 8,
             "Émilien": 9,
-            "Lucie": 10,
-            "Agathe": 11,
+            "Agathe": 10,
+            "Lucie": 11,
             "Charles": 12,
-            "Guillemette": 13,
-            "Orlane": 14,
+            "Orlane": 13,
+            "Guillemette": 14,
             "Ema": 15,
             "Aude": 16
           }
@@ -925,17 +925,17 @@
             "Mathis": 1,
             "Robin": 2,
             "Pierre": 3,
-            "Quentin": 4,
-            "Sacha": 5,
-            "Damien": 6,
-            "Nans": 7,
-            "Stella": 8,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha": 6,
+            "Stella": 7,
+            "Damien": 8,
             "Émilien": 9,
-            "Lucie": 10,
-            "Agathe": 11,
+            "Agathe": 10,
+            "Lucie": 11,
             "Charles": 12,
-            "Guillemette": 13,
-            "Orlane": 14,
+            "Orlane": 13,
+            "Guillemette": 14,
             "Ema": 15,
             "Aude": 16
           }
@@ -947,17 +947,17 @@
             "Mathis": 1,
             "Robin": 2,
             "Pierre": 3,
-            "Quentin": 4,
-            "Sacha": 5,
-            "Damien": 6,
-            "Nans": 7,
-            "Stella": 8,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha": 6,
+            "Stella": 7,
+            "Damien": 8,
             "Émilien": 9,
-            "Lucie": 10,
-            "Agathe": 11,
+            "Agathe": 10,
+            "Lucie": 11,
             "Charles": 12,
-            "Guillemette": 13,
-            "Orlane": 14,
+            "Orlane": 13,
+            "Guillemette": 14,
             "Ema": 15,
             "Aude": 16
           }
@@ -969,17 +969,17 @@
             "Mathis": 1,
             "Robin": 2,
             "Pierre": 3,
-            "Quentin": 4,
-            "Sacha": 5,
-            "Damien": 6,
-            "Nans": 7,
-            "Stella": 8,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha": 6,
+            "Stella": 7,
+            "Damien": 8,
             "Émilien": 9,
-            "Lucie": 10,
-            "Agathe": 11,
+            "Agathe": 10,
+            "Lucie": 11,
             "Charles": 12,
-            "Guillemette": 13,
-            "Orlane": 14,
+            "Orlane": 13,
+            "Guillemette": 14,
             "Ema": 15,
             "Aude": 16
           }
@@ -991,17 +991,17 @@
             "Mathis": 1,
             "Robin": 2,
             "Pierre": 3,
-            "Quentin": 4,
-            "Sacha": 5,
-            "Damien": 6,
-            "Nans": 7,
-            "Stella": 8,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha": 6,
+            "Stella": 7,
+            "Damien": 8,
             "Émilien": 9,
-            "Lucie": 10,
-            "Agathe": 11,
+            "Agathe": 10,
+            "Lucie": 11,
             "Charles": 12,
-            "Guillemette": 13,
-            "Orlane": 14,
+            "Orlane": 13,
+            "Guillemette": 14,
             "Ema": 15,
             "Aude": 16
           }
@@ -1013,17 +1013,17 @@
             "Mathis": 1,
             "Robin": 2,
             "Pierre": 3,
-            "Quentin": 4,
-            "Sacha": 5,
-            "Damien": 6,
-            "Nans": 7,
-            "Stella": 8,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha": 6,
+            "Stella": 7,
+            "Damien": 8,
             "Émilien": 9,
-            "Lucie": 10,
-            "Agathe": 11,
+            "Agathe": 10,
+            "Lucie": 11,
             "Charles": 12,
-            "Guillemette": 13,
-            "Orlane": 14,
+            "Orlane": 13,
+            "Guillemette": 14,
             "Ema": 15,
             "Aude": 16
           }
@@ -1035,17 +1035,17 @@
             "Mathis": 1,
             "Robin": 2,
             "Pierre": 3,
-            "Quentin": 4,
-            "Sacha": 5,
-            "Damien": 6,
-            "Nans": 7,
-            "Stella": 8,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha": 6,
+            "Stella": 7,
+            "Damien": 8,
             "Émilien": 9,
-            "Lucie": 10,
-            "Agathe": 11,
+            "Agathe": 10,
+            "Lucie": 11,
             "Charles": 12,
-            "Guillemette": 13,
-            "Orlane": 14,
+            "Orlane": 13,
+            "Guillemette": 14,
             "Ema": 15,
             "Aude": 16
           }
@@ -1057,17 +1057,17 @@
             "Mathis": 1,
             "Robin": 2,
             "Pierre": 3,
-            "Quentin": 4,
-            "Sacha": 5,
-            "Damien": 6,
-            "Nans": 7,
-            "Stella": 8,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha": 6,
+            "Stella": 7,
+            "Damien": 8,
             "Émilien": 9,
-            "Lucie": 10,
-            "Agathe": 11,
+            "Agathe": 10,
+            "Lucie": 11,
             "Charles": 12,
-            "Guillemette": 13,
-            "Orlane": 14,
+            "Orlane": 13,
+            "Guillemette": 14,
             "Ema": 15,
             "Aude": 16
           }
@@ -1079,17 +1079,17 @@
             "Mathis": 1,
             "Robin": 2,
             "Pierre": 3,
-            "Quentin": 4,
-            "Sacha": 5,
-            "Damien": 6,
-            "Nans": 7,
-            "Stella": 8,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha": 6,
+            "Stella": 7,
+            "Damien": 8,
             "Émilien": 9,
-            "Lucie": 10,
-            "Agathe": 11,
+            "Agathe": 10,
+            "Lucie": 11,
             "Charles": 12,
-            "Guillemette": 13,
-            "Orlane": 14,
+            "Orlane": 13,
+            "Guillemette": 14,
             "Ema": 15,
             "Aude": 16
           }
@@ -1182,11 +1182,11 @@
       "course": "Giro Women",
       "slug": "giro-women",
       "logo": "./assets/course-logos/Giro Women.png",
-      "first": null,
-      "second": null,
-      "third": null,
-      "last": null,
-      "isPlayed": false
+      "first": "Stella",
+      "second": "Nans",
+      "third": "Pierre",
+      "last": "Ema",
+      "isPlayed": true
     },
     {
       "course": "Tour Auvergne Rhône Alpes",
@@ -1282,7 +1282,7 @@
   "details": [
     {
       "name": "Pierre",
-      "total": 2025,
+      "total": 2350,
       "results": [
         {
           "course": "Down Under",
@@ -1326,8 +1326,8 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
-          "points": 0
+          "rank": 3,
+          "points": 325
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
@@ -1422,7 +1422,7 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -1474,7 +1474,7 @@
     },
     {
       "name": "Agathe",
-      "total": 1188,
+      "total": 1313,
       "results": [
         {
           "course": "Down Under",
@@ -1518,8 +1518,8 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
-          "points": 0
+          "rank": 8,
+          "points": 125
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
@@ -1614,7 +1614,7 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -1710,7 +1710,7 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -1762,7 +1762,7 @@
     },
     {
       "name": "Ema",
-      "total": 335,
+      "total": 420,
       "results": [
         {
           "course": "Down Under",
@@ -1806,8 +1806,8 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
-          "points": 0
+          "rank": 10,
+          "points": 85
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
@@ -1858,7 +1858,7 @@
     },
     {
       "name": "Quentin",
-      "total": 1970,
+      "total": 2070,
       "results": [
         {
           "course": "Down Under",
@@ -1902,8 +1902,8 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
-          "points": 0
+          "rank": 9,
+          "points": 100
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
@@ -1954,7 +1954,7 @@
     },
     {
       "name": "Stella",
-      "total": 1555,
+      "total": 2055,
       "results": [
         {
           "course": "Down Under",
@@ -1998,8 +1998,8 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
-          "points": 0
+          "rank": 1,
+          "points": 500
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
@@ -2094,7 +2094,7 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -2146,7 +2146,7 @@
     },
     {
       "name": "Sacha",
-      "total": 1915,
+      "total": 2065,
       "results": [
         {
           "course": "Down Under",
@@ -2190,8 +2190,8 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
-          "points": 0
+          "rank": 7,
+          "points": 150
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
@@ -2286,7 +2286,7 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -2338,7 +2338,7 @@
     },
     {
       "name": "Nans",
-      "total": 1825,
+      "total": 2225,
       "results": [
         {
           "course": "Down Under",
@@ -2382,8 +2382,8 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
-          "points": 0
+          "rank": 2,
+          "points": 400
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
@@ -2478,7 +2478,7 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -2530,7 +2530,7 @@
     },
     {
       "name": "Orlane",
-      "total": 461,
+      "total": 686,
       "results": [
         {
           "course": "Down Under",
@@ -2574,8 +2574,8 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
-          "points": 0
+          "rank": 5,
+          "points": 225
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
@@ -2626,7 +2626,7 @@
     },
     {
       "name": "Mathis",
-      "total": 2463,
+      "total": 2738,
       "results": [
         {
           "course": "Down Under",
@@ -2670,8 +2670,8 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
-          "points": 0
+          "rank": 4,
+          "points": 275
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
@@ -2722,7 +2722,7 @@
     },
     {
       "name": "Robin",
-      "total": 2345,
+      "total": 2520,
       "results": [
         {
           "course": "Down Under",
@@ -2766,8 +2766,8 @@
         },
         {
           "course": "Giro Women",
-          "rank": null,
-          "points": 0
+          "rank": 6,
+          "points": 175
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
