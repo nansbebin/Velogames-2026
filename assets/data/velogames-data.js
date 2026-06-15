@@ -2,58 +2,58 @@ window.VELOGAMES_DATA = {
   "meta": {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
-    "lastUpdated": "2026-06-08T08:21:09",
-    "generatedAt": "2026-06-08T08:21:26",
+    "lastUpdated": "2026-06-15T08:25:42",
+    "generatedAt": "2026-06-15T08:25:54",
     "playersCount": 16,
     "coursesCount": 18,
-    "playedCoursesCount": 9
+    "playedCoursesCount": 10
   },
   "home": {
     "globalRanking": [
       {
         "rank": 1,
         "name": "Mathis",
-        "points": 2738
+        "points": 2823
       },
       {
         "rank": 2,
         "name": "Robin",
-        "points": 2520
+        "points": 2645
       },
       {
         "rank": 3,
-        "name": "Pierre",
-        "points": 2350
+        "name": "Quentin",
+        "points": 2570
       },
       {
         "rank": 4,
-        "name": "Nans",
-        "points": 2225
+        "name": "Pierre",
+        "points": 2525
       },
       {
         "rank": 5,
-        "name": "Quentin",
-        "points": 2070
+        "name": "Sacha",
+        "points": 2390
       },
       {
         "rank": 6,
-        "name": "Sacha",
-        "points": 2065
+        "name": "Nans",
+        "points": 2375
       },
       {
         "rank": 7,
-        "name": "Stella",
-        "points": 2055
+        "name": "Damien",
+        "points": 2300
       },
       {
         "rank": 8,
-        "name": "Damien",
-        "points": 1900
+        "name": "Stella",
+        "points": 2125
       },
       {
         "rank": 9,
         "name": "Émilien",
-        "points": 1423
+        "points": 1648
       },
       {
         "rank": 10,
@@ -68,7 +68,7 @@ window.VELOGAMES_DATA = {
       {
         "rank": 12,
         "name": "Charles",
-        "points": 1010
+        "points": 1285
       },
       {
         "rank": 13,
@@ -83,7 +83,7 @@ window.VELOGAMES_DATA = {
       {
         "rank": 15,
         "name": "Ema",
-        "points": 420
+        "points": 520
       },
       {
         "rank": 16,
@@ -95,17 +95,17 @@ window.VELOGAMES_DATA = {
       {
         "rank": 1,
         "name": "ÉTUDES",
-        "points": 1835.8
+        "points": 1962.8
       },
       {
         "rank": 2,
         "name": "SALES",
-        "points": 1496.71
+        "points": 1681.71
       },
       {
         "rank": 3,
         "name": "PRODUIT",
-        "points": 903.33
+        "points": 1011.67
       }
     ],
     "teamBreakdown": [
@@ -114,19 +114,19 @@ window.VELOGAMES_DATA = {
         "members": [
           {
             "name": "Quentin",
-            "total": 2070
-          },
-          {
-            "name": "Stella",
-            "total": 2055
+            "total": 2570
           },
           {
             "name": "Damien",
-            "total": 1900
+            "total": 2300
+          },
+          {
+            "name": "Stella",
+            "total": 2125
           },
           {
             "name": "Émilien",
-            "total": 1423
+            "total": 1648
           },
           {
             "name": "Agathe",
@@ -138,21 +138,21 @@ window.VELOGAMES_DATA = {
           },
           {
             "name": "Ema",
-            "total": 420
+            "total": 520
           }
         ],
-        "total": 10477,
-        "average": 1496.71,
+        "total": 11772,
+        "average": 1681.71,
         "leader": "Quentin",
-        "leaderPoints": 2070,
-        "leaderShare": 19.76
+        "leaderPoints": 2570,
+        "leaderShare": 21.83
       },
       {
         "name": "PRODUIT",
         "members": [
           {
             "name": "Sacha",
-            "total": 2065
+            "total": 2390
           },
           {
             "name": "Guillemette",
@@ -163,41 +163,41 @@ window.VELOGAMES_DATA = {
             "total": 0
           }
         ],
-        "total": 2710,
-        "average": 903.33,
+        "total": 3035,
+        "average": 1011.67,
         "leader": "Sacha",
-        "leaderPoints": 2065,
-        "leaderShare": 76.2
+        "leaderPoints": 2390,
+        "leaderShare": 78.75
       },
       {
         "name": "ÉTUDES",
         "members": [
           {
             "name": "Mathis",
-            "total": 2738
+            "total": 2823
           },
           {
             "name": "Robin",
-            "total": 2520
+            "total": 2645
           },
           {
             "name": "Nans",
-            "total": 2225
+            "total": 2375
           },
           {
             "name": "Charles",
-            "total": 1010
+            "total": 1285
           },
           {
             "name": "Orlane",
             "total": 686
           }
         ],
-        "total": 9179,
-        "average": 1835.8,
+        "total": 9814,
+        "average": 1962.8,
         "leader": "Mathis",
-        "leaderPoints": 2738,
-        "leaderShare": 29.83
+        "leaderPoints": 2823,
+        "leaderShare": 28.77
       }
     ],
     "progression": {
@@ -260,7 +260,7 @@ window.VELOGAMES_DATA = {
           "name": "Critérium",
           "slug": "criterium",
           "logo": null,
-          "played": false
+          "played": true
         },
         {
           "name": "Tour de Suisse",
@@ -324,15 +324,15 @@ window.VELOGAMES_DATA = {
             1740,
             2025,
             2350,
-            2350,
-            2350,
-            2350,
-            2350,
-            2350,
-            2350,
-            2350,
-            2350,
-            2350,
+            2525,
+            2525,
+            2525,
+            2525,
+            2525,
+            2525,
+            2525,
+            2525,
+            2525,
             0
           ]
         },
@@ -348,15 +348,15 @@ window.VELOGAMES_DATA = {
             1665,
             1900,
             1900,
-            1900,
-            1900,
-            1900,
-            1900,
-            1900,
-            1900,
-            1900,
-            1900,
-            1900,
+            2300,
+            2300,
+            2300,
+            2300,
+            2300,
+            2300,
+            2300,
+            2300,
+            2300,
             0
           ]
         },
@@ -396,15 +396,15 @@ window.VELOGAMES_DATA = {
             1243,
             1423,
             1423,
-            1423,
-            1423,
-            1423,
-            1423,
-            1423,
-            1423,
-            1423,
-            1423,
-            1423,
+            1648,
+            1648,
+            1648,
+            1648,
+            1648,
+            1648,
+            1648,
+            1648,
+            1648,
             0
           ]
         },
@@ -444,15 +444,15 @@ window.VELOGAMES_DATA = {
             335,
             335,
             420,
-            420,
-            420,
-            420,
-            420,
-            420,
-            420,
-            420,
-            420,
-            420,
+            520,
+            520,
+            520,
+            520,
+            520,
+            520,
+            520,
+            520,
+            520,
             0
           ]
         },
@@ -468,15 +468,15 @@ window.VELOGAMES_DATA = {
             1840,
             1970,
             2070,
-            2070,
-            2070,
-            2070,
-            2070,
-            2070,
-            2070,
-            2070,
-            2070,
-            2070,
+            2570,
+            2570,
+            2570,
+            2570,
+            2570,
+            2570,
+            2570,
+            2570,
+            2570,
             0
           ]
         },
@@ -492,15 +492,15 @@ window.VELOGAMES_DATA = {
             955,
             1555,
             2055,
-            2055,
-            2055,
-            2055,
-            2055,
-            2055,
-            2055,
-            2055,
-            2055,
-            2055,
+            2125,
+            2125,
+            2125,
+            2125,
+            2125,
+            2125,
+            2125,
+            2125,
+            2125,
             0
           ]
         },
@@ -540,15 +540,15 @@ window.VELOGAMES_DATA = {
             1165,
             1915,
             2065,
-            2065,
-            2065,
-            2065,
-            2065,
-            2065,
-            2065,
-            2065,
-            2065,
-            2065,
+            2390,
+            2390,
+            2390,
+            2390,
+            2390,
+            2390,
+            2390,
+            2390,
+            2390,
             0
           ]
         },
@@ -588,15 +588,15 @@ window.VELOGAMES_DATA = {
             1735,
             1825,
             2225,
-            2225,
-            2225,
-            2225,
-            2225,
-            2225,
-            2225,
-            2225,
-            2225,
-            2225,
+            2375,
+            2375,
+            2375,
+            2375,
+            2375,
+            2375,
+            2375,
+            2375,
+            2375,
             0
           ]
         },
@@ -612,15 +612,15 @@ window.VELOGAMES_DATA = {
             595,
             1010,
             1010,
-            1010,
-            1010,
-            1010,
-            1010,
-            1010,
-            1010,
-            1010,
-            1010,
-            1010,
+            1285,
+            1285,
+            1285,
+            1285,
+            1285,
+            1285,
+            1285,
+            1285,
+            1285,
             0
           ]
         },
@@ -660,15 +660,15 @@ window.VELOGAMES_DATA = {
             1363,
             2463,
             2738,
-            2738,
-            2738,
-            2738,
-            2738,
-            2738,
-            2738,
-            2738,
-            2738,
-            2738,
+            2823,
+            2823,
+            2823,
+            2823,
+            2823,
+            2823,
+            2823,
+            2823,
+            2823,
             0
           ]
         },
@@ -684,15 +684,15 @@ window.VELOGAMES_DATA = {
             1460,
             2345,
             2520,
-            2520,
-            2520,
-            2520,
-            2520,
-            2520,
-            2520,
-            2520,
-            2520,
-            2520,
+            2645,
+            2645,
+            2645,
+            2645,
+            2645,
+            2645,
+            2645,
+            2645,
+            2645,
             0
           ]
         }
@@ -902,12 +902,12 @@ window.VELOGAMES_DATA = {
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Pierre": 3,
-            "Nans": 4,
-            "Quentin": 5,
-            "Sacha": 6,
-            "Stella": 7,
-            "Damien": 8,
+            "Quentin": 3,
+            "Pierre": 4,
+            "Sacha": 5,
+            "Nans": 6,
+            "Damien": 7,
+            "Stella": 8,
             "Émilien": 9,
             "Agathe": 10,
             "Lucie": 11,
@@ -924,12 +924,12 @@ window.VELOGAMES_DATA = {
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Pierre": 3,
-            "Nans": 4,
-            "Quentin": 5,
-            "Sacha": 6,
-            "Stella": 7,
-            "Damien": 8,
+            "Quentin": 3,
+            "Pierre": 4,
+            "Sacha": 5,
+            "Nans": 6,
+            "Damien": 7,
+            "Stella": 8,
             "Émilien": 9,
             "Agathe": 10,
             "Lucie": 11,
@@ -946,12 +946,12 @@ window.VELOGAMES_DATA = {
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Pierre": 3,
-            "Nans": 4,
-            "Quentin": 5,
-            "Sacha": 6,
-            "Stella": 7,
-            "Damien": 8,
+            "Quentin": 3,
+            "Pierre": 4,
+            "Sacha": 5,
+            "Nans": 6,
+            "Damien": 7,
+            "Stella": 8,
             "Émilien": 9,
             "Agathe": 10,
             "Lucie": 11,
@@ -968,12 +968,12 @@ window.VELOGAMES_DATA = {
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Pierre": 3,
-            "Nans": 4,
-            "Quentin": 5,
-            "Sacha": 6,
-            "Stella": 7,
-            "Damien": 8,
+            "Quentin": 3,
+            "Pierre": 4,
+            "Sacha": 5,
+            "Nans": 6,
+            "Damien": 7,
+            "Stella": 8,
             "Émilien": 9,
             "Agathe": 10,
             "Lucie": 11,
@@ -990,12 +990,12 @@ window.VELOGAMES_DATA = {
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Pierre": 3,
-            "Nans": 4,
-            "Quentin": 5,
-            "Sacha": 6,
-            "Stella": 7,
-            "Damien": 8,
+            "Quentin": 3,
+            "Pierre": 4,
+            "Sacha": 5,
+            "Nans": 6,
+            "Damien": 7,
+            "Stella": 8,
             "Émilien": 9,
             "Agathe": 10,
             "Lucie": 11,
@@ -1012,12 +1012,12 @@ window.VELOGAMES_DATA = {
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Pierre": 3,
-            "Nans": 4,
-            "Quentin": 5,
-            "Sacha": 6,
-            "Stella": 7,
-            "Damien": 8,
+            "Quentin": 3,
+            "Pierre": 4,
+            "Sacha": 5,
+            "Nans": 6,
+            "Damien": 7,
+            "Stella": 8,
             "Émilien": 9,
             "Agathe": 10,
             "Lucie": 11,
@@ -1034,12 +1034,12 @@ window.VELOGAMES_DATA = {
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Pierre": 3,
-            "Nans": 4,
-            "Quentin": 5,
-            "Sacha": 6,
-            "Stella": 7,
-            "Damien": 8,
+            "Quentin": 3,
+            "Pierre": 4,
+            "Sacha": 5,
+            "Nans": 6,
+            "Damien": 7,
+            "Stella": 8,
             "Émilien": 9,
             "Agathe": 10,
             "Lucie": 11,
@@ -1056,12 +1056,12 @@ window.VELOGAMES_DATA = {
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Pierre": 3,
-            "Nans": 4,
-            "Quentin": 5,
-            "Sacha": 6,
-            "Stella": 7,
-            "Damien": 8,
+            "Quentin": 3,
+            "Pierre": 4,
+            "Sacha": 5,
+            "Nans": 6,
+            "Damien": 7,
+            "Stella": 8,
             "Émilien": 9,
             "Agathe": 10,
             "Lucie": 11,
@@ -1078,12 +1078,12 @@ window.VELOGAMES_DATA = {
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Pierre": 3,
-            "Nans": 4,
-            "Quentin": 5,
-            "Sacha": 6,
-            "Stella": 7,
-            "Damien": 8,
+            "Quentin": 3,
+            "Pierre": 4,
+            "Sacha": 5,
+            "Nans": 6,
+            "Damien": 7,
+            "Stella": 8,
             "Émilien": 9,
             "Agathe": 10,
             "Lucie": 11,
@@ -1192,11 +1192,11 @@ window.VELOGAMES_DATA = {
       "course": "Tour Auvergne Rhône Alpes",
       "slug": "tour-auvergne-rhone-alpes",
       "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
-      "first": null,
-      "second": null,
-      "third": null,
-      "last": null,
-      "isPlayed": false
+      "first": "Quentin",
+      "second": "Damien",
+      "third": "Sacha",
+      "last": "Stella",
+      "isPlayed": true
     },
     {
       "course": "Tour de Suisse",
@@ -1282,7 +1282,7 @@ window.VELOGAMES_DATA = {
   "details": [
     {
       "name": "Pierre",
-      "total": 2350,
+      "total": 2525,
       "results": [
         {
           "course": "Down Under",
@@ -1331,8 +1331,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
-          "points": 0
+          "rank": 6,
+          "points": 175
         },
         {
           "course": "Tour de Suisse",
@@ -1378,7 +1378,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Damien",
-      "total": 1900,
+      "total": 2300,
       "results": [
         {
           "course": "Down Under",
@@ -1427,8 +1427,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
-          "points": 0
+          "rank": 2,
+          "points": 400
         },
         {
           "course": "Tour de Suisse",
@@ -1523,7 +1523,7 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -1570,7 +1570,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Émilien",
-      "total": 1423,
+      "total": 1648,
       "results": [
         {
           "course": "Down Under",
@@ -1619,8 +1619,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
-          "points": 0
+          "rank": 5,
+          "points": 225
         },
         {
           "course": "Tour de Suisse",
@@ -1715,7 +1715,7 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -1762,7 +1762,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Ema",
-      "total": 420,
+      "total": 520,
       "results": [
         {
           "course": "Down Under",
@@ -1811,8 +1811,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
-          "points": 0
+          "rank": 9,
+          "points": 100
         },
         {
           "course": "Tour de Suisse",
@@ -1858,7 +1858,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Quentin",
-      "total": 2070,
+      "total": 2570,
       "results": [
         {
           "course": "Down Under",
@@ -1907,8 +1907,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
-          "points": 0
+          "rank": 1,
+          "points": 500
         },
         {
           "course": "Tour de Suisse",
@@ -1954,7 +1954,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Stella",
-      "total": 2055,
+      "total": 2125,
       "results": [
         {
           "course": "Down Under",
@@ -2003,8 +2003,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
-          "points": 0
+          "rank": 11,
+          "points": 70
         },
         {
           "course": "Tour de Suisse",
@@ -2099,7 +2099,7 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -2146,7 +2146,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Sacha",
-      "total": 2065,
+      "total": 2390,
       "results": [
         {
           "course": "Down Under",
@@ -2195,8 +2195,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
-          "points": 0
+          "rank": 3,
+          "points": 325
         },
         {
           "course": "Tour de Suisse",
@@ -2291,7 +2291,7 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -2338,7 +2338,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Nans",
-      "total": 2225,
+      "total": 2375,
       "results": [
         {
           "course": "Down Under",
@@ -2387,8 +2387,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
-          "points": 0
+          "rank": 7,
+          "points": 150
         },
         {
           "course": "Tour de Suisse",
@@ -2434,7 +2434,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Charles",
-      "total": 1010,
+      "total": 1285,
       "results": [
         {
           "course": "Down Under",
@@ -2483,8 +2483,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
-          "points": 0
+          "rank": 4,
+          "points": 275
         },
         {
           "course": "Tour de Suisse",
@@ -2579,7 +2579,7 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -2626,7 +2626,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Mathis",
-      "total": 2738,
+      "total": 2823,
       "results": [
         {
           "course": "Down Under",
@@ -2675,8 +2675,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
-          "points": 0
+          "rank": 10,
+          "points": 85
         },
         {
           "course": "Tour de Suisse",
@@ -2722,7 +2722,7 @@ window.VELOGAMES_DATA = {
     },
     {
       "name": "Robin",
-      "total": 2520,
+      "total": 2645,
       "results": [
         {
           "course": "Down Under",
@@ -2771,8 +2771,8 @@ window.VELOGAMES_DATA = {
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
-          "rank": null,
-          "points": 0
+          "rank": 8,
+          "points": 125
         },
         {
           "course": "Tour de Suisse",
