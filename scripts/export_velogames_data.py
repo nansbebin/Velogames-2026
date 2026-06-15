@@ -17,13 +17,19 @@ OUTPUT_JSON = ROOT / "assets" / "data" / "velogames-data.json"
 OUTPUT_JS = ROOT / "assets" / "data" / "velogames-data.js"
 SITE_LOGOS_DIR = ROOT / "assets" / "course-logos"
 
+COURSE_NAME_OVERRIDES = {
+    "Itzulia Women": "Giro Women",
+    "Critérium": "Tour Auvergne Rhône Alpes",
+    "Critérium du Dauphiné": "Tour Auvergne Rhône Alpes",
+}
+
 COURSE_DISPLAY_NAMES = {
     "Down Under": "Santos Tour Down Under",
     "Itzulia": "Itzulia Basque Country",
     "Romandie": "Tour de Romandie",
     "Vuelta Fem": "Vuelta Femenina",
-    "Critérium": "Critérium du Dauphiné",
     "Tour Femmes": "Tour de France Femmes avec Zwift",
+    "Romandie Femmes": "Tour de Romandie Femmes",
     "Tour Romandie Femmes": "Tour de Romandie Féminin",
 }
 
@@ -45,8 +51,13 @@ def clean_number(value):
     return value
 
 
+def get_canonical_course_name(value: str) -> str:
+    return COURSE_NAME_OVERRIDES.get(value, value)
+
+
 def get_display_course_name(value: str) -> str:
-    return COURSE_DISPLAY_NAMES.get(value, value)
+    canonical_value = get_canonical_course_name(value)
+    return COURSE_DISPLAY_NAMES.get(canonical_value, canonical_value)
 
 
 def find_total_col(details_sheet) -> int:
@@ -106,8 +117,11 @@ def build_logo_map() -> dict[str, str]:
         "vuelta-femenina": "lvf23-logo-positivo-color-rgb",
         "la-vuelta-femenina": "lvf23-logo-positivo-color-rgb",
         "tour-femmes": "tour-de-france-femmes-avec-zwift",
-        "criterium": "criterium-du-dauphine",
-        "criterium-du-dauphine": "criterium-du-dauphine",
+        "giro-women": "giro-women",
+        "itzulia-women": "giro-women",
+        "tour-auvergne-rhone-alpes": "tour-auvergne-rhone-alpes",
+        "criterium": "tour-auvergne-rhone-alpes",
+        "criterium-du-dauphine": "tour-auvergne-rhone-alpes",
         "simac-ladies-tour": "simac-ladies-tour",
     }
     for alias, target in aliases.items():
@@ -196,7 +210,10 @@ def read_team_breakdown(details_sheet):
 
 def read_course_headers(details_sheet):
     return [
-        {"name": block["name"], "slug": slugify(block["name"])}
+        {
+            "name": get_canonical_course_name(str(block["name"])),
+            "slug": slugify(get_canonical_course_name(str(block["name"]))),
+        }
         for block in get_course_blocks(details_sheet)
     ]
 
@@ -205,36 +222,34 @@ def read_progression(details_sheet, logo_map):
     players = []
     courses = []
     course_blocks = get_course_blocks(details_sheet)
-    for idx, col in enumerate(range(3, 22)):
-        course_name = details_sheet.cell(43, col).value
-        if course_name:
-            course_slug = slugify(str(course_name))
-            if idx >= len(course_blocks):
-                continue
-            detail_rank_col = course_blocks[idx]["rankCol"]
-            detail_points_col = detail_rank_col + 1
-            is_played = False
-            for row in range(4, 20):
-                rank_value = details_sheet.cell(row, detail_rank_col).value
-                points_value = details_sheet.cell(row, detail_points_col).value
-                if rank_value not in (None, "") or clean_number(points_value) not in (None, 0):
-                    is_played = True
-                    break
-            courses.append(
-                {
-                    "name": str(course_name),
-                    "slug": course_slug,
-                    "logo": logo_map.get(course_slug),
-                    "played": is_played,
-                }
-            )
+    progression_cols = list(range(3, 3 + len(course_blocks)))
+    for block in course_blocks:
+        course_name = get_canonical_course_name(str(block["name"]))
+        course_slug = slugify(course_name)
+        detail_rank_col = block["rankCol"]
+        detail_points_col = detail_rank_col + 1
+        is_played = False
+        for row in range(4, 20):
+            rank_value = details_sheet.cell(row, detail_rank_col).value
+            points_value = details_sheet.cell(row, detail_points_col).value
+            if rank_value not in (None, "") or clean_number(points_value) not in (None, 0):
+                is_played = True
+                break
+        courses.append(
+            {
+                "name": course_name,
+                "slug": course_slug,
+                "logo": logo_map.get(course_slug),
+                "played": is_played,
+            }
+        )
 
     for row in range(44, 60):
         name = details_sheet.cell(row, 2).value
         if not name:
             continue
         totals = []
-        for col in range(3, 22):
+        for col in progression_cols:
             totals.append(clean_number(details_sheet.cell(row, col).value) or 0)
         players.append({"name": str(name), "totals": totals})
 
@@ -325,7 +340,7 @@ def read_details(details_sheet):
         for block in course_blocks:
             results.append(
                 {
-                    "course": block["name"],
+                    "course": get_canonical_course_name(str(block["name"])),
                     "rank": details_sheet.cell(row, block["rankCol"]).value,
                     "points": clean_number(details_sheet.cell(row, block["pointsCol"]).value)
                     or 0,

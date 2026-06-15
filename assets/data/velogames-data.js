@@ -3,7 +3,7 @@ window.VELOGAMES_DATA = {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
     "lastUpdated": "2026-06-15T08:25:42",
-    "generatedAt": "2026-06-15T08:25:54",
+    "generatedAt": "2026-06-15T09:29:12",
     "playersCount": 16,
     "coursesCount": 18,
     "playedCoursesCount": 10
@@ -251,15 +251,15 @@ window.VELOGAMES_DATA = {
           "played": true
         },
         {
-          "name": "Itzulia Women",
-          "slug": "itzulia-women",
-          "logo": "./assets/course-logos/Itzulia Women.png",
+          "name": "Giro Women",
+          "slug": "giro-women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "played": true
         },
         {
-          "name": "Critérium",
-          "slug": "criterium",
-          "logo": null,
+          "name": "Tour Auvergne Rhône Alpes",
+          "slug": "tour-auvergne-rhone-alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "played": true
         },
         {
@@ -299,8 +299,8 @@ window.VELOGAMES_DATA = {
           "played": false
         },
         {
-          "name": "Tour Romandie Femmes",
-          "slug": "tour-romandie-femmes",
+          "name": "Romandie Femmes",
+          "slug": "romandie-femmes",
           "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "played": false
         },
@@ -332,8 +332,7 @@ window.VELOGAMES_DATA = {
             2525,
             2525,
             2525,
-            2525,
-            0
+            2525
           ]
         },
         {
@@ -356,8 +355,7 @@ window.VELOGAMES_DATA = {
             2300,
             2300,
             2300,
-            2300,
-            0
+            2300
           ]
         },
         {
@@ -380,8 +378,7 @@ window.VELOGAMES_DATA = {
             1313,
             1313,
             1313,
-            1313,
-            0
+            1313
           ]
         },
         {
@@ -404,8 +401,7 @@ window.VELOGAMES_DATA = {
             1648,
             1648,
             1648,
-            1648,
-            0
+            1648
           ]
         },
         {
@@ -428,8 +424,7 @@ window.VELOGAMES_DATA = {
             1296,
             1296,
             1296,
-            1296,
-            0
+            1296
           ]
         },
         {
@@ -452,8 +447,7 @@ window.VELOGAMES_DATA = {
             520,
             520,
             520,
-            520,
-            0
+            520
           ]
         },
         {
@@ -476,8 +470,7 @@ window.VELOGAMES_DATA = {
             2570,
             2570,
             2570,
-            2570,
-            0
+            2570
           ]
         },
         {
@@ -500,14 +493,12 @@ window.VELOGAMES_DATA = {
             2125,
             2125,
             2125,
-            2125,
-            0
+            2125
           ]
         },
         {
           "name": "Aude",
           "totals": [
-            0,
             0,
             0,
             0,
@@ -548,8 +539,7 @@ window.VELOGAMES_DATA = {
             2390,
             2390,
             2390,
-            2390,
-            0
+            2390
           ]
         },
         {
@@ -572,8 +562,7 @@ window.VELOGAMES_DATA = {
             645,
             645,
             645,
-            645,
-            0
+            645
           ]
         },
         {
@@ -596,8 +585,7 @@ window.VELOGAMES_DATA = {
             2375,
             2375,
             2375,
-            2375,
-            0
+            2375
           ]
         },
         {
@@ -620,8 +608,7 @@ window.VELOGAMES_DATA = {
             1285,
             1285,
             1285,
-            1285,
-            0
+            1285
           ]
         },
         {
@@ -644,8 +631,7 @@ window.VELOGAMES_DATA = {
             686,
             686,
             686,
-            686,
-            0
+            686
           ]
         },
         {
@@ -668,8 +654,7 @@ window.VELOGAMES_DATA = {
             2823,
             2823,
             2823,
-            2823,
-            0
+            2823
           ]
         },
         {
@@ -692,8 +677,7 @@ window.VELOGAMES_DATA = {
             2645,
             2645,
             2645,
-            2645,
-            0
+            2645
           ]
         }
       ],
@@ -875,8 +859,8 @@ window.VELOGAMES_DATA = {
           }
         },
         {
-          "course": "Itzulia Women",
-          "slug": "itzulia-women",
+          "course": "Giro Women",
+          "slug": "giro-women",
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
@@ -897,8 +881,8 @@ window.VELOGAMES_DATA = {
           }
         },
         {
-          "course": "Critérium",
-          "slug": "criterium",
+          "course": "Tour Auvergne Rhône Alpes",
+          "slug": "tour-auvergne-rhone-alpes",
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
@@ -1051,8 +1035,8 @@ window.VELOGAMES_DATA = {
           }
         },
         {
-          "course": "Tour Romandie Femmes",
-          "slug": "tour-romandie-femmes",
+          "course": "Romandie Femmes",
+          "slug": "romandie-femmes",
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
@@ -1259,8 +1243,8 @@ window.VELOGAMES_DATA = {
       "isPlayed": false
     },
     {
-      "course": "Romandie Femmes",
-      "slug": "romandie-femmes",
+      "course": "Tour de Romandie Femmes",
+      "slug": "tour-de-romandie-femmes",
       "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
       "first": null,
       "second": null,
