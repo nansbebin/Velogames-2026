@@ -85,6 +85,24 @@ def get_course_blocks(details_sheet):
     return course_blocks
 
 
+def get_player_rows(details_sheet) -> list[int]:
+    rows = []
+    for row in range(4, details_sheet.max_row + 1):
+        player_name = details_sheet.cell(row, 2).value
+        if player_name:
+            rows.append(row)
+        elif rows:
+            break
+    return rows
+
+
+def get_player_total(details_sheet, row: int, course_blocks) -> float:
+    return sum(
+        clean_number(details_sheet.cell(row, block["pointsCol"]).value) or 0
+        for block in course_blocks
+    )
+
+
 def build_logo_map() -> dict[str, str]:
     mapping = {}
     if not LOGOS_DIR.exists():
@@ -132,41 +150,35 @@ def build_logo_map() -> dict[str, str]:
 
 
 def read_global_ranking(details_sheet):
-    ranking = []
-    for row in range(24, 40):
-        rank = details_sheet[f"F{row}"].value
-        name = details_sheet[f"G{row}"].value
-        points = details_sheet[f"H{row}"].value
-        if rank and name:
-            ranking.append(
-                {
-                    "rank": int(rank),
-                    "name": str(name),
-                    "points": clean_number(points) or 0,
-                }
-            )
+    course_blocks = get_course_blocks(details_sheet)
+    ranking = [
+        {
+            "name": str(details_sheet.cell(row, 2).value),
+            "points": clean_number(get_player_total(details_sheet, row, course_blocks)) or 0,
+        }
+        for row in get_player_rows(details_sheet)
+    ]
+    ranking.sort(key=lambda item: (-item["points"], item["name"].lower()))
+    for index, player in enumerate(ranking, start=1):
+        player["rank"] = index
     return ranking
 
 
 def read_team_ranking(details_sheet):
-    teams = []
-    for row in range(24, 27):
-        rank = details_sheet[f"J{row}"].value
-        name = details_sheet[f"K{row}"].value
-        points = details_sheet[f"L{row}"].value
-        if rank and name:
-            teams.append(
-                {
-                    "rank": int(rank),
-                    "name": str(name),
-                    "points": clean_number(points) or 0,
-                }
-            )
-    return teams
+    teams = read_team_breakdown(details_sheet)
+    teams.sort(key=lambda item: (-item["average"], item["name"].lower()))
+    return [
+        {
+            "rank": index,
+            "name": team["name"],
+            "points": team["average"],
+        }
+        for index, team in enumerate(teams, start=1)
+    ]
 
 
 def read_team_breakdown(details_sheet):
-    total_col = find_total_col(details_sheet)
+    course_blocks = get_course_blocks(details_sheet)
     team_rows = {
         "SALES": range(5, 12),
         "PRODUIT": range(12, 15),
@@ -178,7 +190,7 @@ def read_team_breakdown(details_sheet):
         members = []
         for row in rows:
             player_name = details_sheet.cell(row, 2).value
-            total = clean_number(details_sheet.cell(row, total_col).value) or 0
+            total = clean_number(get_player_total(details_sheet, row, course_blocks)) or 0
             if player_name:
                 members.append(
                     {
@@ -222,14 +234,14 @@ def read_progression(details_sheet, logo_map):
     players = []
     courses = []
     course_blocks = get_course_blocks(details_sheet)
-    progression_cols = list(range(3, 3 + len(course_blocks)))
+    player_rows = get_player_rows(details_sheet)
     for block in course_blocks:
         course_name = get_canonical_course_name(str(block["name"]))
         course_slug = slugify(course_name)
         detail_rank_col = block["rankCol"]
         detail_points_col = detail_rank_col + 1
         is_played = False
-        for row in range(4, 20):
+        for row in player_rows:
             rank_value = details_sheet.cell(row, detail_rank_col).value
             points_value = details_sheet.cell(row, detail_points_col).value
             if rank_value not in (None, "") or clean_number(points_value) not in (None, 0):
@@ -244,13 +256,15 @@ def read_progression(details_sheet, logo_map):
             }
         )
 
-    for row in range(44, 60):
+    for row in player_rows:
         name = details_sheet.cell(row, 2).value
         if not name:
             continue
+        running_total = 0
         totals = []
-        for col in progression_cols:
-            totals.append(clean_number(details_sheet.cell(row, col).value) or 0)
+        for block in course_blocks:
+            running_total += clean_number(details_sheet.cell(row, block["pointsCol"]).value) or 0
+            totals.append(clean_number(running_total) or 0)
         players.append({"name": str(name), "totals": totals})
 
     rankings_by_course = []
@@ -273,6 +287,7 @@ def read_progression(details_sheet, logo_map):
 
 def read_palmares_from_details(details_sheet, logo_map):
     entries = []
+    player_rows = get_player_rows(details_sheet)
     for block in get_course_blocks(details_sheet):
         course = block["name"]
         official_name = get_display_course_name(course)
@@ -280,7 +295,7 @@ def read_palmares_from_details(details_sheet, logo_map):
         numeric_rankings = []
         has_data = False
 
-        for row in range(4, 20):
+        for row in player_rows:
             player = details_sheet.cell(row, 2).value
             if not player:
                 continue
@@ -330,9 +345,8 @@ def read_points_rules(points_sheet):
 def read_details(details_sheet):
     player_rows = []
     course_blocks = get_course_blocks(details_sheet)
-    total_col = find_total_col(details_sheet)
 
-    for row in range(4, 20):
+    for row in get_player_rows(details_sheet):
         player = details_sheet.cell(row, 2).value
         if not player:
             continue
@@ -346,7 +360,7 @@ def read_details(details_sheet):
                     or 0,
                 }
             )
-        total = clean_number(details_sheet.cell(row, total_col).value) or 0
+        total = clean_number(get_player_total(details_sheet, row, course_blocks)) or 0
         player_rows.append({"name": str(player), "total": total, "results": results})
     return player_rows
 
