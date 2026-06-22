@@ -2,96 +2,96 @@
   "meta": {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
-    "lastUpdated": "2026-06-17T08:50:22",
-    "generatedAt": "2026-06-17T09:26:03",
+    "lastUpdated": "2026-06-22T08:03:22",
+    "generatedAt": "2026-06-22T08:03:36",
     "playersCount": 17,
     "coursesCount": 18,
-    "playedCoursesCount": 10
+    "playedCoursesCount": 11
   },
   "home": {
     "globalRanking": [
       {
         "name": "Mathis",
-        "points": 2823,
+        "points": 3323,
         "rank": 1
       },
       {
         "name": "Robin",
-        "points": 2645,
+        "points": 2705,
         "rank": 2
       },
       {
-        "name": "Quentin",
-        "points": 2570,
+        "name": "Nans",
+        "points": 2700,
         "rank": 3
       },
       {
         "name": "Pierre",
-        "points": 2525,
+        "points": 2700,
         "rank": 4
       },
       {
-        "name": "Sacha R",
-        "points": 2390,
+        "name": "Quentin",
+        "points": 2610,
         "rank": 5
       },
       {
-        "name": "Nans",
-        "points": 2375,
+        "name": "Sacha R",
+        "points": 2420,
         "rank": 6
       },
       {
         "name": "Damien",
-        "points": 2300,
+        "points": 2400,
         "rank": 7
       },
       {
         "name": "Stella",
-        "points": 2125,
+        "points": 2250,
         "rank": 8
       },
       {
         "name": "Émilien",
-        "points": 1648,
+        "points": 1718,
         "rank": 9
       },
       {
-        "name": "Agathe",
-        "points": 1313,
+        "name": "Charles",
+        "points": 1685,
         "rank": 10
       },
       {
-        "name": "Lucie",
-        "points": 1296,
+        "name": "Agathe",
+        "points": 1463,
         "rank": 11
       },
       {
-        "name": "Charles",
-        "points": 1285,
+        "name": "Lucie",
+        "points": 1346,
         "rank": 12
       },
       {
         "name": "Orlane",
-        "points": 686,
+        "points": 771,
         "rank": 13
       },
       {
-        "name": "Guillemette",
-        "points": 645,
+        "name": "Ema",
+        "points": 745,
         "rank": 14
       },
       {
-        "name": "Ema",
-        "points": 520,
+        "name": "Guillemette",
+        "points": 680,
         "rank": 15
       },
       {
-        "name": "Aude",
-        "points": 0,
+        "name": "Sacha C",
+        "points": 275,
         "rank": 16
       },
       {
-        "name": "Sacha C",
+        "name": "Aude",
         "points": 0,
         "rank": 17
       }
@@ -100,17 +100,17 @@
       {
         "rank": 1,
         "name": "ÉTUDES",
-        "points": 1962.8
+        "points": 2236.8
       },
       {
         "rank": 2,
         "name": "SALES",
-        "points": 1681.71
+        "points": 1790.29
       },
       {
         "rank": 3,
         "name": "PRODUIT",
-        "points": 1011.67
+        "points": 1033.33
       }
     ],
     "teamBreakdown": [
@@ -119,90 +119,90 @@
         "members": [
           {
             "name": "Quentin",
-            "total": 2570
+            "total": 2610
           },
           {
             "name": "Damien",
-            "total": 2300
+            "total": 2400
           },
           {
             "name": "Stella",
-            "total": 2125
+            "total": 2250
           },
           {
             "name": "Émilien",
-            "total": 1648
+            "total": 1718
           },
           {
             "name": "Agathe",
-            "total": 1313
+            "total": 1463
           },
           {
             "name": "Lucie",
-            "total": 1296
+            "total": 1346
           },
           {
             "name": "Ema",
-            "total": 520
+            "total": 745
           }
         ],
-        "total": 11772,
-        "average": 1681.71,
+        "total": 12532,
+        "average": 1790.29,
         "leader": "Quentin",
-        "leaderPoints": 2570,
-        "leaderShare": 21.83
+        "leaderPoints": 2610,
+        "leaderShare": 20.83
       },
       {
         "name": "PRODUIT",
         "members": [
           {
             "name": "Sacha R",
-            "total": 2390
+            "total": 2420
           },
           {
             "name": "Guillemette",
-            "total": 645
+            "total": 680
           },
           {
             "name": "Aude",
             "total": 0
           }
         ],
-        "total": 3035,
-        "average": 1011.67,
+        "total": 3100,
+        "average": 1033.33,
         "leader": "Sacha R",
-        "leaderPoints": 2390,
-        "leaderShare": 78.75
+        "leaderPoints": 2420,
+        "leaderShare": 78.06
       },
       {
         "name": "ÉTUDES",
         "members": [
           {
             "name": "Mathis",
-            "total": 2823
+            "total": 3323
           },
           {
             "name": "Robin",
-            "total": 2645
+            "total": 2705
           },
           {
             "name": "Nans",
-            "total": 2375
+            "total": 2700
           },
           {
             "name": "Charles",
-            "total": 1285
+            "total": 1685
           },
           {
             "name": "Orlane",
-            "total": 686
+            "total": 771
           }
         ],
-        "total": 9814,
-        "average": 1962.8,
+        "total": 11184,
+        "average": 2236.8,
         "leader": "Mathis",
-        "leaderPoints": 2823,
-        "leaderShare": 28.77
+        "leaderPoints": 3323,
+        "leaderShare": 29.71
       }
     ],
     "progression": {
@@ -271,7 +271,7 @@
           "name": "Tour de Suisse",
           "slug": "tour-de-suisse",
           "logo": "./assets/course-logos/Tour de Suisse.webp",
-          "played": false
+          "played": true
         },
         {
           "name": "Tour de France",
@@ -330,14 +330,14 @@
             2025,
             2350,
             2525,
-            2525,
-            2525,
-            2525,
-            2525,
-            2525,
-            2525,
-            2525,
-            2525
+            2700,
+            2700,
+            2700,
+            2700,
+            2700,
+            2700,
+            2700,
+            2700
           ]
         },
         {
@@ -353,14 +353,14 @@
             1900,
             1900,
             2300,
-            2300,
-            2300,
-            2300,
-            2300,
-            2300,
-            2300,
-            2300,
-            2300
+            2400,
+            2400,
+            2400,
+            2400,
+            2400,
+            2400,
+            2400,
+            2400
           ]
         },
         {
@@ -376,14 +376,14 @@
             1188,
             1313,
             1313,
-            1313,
-            1313,
-            1313,
-            1313,
-            1313,
-            1313,
-            1313,
-            1313
+            1463,
+            1463,
+            1463,
+            1463,
+            1463,
+            1463,
+            1463,
+            1463
           ]
         },
         {
@@ -399,14 +399,14 @@
             1423,
             1423,
             1648,
-            1648,
-            1648,
-            1648,
-            1648,
-            1648,
-            1648,
-            1648,
-            1648
+            1718,
+            1718,
+            1718,
+            1718,
+            1718,
+            1718,
+            1718,
+            1718
           ]
         },
         {
@@ -422,14 +422,14 @@
             1296,
             1296,
             1296,
-            1296,
-            1296,
-            1296,
-            1296,
-            1296,
-            1296,
-            1296,
-            1296
+            1346,
+            1346,
+            1346,
+            1346,
+            1346,
+            1346,
+            1346,
+            1346
           ]
         },
         {
@@ -445,14 +445,14 @@
             335,
             420,
             520,
-            520,
-            520,
-            520,
-            520,
-            520,
-            520,
-            520,
-            520
+            745,
+            745,
+            745,
+            745,
+            745,
+            745,
+            745,
+            745
           ]
         },
         {
@@ -468,14 +468,14 @@
             1970,
             2070,
             2570,
-            2570,
-            2570,
-            2570,
-            2570,
-            2570,
-            2570,
-            2570,
-            2570
+            2610,
+            2610,
+            2610,
+            2610,
+            2610,
+            2610,
+            2610,
+            2610
           ]
         },
         {
@@ -491,14 +491,14 @@
             1555,
             2055,
             2125,
-            2125,
-            2125,
-            2125,
-            2125,
-            2125,
-            2125,
-            2125,
-            2125
+            2250,
+            2250,
+            2250,
+            2250,
+            2250,
+            2250,
+            2250,
+            2250
           ]
         },
         {
@@ -537,14 +537,14 @@
             1915,
             2065,
             2390,
-            2390,
-            2390,
-            2390,
-            2390,
-            2390,
-            2390,
-            2390,
-            2390
+            2420,
+            2420,
+            2420,
+            2420,
+            2420,
+            2420,
+            2420,
+            2420
           ]
         },
         {
@@ -560,14 +560,14 @@
             645,
             645,
             645,
-            645,
-            645,
-            645,
-            645,
-            645,
-            645,
-            645,
-            645
+            680,
+            680,
+            680,
+            680,
+            680,
+            680,
+            680,
+            680
           ]
         },
         {
@@ -583,14 +583,14 @@
             1825,
             2225,
             2375,
-            2375,
-            2375,
-            2375,
-            2375,
-            2375,
-            2375,
-            2375,
-            2375
+            2700,
+            2700,
+            2700,
+            2700,
+            2700,
+            2700,
+            2700,
+            2700
           ]
         },
         {
@@ -606,14 +606,14 @@
             1010,
             1010,
             1285,
-            1285,
-            1285,
-            1285,
-            1285,
-            1285,
-            1285,
-            1285,
-            1285
+            1685,
+            1685,
+            1685,
+            1685,
+            1685,
+            1685,
+            1685,
+            1685
           ]
         },
         {
@@ -629,14 +629,14 @@
             461,
             686,
             686,
-            686,
-            686,
-            686,
-            686,
-            686,
-            686,
-            686,
-            686
+            771,
+            771,
+            771,
+            771,
+            771,
+            771,
+            771,
+            771
           ]
         },
         {
@@ -652,14 +652,14 @@
             2463,
             2738,
             2823,
-            2823,
-            2823,
-            2823,
-            2823,
-            2823,
-            2823,
-            2823,
-            2823
+            3323,
+            3323,
+            3323,
+            3323,
+            3323,
+            3323,
+            3323,
+            3323
           ]
         },
         {
@@ -675,14 +675,14 @@
             2345,
             2520,
             2645,
-            2645,
-            2645,
-            2645,
-            2645,
-            2645,
-            2645,
-            2645,
-            2645
+            2705,
+            2705,
+            2705,
+            2705,
+            2705,
+            2705,
+            2705,
+            2705
           ]
         },
         {
@@ -698,14 +698,14 @@
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            275,
+            275,
+            275,
+            275,
+            275,
+            275,
+            275,
+            275
           ]
         }
       ],
@@ -946,21 +946,21 @@
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Quentin": 3,
-            "Pierre": 4,
-            "Sacha R": 5,
-            "Nans": 6,
+            "Pierre": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha R": 6,
             "Damien": 7,
             "Stella": 8,
             "Émilien": 9,
-            "Agathe": 10,
-            "Lucie": 11,
-            "Charles": 12,
+            "Charles": 10,
+            "Agathe": 11,
+            "Lucie": 12,
             "Orlane": 13,
-            "Guillemette": 14,
-            "Ema": 15,
-            "Aude": 16,
-            "Sacha C": 17
+            "Ema": 14,
+            "Guillemette": 15,
+            "Sacha C": 16,
+            "Aude": 17
           }
         },
         {
@@ -969,21 +969,21 @@
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Quentin": 3,
-            "Pierre": 4,
-            "Sacha R": 5,
-            "Nans": 6,
+            "Pierre": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha R": 6,
             "Damien": 7,
             "Stella": 8,
             "Émilien": 9,
-            "Agathe": 10,
-            "Lucie": 11,
-            "Charles": 12,
+            "Charles": 10,
+            "Agathe": 11,
+            "Lucie": 12,
             "Orlane": 13,
-            "Guillemette": 14,
-            "Ema": 15,
-            "Aude": 16,
-            "Sacha C": 17
+            "Ema": 14,
+            "Guillemette": 15,
+            "Sacha C": 16,
+            "Aude": 17
           }
         },
         {
@@ -992,21 +992,21 @@
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Quentin": 3,
-            "Pierre": 4,
-            "Sacha R": 5,
-            "Nans": 6,
+            "Pierre": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha R": 6,
             "Damien": 7,
             "Stella": 8,
             "Émilien": 9,
-            "Agathe": 10,
-            "Lucie": 11,
-            "Charles": 12,
+            "Charles": 10,
+            "Agathe": 11,
+            "Lucie": 12,
             "Orlane": 13,
-            "Guillemette": 14,
-            "Ema": 15,
-            "Aude": 16,
-            "Sacha C": 17
+            "Ema": 14,
+            "Guillemette": 15,
+            "Sacha C": 16,
+            "Aude": 17
           }
         },
         {
@@ -1015,21 +1015,21 @@
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Quentin": 3,
-            "Pierre": 4,
-            "Sacha R": 5,
-            "Nans": 6,
+            "Pierre": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha R": 6,
             "Damien": 7,
             "Stella": 8,
             "Émilien": 9,
-            "Agathe": 10,
-            "Lucie": 11,
-            "Charles": 12,
+            "Charles": 10,
+            "Agathe": 11,
+            "Lucie": 12,
             "Orlane": 13,
-            "Guillemette": 14,
-            "Ema": 15,
-            "Aude": 16,
-            "Sacha C": 17
+            "Ema": 14,
+            "Guillemette": 15,
+            "Sacha C": 16,
+            "Aude": 17
           }
         },
         {
@@ -1038,21 +1038,21 @@
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Quentin": 3,
-            "Pierre": 4,
-            "Sacha R": 5,
-            "Nans": 6,
+            "Pierre": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha R": 6,
             "Damien": 7,
             "Stella": 8,
             "Émilien": 9,
-            "Agathe": 10,
-            "Lucie": 11,
-            "Charles": 12,
+            "Charles": 10,
+            "Agathe": 11,
+            "Lucie": 12,
             "Orlane": 13,
-            "Guillemette": 14,
-            "Ema": 15,
-            "Aude": 16,
-            "Sacha C": 17
+            "Ema": 14,
+            "Guillemette": 15,
+            "Sacha C": 16,
+            "Aude": 17
           }
         },
         {
@@ -1061,21 +1061,21 @@
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Quentin": 3,
-            "Pierre": 4,
-            "Sacha R": 5,
-            "Nans": 6,
+            "Pierre": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha R": 6,
             "Damien": 7,
             "Stella": 8,
             "Émilien": 9,
-            "Agathe": 10,
-            "Lucie": 11,
-            "Charles": 12,
+            "Charles": 10,
+            "Agathe": 11,
+            "Lucie": 12,
             "Orlane": 13,
-            "Guillemette": 14,
-            "Ema": 15,
-            "Aude": 16,
-            "Sacha C": 17
+            "Ema": 14,
+            "Guillemette": 15,
+            "Sacha C": 16,
+            "Aude": 17
           }
         },
         {
@@ -1084,21 +1084,21 @@
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Quentin": 3,
-            "Pierre": 4,
-            "Sacha R": 5,
-            "Nans": 6,
+            "Pierre": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha R": 6,
             "Damien": 7,
             "Stella": 8,
             "Émilien": 9,
-            "Agathe": 10,
-            "Lucie": 11,
-            "Charles": 12,
+            "Charles": 10,
+            "Agathe": 11,
+            "Lucie": 12,
             "Orlane": 13,
-            "Guillemette": 14,
-            "Ema": 15,
-            "Aude": 16,
-            "Sacha C": 17
+            "Ema": 14,
+            "Guillemette": 15,
+            "Sacha C": 16,
+            "Aude": 17
           }
         },
         {
@@ -1107,21 +1107,21 @@
           "ranks": {
             "Mathis": 1,
             "Robin": 2,
-            "Quentin": 3,
-            "Pierre": 4,
-            "Sacha R": 5,
-            "Nans": 6,
+            "Pierre": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Sacha R": 6,
             "Damien": 7,
             "Stella": 8,
             "Émilien": 9,
-            "Agathe": 10,
-            "Lucie": 11,
-            "Charles": 12,
+            "Charles": 10,
+            "Agathe": 11,
+            "Lucie": 12,
             "Orlane": 13,
-            "Guillemette": 14,
-            "Ema": 15,
-            "Aude": 16,
-            "Sacha C": 17
+            "Ema": 14,
+            "Guillemette": 15,
+            "Sacha C": 16,
+            "Aude": 17
           }
         }
       ]
@@ -1232,11 +1232,11 @@
       "course": "Tour de Suisse",
       "slug": "tour-de-suisse",
       "logo": "./assets/course-logos/Tour de Suisse.webp",
-      "first": null,
-      "second": null,
-      "third": null,
-      "last": null,
-      "isPlayed": false
+      "first": "Mathis",
+      "second": "Charles",
+      "third": "Nans",
+      "last": "Sacha R",
+      "isPlayed": true
     },
     {
       "course": "Tour de France",
@@ -1312,7 +1312,7 @@
   "details": [
     {
       "name": "Pierre",
-      "total": 2525,
+      "total": 2700,
       "results": [
         {
           "course": "Down Under",
@@ -1366,8 +1366,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 6,
+          "points": 175
         },
         {
           "course": "Tour de France",
@@ -1408,7 +1408,7 @@
     },
     {
       "name": "Damien",
-      "total": 2300,
+      "total": 2400,
       "results": [
         {
           "course": "Down Under",
@@ -1462,8 +1462,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 9,
+          "points": 100
         },
         {
           "course": "Tour de France",
@@ -1504,7 +1504,7 @@
     },
     {
       "name": "Agathe",
-      "total": 1313,
+      "total": 1463,
       "results": [
         {
           "course": "Down Under",
@@ -1558,8 +1558,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 7,
+          "points": 150
         },
         {
           "course": "Tour de France",
@@ -1600,7 +1600,7 @@
     },
     {
       "name": "Émilien",
-      "total": 1648,
+      "total": 1718,
       "results": [
         {
           "course": "Down Under",
@@ -1654,8 +1654,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 11,
+          "points": 70
         },
         {
           "course": "Tour de France",
@@ -1696,7 +1696,7 @@
     },
     {
       "name": "Lucie",
-      "total": 1296,
+      "total": 1346,
       "results": [
         {
           "course": "Down Under",
@@ -1750,8 +1750,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 13,
+          "points": 50
         },
         {
           "course": "Tour de France",
@@ -1792,7 +1792,7 @@
     },
     {
       "name": "Ema",
-      "total": 520,
+      "total": 745,
       "results": [
         {
           "course": "Down Under",
@@ -1846,8 +1846,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 5,
+          "points": 225
         },
         {
           "course": "Tour de France",
@@ -1888,7 +1888,7 @@
     },
     {
       "name": "Quentin",
-      "total": 2570,
+      "total": 2610,
       "results": [
         {
           "course": "Down Under",
@@ -1942,8 +1942,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 14,
+          "points": 40
         },
         {
           "course": "Tour de France",
@@ -1984,7 +1984,7 @@
     },
     {
       "name": "Stella",
-      "total": 2125,
+      "total": 2250,
       "results": [
         {
           "course": "Down Under",
@@ -2038,8 +2038,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 8,
+          "points": 125
         },
         {
           "course": "Tour de France",
@@ -2134,7 +2134,7 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -2176,7 +2176,7 @@
     },
     {
       "name": "Sacha R",
-      "total": 2390,
+      "total": 2420,
       "results": [
         {
           "course": "Down Under",
@@ -2230,8 +2230,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 16,
+          "points": 30
         },
         {
           "course": "Tour de France",
@@ -2272,7 +2272,7 @@
     },
     {
       "name": "Guillemette",
-      "total": 645,
+      "total": 680,
       "results": [
         {
           "course": "Down Under",
@@ -2326,8 +2326,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 15,
+          "points": 35
         },
         {
           "course": "Tour de France",
@@ -2368,7 +2368,7 @@
     },
     {
       "name": "Nans",
-      "total": 2375,
+      "total": 2700,
       "results": [
         {
           "course": "Down Under",
@@ -2422,8 +2422,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 3,
+          "points": 325
         },
         {
           "course": "Tour de France",
@@ -2464,7 +2464,7 @@
     },
     {
       "name": "Charles",
-      "total": 1285,
+      "total": 1685,
       "results": [
         {
           "course": "Down Under",
@@ -2518,8 +2518,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 2,
+          "points": 400
         },
         {
           "course": "Tour de France",
@@ -2560,7 +2560,7 @@
     },
     {
       "name": "Orlane",
-      "total": 686,
+      "total": 771,
       "results": [
         {
           "course": "Down Under",
@@ -2614,8 +2614,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 10,
+          "points": 85
         },
         {
           "course": "Tour de France",
@@ -2656,7 +2656,7 @@
     },
     {
       "name": "Mathis",
-      "total": 2823,
+      "total": 3323,
       "results": [
         {
           "course": "Down Under",
@@ -2710,8 +2710,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 1,
+          "points": 500
         },
         {
           "course": "Tour de France",
@@ -2752,7 +2752,7 @@
     },
     {
       "name": "Robin",
-      "total": 2645,
+      "total": 2705,
       "results": [
         {
           "course": "Down Under",
@@ -2806,8 +2806,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 12,
+          "points": 60
         },
         {
           "course": "Tour de France",
@@ -2848,7 +2848,7 @@
     },
     {
       "name": "Sacha C",
-      "total": 0,
+      "total": 275,
       "results": [
         {
           "course": "Down Under",
@@ -2902,8 +2902,8 @@
         },
         {
           "course": "Tour de Suisse",
-          "rank": null,
-          "points": 0
+          "rank": 4,
+          "points": 275
         },
         {
           "course": "Tour de France",
