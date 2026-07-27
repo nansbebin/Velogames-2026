@@ -2,9 +2,9 @@
   "meta": {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
-    "lastUpdated": "2026-07-13T16:35:51",
-    "generatedAt": "2026-07-13T16:36:03",
-    "playersCount": 17,
+    "lastUpdated": "2026-07-27T08:36:42",
+    "generatedAt": "2026-07-27T08:36:58",
+    "playersCount": 18,
     "coursesCount": 18,
     "playedCoursesCount": 12
   },
@@ -16,58 +16,58 @@
         "rank": 1
       },
       {
-        "name": "Mathis",
-        "points": 3683,
+        "name": "Pierre",
+        "points": 3580,
         "rank": 2
       },
       {
-        "name": "Nans",
-        "points": 3580,
+        "name": "Mathis",
+        "points": 3408,
         "rank": 3
       },
       {
-        "name": "Quentin",
-        "points": 3360,
+        "name": "Nans",
+        "points": 3320,
         "rank": 4
       },
       {
-        "name": "Damien",
-        "points": 3020,
+        "name": "Quentin",
+        "points": 3130,
         "rank": 5
       },
       {
-        "name": "Pierre",
-        "points": 2890,
+        "name": "Robin",
+        "points": 3000,
         "rank": 6
       },
       {
-        "name": "Robin",
-        "points": 2805,
+        "name": "Damien",
+        "points": 2825,
         "rank": 7
       },
       {
-        "name": "Stella",
-        "points": 2340,
+        "name": "Charles",
+        "points": 2435,
         "rank": 8
       },
       {
-        "name": "Charles",
-        "points": 2110,
+        "name": "Stella",
+        "points": 2330,
         "rank": 9
       },
       {
         "name": "Émilien",
-        "points": 1948,
+        "points": 1858,
         "rank": 10
       },
       {
         "name": "Lucie",
-        "points": 1866,
+        "points": 1576,
         "rank": 11
       },
       {
         "name": "Agathe",
-        "points": 1603,
+        "points": 1573,
         "rank": 12
       },
       {
@@ -77,40 +77,45 @@
       },
       {
         "name": "Guillemette",
-        "points": 975,
+        "points": 1040,
         "rank": 14
       },
       {
         "name": "Orlane",
-        "points": 851,
+        "points": 871,
         "rank": 15
       },
       {
         "name": "Ema",
-        "points": 830,
+        "points": 835,
         "rank": 16
       },
       {
         "name": "Aude",
-        "points": 165,
+        "points": 190,
         "rank": 17
+      },
+      {
+        "name": "Lilou",
+        "points": 165,
+        "rank": 18
       }
     ],
     "teamRanking": [
       {
         "rank": 1,
         "name": "ÉTUDES",
-        "points": 2605.8
+        "points": 2606.8
       },
       {
         "rank": 2,
         "name": "SALES",
-        "points": 2138.14
+        "points": 2018.14
       },
       {
         "rank": 3,
         "name": "PRODUIT",
-        "points": 1620.0
+        "points": 1650.0
       }
     ],
     "teamBreakdown": [
@@ -119,38 +124,38 @@
         "members": [
           {
             "name": "Quentin",
-            "total": 3360
+            "total": 3130
           },
           {
             "name": "Damien",
-            "total": 3020
+            "total": 2825
           },
           {
             "name": "Stella",
-            "total": 2340
+            "total": 2330
           },
           {
             "name": "Émilien",
-            "total": 1948
+            "total": 1858
           },
           {
             "name": "Lucie",
-            "total": 1866
+            "total": 1576
           },
           {
             "name": "Agathe",
-            "total": 1603
+            "total": 1573
           },
           {
             "name": "Ema",
-            "total": 830
+            "total": 835
           }
         ],
-        "total": 14967,
-        "average": 2138.14,
+        "total": 14127,
+        "average": 2018.14,
         "leader": "Quentin",
-        "leaderPoints": 3360,
-        "leaderShare": 22.45
+        "leaderPoints": 3130,
+        "leaderShare": 22.16
       },
       {
         "name": "PRODUIT",
@@ -161,48 +166,48 @@
           },
           {
             "name": "Guillemette",
-            "total": 975
+            "total": 1040
           },
           {
             "name": "Aude",
-            "total": 165
+            "total": 190
           }
         ],
-        "total": 4860,
-        "average": 1620.0,
+        "total": 4950,
+        "average": 1650.0,
         "leader": "Sacha R",
         "leaderPoints": 3720,
-        "leaderShare": 76.54
+        "leaderShare": 75.15
       },
       {
         "name": "ÉTUDES",
         "members": [
           {
             "name": "Mathis",
-            "total": 3683
+            "total": 3408
           },
           {
             "name": "Nans",
-            "total": 3580
+            "total": 3320
           },
           {
             "name": "Robin",
-            "total": 2805
+            "total": 3000
           },
           {
             "name": "Charles",
-            "total": 2110
+            "total": 2435
           },
           {
             "name": "Orlane",
-            "total": 851
+            "total": 871
           }
         ],
-        "total": 13029,
-        "average": 2605.8,
+        "total": 13034,
+        "average": 2606.8,
         "leader": "Mathis",
-        "leaderPoints": 3683,
-        "leaderShare": 28.27
+        "leaderPoints": 3408,
+        "leaderShare": 26.15
       }
     ],
     "progression": {
@@ -331,13 +336,13 @@
             2350,
             2525,
             2700,
-            2890,
-            2890,
-            2890,
-            2890,
-            2890,
-            2890,
-            2890
+            3580,
+            3580,
+            3580,
+            3580,
+            3580,
+            3580,
+            3580
           ]
         },
         {
@@ -354,13 +359,13 @@
             1900,
             2300,
             2400,
-            3020,
-            3020,
-            3020,
-            3020,
-            3020,
-            3020,
-            3020
+            2825,
+            2825,
+            2825,
+            2825,
+            2825,
+            2825,
+            2825
           ]
         },
         {
@@ -377,13 +382,13 @@
             1313,
             1313,
             1463,
-            1603,
-            1603,
-            1603,
-            1603,
-            1603,
-            1603,
-            1603
+            1573,
+            1573,
+            1573,
+            1573,
+            1573,
+            1573,
+            1573
           ]
         },
         {
@@ -400,13 +405,13 @@
             1423,
             1648,
             1718,
-            1948,
-            1948,
-            1948,
-            1948,
-            1948,
-            1948,
-            1948
+            1858,
+            1858,
+            1858,
+            1858,
+            1858,
+            1858,
+            1858
           ]
         },
         {
@@ -423,13 +428,13 @@
             1296,
             1296,
             1346,
-            1866,
-            1866,
-            1866,
-            1866,
-            1866,
-            1866,
-            1866
+            1576,
+            1576,
+            1576,
+            1576,
+            1576,
+            1576,
+            1576
           ]
         },
         {
@@ -446,13 +451,13 @@
             420,
             520,
             745,
-            830,
-            830,
-            830,
-            830,
-            830,
-            830,
-            830
+            835,
+            835,
+            835,
+            835,
+            835,
+            835,
+            835
           ]
         },
         {
@@ -469,13 +474,13 @@
             2070,
             2570,
             2610,
-            3360,
-            3360,
-            3360,
-            3360,
-            3360,
-            3360,
-            3360
+            3130,
+            3130,
+            3130,
+            3130,
+            3130,
+            3130,
+            3130
           ]
         },
         {
@@ -492,13 +497,13 @@
             2055,
             2125,
             2250,
-            2340,
-            2340,
-            2340,
-            2340,
-            2340,
-            2340,
-            2340
+            2330,
+            2330,
+            2330,
+            2330,
+            2330,
+            2330,
+            2330
           ]
         },
         {
@@ -515,13 +520,13 @@
             0,
             0,
             0,
-            165,
-            165,
-            165,
-            165,
-            165,
-            165,
-            165
+            190,
+            190,
+            190,
+            190,
+            190,
+            190,
+            190
           ]
         },
         {
@@ -561,13 +566,13 @@
             645,
             645,
             680,
-            975,
-            975,
-            975,
-            975,
-            975,
-            975,
-            975
+            1040,
+            1040,
+            1040,
+            1040,
+            1040,
+            1040,
+            1040
           ]
         },
         {
@@ -584,13 +589,13 @@
             2225,
             2375,
             2700,
-            3580,
-            3580,
-            3580,
-            3580,
-            3580,
-            3580,
-            3580
+            3320,
+            3320,
+            3320,
+            3320,
+            3320,
+            3320,
+            3320
           ]
         },
         {
@@ -607,13 +612,13 @@
             1010,
             1285,
             1685,
-            2110,
-            2110,
-            2110,
-            2110,
-            2110,
-            2110,
-            2110
+            2435,
+            2435,
+            2435,
+            2435,
+            2435,
+            2435,
+            2435
           ]
         },
         {
@@ -630,13 +635,13 @@
             686,
             686,
             771,
-            851,
-            851,
-            851,
-            851,
-            851,
-            851,
-            851
+            871,
+            871,
+            871,
+            871,
+            871,
+            871,
+            871
           ]
         },
         {
@@ -653,13 +658,13 @@
             2738,
             2823,
             3323,
-            3683,
-            3683,
-            3683,
-            3683,
-            3683,
-            3683,
-            3683
+            3408,
+            3408,
+            3408,
+            3408,
+            3408,
+            3408,
+            3408
           ]
         },
         {
@@ -676,13 +681,13 @@
             2520,
             2645,
             2705,
-            2805,
-            2805,
-            2805,
-            2805,
-            2805,
-            2805,
-            2805
+            3000,
+            3000,
+            3000,
+            3000,
+            3000,
+            3000,
+            3000
           ]
         },
         {
@@ -707,6 +712,29 @@
             1315,
             1315
           ]
+        },
+        {
+          "name": "Lilou",
+          "totals": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            165,
+            165,
+            165,
+            165,
+            165,
+            165,
+            165
+          ]
         }
       ],
       "rankingsByCourse": [
@@ -730,7 +758,8 @@
             "Aude": 14,
             "Guillemette": 15,
             "Charles": 16,
-            "Sacha C": 17
+            "Sacha C": 17,
+            "Lilou": 18
           }
         },
         {
@@ -753,7 +782,8 @@
             "Orlane": 14,
             "Aude": 15,
             "Guillemette": 16,
-            "Sacha C": 17
+            "Sacha C": 17,
+            "Lilou": 18
           }
         },
         {
@@ -776,7 +806,8 @@
             "Guillemette": 14,
             "Orlane": 15,
             "Aude": 16,
-            "Sacha C": 17
+            "Sacha C": 17,
+            "Lilou": 18
           }
         },
         {
@@ -799,7 +830,8 @@
             "Orlane": 14,
             "Guillemette": 15,
             "Aude": 16,
-            "Sacha C": 17
+            "Sacha C": 17,
+            "Lilou": 18
           }
         },
         {
@@ -822,7 +854,8 @@
             "Orlane": 14,
             "Guillemette": 15,
             "Aude": 16,
-            "Sacha C": 17
+            "Sacha C": 17,
+            "Lilou": 18
           }
         },
         {
@@ -845,7 +878,8 @@
             "Orlane": 14,
             "Guillemette": 15,
             "Aude": 16,
-            "Sacha C": 17
+            "Sacha C": 17,
+            "Lilou": 18
           }
         },
         {
@@ -868,7 +902,8 @@
             "Ema": 14,
             "Guillemette": 15,
             "Aude": 16,
-            "Sacha C": 17
+            "Sacha C": 17,
+            "Lilou": 18
           }
         },
         {
@@ -891,7 +926,8 @@
             "Orlane": 14,
             "Ema": 15,
             "Aude": 16,
-            "Sacha C": 17
+            "Sacha C": 17,
+            "Lilou": 18
           }
         },
         {
@@ -914,7 +950,8 @@
             "Guillemette": 14,
             "Ema": 15,
             "Aude": 16,
-            "Sacha C": 17
+            "Sacha C": 17,
+            "Lilou": 18
           }
         },
         {
@@ -937,7 +974,8 @@
             "Guillemette": 14,
             "Ema": 15,
             "Aude": 16,
-            "Sacha C": 17
+            "Sacha C": 17,
+            "Lilou": 18
           }
         },
         {
@@ -960,7 +998,8 @@
             "Ema": 14,
             "Guillemette": 15,
             "Sacha C": 16,
-            "Aude": 17
+            "Aude": 17,
+            "Lilou": 18
           }
         },
         {
@@ -968,14 +1007,14 @@
           "slug": "tour-de-france",
           "ranks": {
             "Sacha R": 1,
-            "Mathis": 2,
-            "Nans": 3,
-            "Quentin": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Robin": 7,
-            "Stella": 8,
-            "Charles": 9,
+            "Pierre": 2,
+            "Mathis": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Robin": 6,
+            "Damien": 7,
+            "Charles": 8,
+            "Stella": 9,
             "Émilien": 10,
             "Lucie": 11,
             "Agathe": 12,
@@ -983,7 +1022,8 @@
             "Guillemette": 14,
             "Orlane": 15,
             "Ema": 16,
-            "Aude": 17
+            "Aude": 17,
+            "Lilou": 18
           }
         },
         {
@@ -991,14 +1031,14 @@
           "slug": "tour-femmes",
           "ranks": {
             "Sacha R": 1,
-            "Mathis": 2,
-            "Nans": 3,
-            "Quentin": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Robin": 7,
-            "Stella": 8,
-            "Charles": 9,
+            "Pierre": 2,
+            "Mathis": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Robin": 6,
+            "Damien": 7,
+            "Charles": 8,
+            "Stella": 9,
             "Émilien": 10,
             "Lucie": 11,
             "Agathe": 12,
@@ -1006,7 +1046,8 @@
             "Guillemette": 14,
             "Orlane": 15,
             "Ema": 16,
-            "Aude": 17
+            "Aude": 17,
+            "Lilou": 18
           }
         },
         {
@@ -1014,14 +1055,14 @@
           "slug": "vuelta",
           "ranks": {
             "Sacha R": 1,
-            "Mathis": 2,
-            "Nans": 3,
-            "Quentin": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Robin": 7,
-            "Stella": 8,
-            "Charles": 9,
+            "Pierre": 2,
+            "Mathis": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Robin": 6,
+            "Damien": 7,
+            "Charles": 8,
+            "Stella": 9,
             "Émilien": 10,
             "Lucie": 11,
             "Agathe": 12,
@@ -1029,7 +1070,8 @@
             "Guillemette": 14,
             "Orlane": 15,
             "Ema": 16,
-            "Aude": 17
+            "Aude": 17,
+            "Lilou": 18
           }
         },
         {
@@ -1037,14 +1079,14 @@
           "slug": "renewi-tour",
           "ranks": {
             "Sacha R": 1,
-            "Mathis": 2,
-            "Nans": 3,
-            "Quentin": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Robin": 7,
-            "Stella": 8,
-            "Charles": 9,
+            "Pierre": 2,
+            "Mathis": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Robin": 6,
+            "Damien": 7,
+            "Charles": 8,
+            "Stella": 9,
             "Émilien": 10,
             "Lucie": 11,
             "Agathe": 12,
@@ -1052,7 +1094,8 @@
             "Guillemette": 14,
             "Orlane": 15,
             "Ema": 16,
-            "Aude": 17
+            "Aude": 17,
+            "Lilou": 18
           }
         },
         {
@@ -1060,14 +1103,14 @@
           "slug": "tour-of-britain",
           "ranks": {
             "Sacha R": 1,
-            "Mathis": 2,
-            "Nans": 3,
-            "Quentin": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Robin": 7,
-            "Stella": 8,
-            "Charles": 9,
+            "Pierre": 2,
+            "Mathis": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Robin": 6,
+            "Damien": 7,
+            "Charles": 8,
+            "Stella": 9,
             "Émilien": 10,
             "Lucie": 11,
             "Agathe": 12,
@@ -1075,7 +1118,8 @@
             "Guillemette": 14,
             "Orlane": 15,
             "Ema": 16,
-            "Aude": 17
+            "Aude": 17,
+            "Lilou": 18
           }
         },
         {
@@ -1083,14 +1127,14 @@
           "slug": "romandie-femmes",
           "ranks": {
             "Sacha R": 1,
-            "Mathis": 2,
-            "Nans": 3,
-            "Quentin": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Robin": 7,
-            "Stella": 8,
-            "Charles": 9,
+            "Pierre": 2,
+            "Mathis": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Robin": 6,
+            "Damien": 7,
+            "Charles": 8,
+            "Stella": 9,
             "Émilien": 10,
             "Lucie": 11,
             "Agathe": 12,
@@ -1098,7 +1142,8 @@
             "Guillemette": 14,
             "Orlane": 15,
             "Ema": 16,
-            "Aude": 17
+            "Aude": 17,
+            "Lilou": 18
           }
         },
         {
@@ -1106,14 +1151,14 @@
           "slug": "simac-ladies-tour",
           "ranks": {
             "Sacha R": 1,
-            "Mathis": 2,
-            "Nans": 3,
-            "Quentin": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Robin": 7,
-            "Stella": 8,
-            "Charles": 9,
+            "Pierre": 2,
+            "Mathis": 3,
+            "Nans": 4,
+            "Quentin": 5,
+            "Robin": 6,
+            "Damien": 7,
+            "Charles": 8,
+            "Stella": 9,
             "Émilien": 10,
             "Lucie": 11,
             "Agathe": 12,
@@ -1121,7 +1166,8 @@
             "Guillemette": 14,
             "Orlane": 15,
             "Ema": 16,
-            "Aude": 17
+            "Aude": 17,
+            "Lilou": 18
           }
         }
       ]
@@ -1244,8 +1290,8 @@
       "logo": "./assets/course-logos/Tour de France.png",
       "first": "Sacha R",
       "second": "Sacha C",
-      "third": "Nans",
-      "last": "Orlane",
+      "third": "Pierre",
+      "last": "Stella",
       "isPlayed": true
     },
     {
@@ -1312,7 +1358,7 @@
   "details": [
     {
       "name": "Pierre",
-      "total": 2890,
+      "total": 3580,
       "results": [
         {
           "course": "Down Under",
@@ -1371,8 +1417,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 11,
-          "points": 190
+          "rank": 3,
+          "points": 880
         },
         {
           "course": "Tour Femmes",
@@ -1408,7 +1454,7 @@
     },
     {
       "name": "Damien",
-      "total": 3020,
+      "total": 2825,
       "results": [
         {
           "course": "Down Under",
@@ -1467,8 +1513,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 5,
-          "points": 620
+          "rank": 7,
+          "points": 425
         },
         {
           "course": "Tour Femmes",
@@ -1504,7 +1550,7 @@
     },
     {
       "name": "Agathe",
-      "total": 1603,
+      "total": 1573,
       "results": [
         {
           "course": "Down Under",
@@ -1563,8 +1609,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 13,
-          "points": 140
+          "rank": 14,
+          "points": 110
         },
         {
           "course": "Tour Femmes",
@@ -1600,7 +1646,7 @@
     },
     {
       "name": "Émilien",
-      "total": 1948,
+      "total": 1858,
       "results": [
         {
           "course": "Down Under",
@@ -1659,8 +1705,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 10,
-          "points": 230
+          "rank": 13,
+          "points": 140
         },
         {
           "course": "Tour Femmes",
@@ -1696,7 +1742,7 @@
     },
     {
       "name": "Lucie",
-      "total": 1866,
+      "total": 1576,
       "results": [
         {
           "course": "Down Under",
@@ -1755,8 +1801,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 6,
-          "points": 520
+          "rank": 10,
+          "points": 230
         },
         {
           "course": "Tour Femmes",
@@ -1792,7 +1838,7 @@
     },
     {
       "name": "Ema",
-      "total": 830,
+      "total": 835,
       "results": [
         {
           "course": "Down Under",
@@ -1851,8 +1897,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 17,
-          "points": 85
+          "rank": 16,
+          "points": 90
         },
         {
           "course": "Tour Femmes",
@@ -1888,7 +1934,7 @@
     },
     {
       "name": "Quentin",
-      "total": 3360,
+      "total": 3130,
       "results": [
         {
           "course": "Down Under",
@@ -1947,8 +1993,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 4,
-          "points": 750
+          "rank": 6,
+          "points": 520
         },
         {
           "course": "Tour Femmes",
@@ -1984,7 +2030,7 @@
     },
     {
       "name": "Stella",
-      "total": 2340,
+      "total": 2330,
       "results": [
         {
           "course": "Down Under",
@@ -2043,8 +2089,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 16,
-          "points": 90
+          "rank": 18,
+          "points": 80
         },
         {
           "course": "Tour Femmes",
@@ -2080,7 +2126,7 @@
     },
     {
       "name": "Aude",
-      "total": 165,
+      "total": 190,
       "results": [
         {
           "course": "Down Under",
@@ -2139,8 +2185,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 12,
-          "points": 165
+          "rank": 11,
+          "points": 190
         },
         {
           "course": "Tour Femmes",
@@ -2272,7 +2318,7 @@
     },
     {
       "name": "Guillemette",
-      "total": 975,
+      "total": 1040,
       "results": [
         {
           "course": "Down Under",
@@ -2331,8 +2377,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 9,
-          "points": 295
+          "rank": 8,
+          "points": 360
         },
         {
           "course": "Tour Femmes",
@@ -2368,7 +2414,7 @@
     },
     {
       "name": "Nans",
-      "total": 3580,
+      "total": 3320,
       "results": [
         {
           "course": "Down Under",
@@ -2427,8 +2473,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 3,
-          "points": 880
+          "rank": 5,
+          "points": 620
         },
         {
           "course": "Tour Femmes",
@@ -2464,7 +2510,7 @@
     },
     {
       "name": "Charles",
-      "total": 2110,
+      "total": 2435,
       "results": [
         {
           "course": "Down Under",
@@ -2523,8 +2569,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 7,
-          "points": 425
+          "rank": 4,
+          "points": 750
         },
         {
           "course": "Tour Femmes",
@@ -2560,7 +2606,7 @@
     },
     {
       "name": "Orlane",
-      "total": 851,
+      "total": 871,
       "results": [
         {
           "course": "Down Under",
@@ -2619,8 +2665,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 18,
-          "points": 80
+          "rank": 15,
+          "points": 100
         },
         {
           "course": "Tour Femmes",
@@ -2656,7 +2702,7 @@
     },
     {
       "name": "Mathis",
-      "total": 3683,
+      "total": 3408,
       "results": [
         {
           "course": "Down Under",
@@ -2715,8 +2761,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 8,
-          "points": 360
+          "rank": 17,
+          "points": 85
         },
         {
           "course": "Tour Femmes",
@@ -2752,7 +2798,7 @@
     },
     {
       "name": "Robin",
-      "total": 2805,
+      "total": 3000,
       "results": [
         {
           "course": "Down Under",
@@ -2811,8 +2857,8 @@
         },
         {
           "course": "Tour de France",
-          "rank": 15,
-          "points": 100
+          "rank": 9,
+          "points": 295
         },
         {
           "course": "Tour Femmes",
@@ -2909,6 +2955,102 @@
           "course": "Tour de France",
           "rank": 2,
           "points": 1040
+        },
+        {
+          "course": "Tour Femmes",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Vuelta",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Renewi Tour",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Tour of Britain",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Romandie Femmes",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Simac Ladies Tour",
+          "rank": null,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "name": "Lilou",
+      "total": 165,
+      "results": [
+        {
+          "course": "Down Under",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "UAE Tour",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Paris-Nice",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Tirreno-Adriatico",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Volta Catalunya",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Itzulia",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Romandie",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Giro",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Giro Women",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Tour Auvergne Rhône Alpes",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Tour de Suisse",
+          "rank": null,
+          "points": 0
+        },
+        {
+          "course": "Tour de France",
+          "rank": 12,
+          "points": 165
         },
         {
           "course": "Tour Femmes",
