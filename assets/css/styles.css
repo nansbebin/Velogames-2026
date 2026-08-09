@@ -1408,3 +1408,285 @@ img {
     height: 360px;
   }
 }
+
+/* Shared operational dashboard layout: vertical navigation and restrained panels. */
+@media (min-width: 761px) {
+  body {
+    background: #f4f6f8;
+  }
+
+  body::before,
+  body::after {
+    display: none;
+  }
+
+  .site-shell {
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 218px minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    grid-column: 1;
+    grid-row: 1 / -1;
+    height: 100vh;
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+    padding: 26px 18px 22px;
+    border: 0;
+    border-radius: 0;
+    background: #101722;
+    color: #fff;
+    box-shadow: 8px 0 24px rgba(16, 23, 34, .08);
+  }
+
+  .brand-title {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 25px;
+    line-height: .98;
+    letter-spacing: -.045em;
+  }
+
+  .brand-kicker {
+    color: var(--yellow);
+    font-size: 10px;
+    letter-spacing: .18em;
+  }
+
+  .nav-links {
+    display: grid;
+    align-content: start;
+    gap: 5px;
+    margin: 0;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 10px 12px;
+    border: 0;
+    border-left: 3px solid transparent;
+    border-radius: 6px;
+    background: transparent;
+    color: rgba(255, 255, 255, .66);
+    font-size: 13px;
+    line-height: 1.15;
+    box-shadow: none;
+  }
+
+  .nav-link:hover,
+  .nav-link.is-active {
+    transform: none;
+    border-left-color: var(--yellow);
+    background: rgba(255, 255, 255, .09);
+    color: #fff;
+    box-shadow: none;
+  }
+
+  .meta-pill {
+    min-width: 0;
+    margin-top: auto;
+    padding: 12px;
+    border-radius: 8px;
+    background: #1b2b42;
+    border: 1px solid rgba(255, 255, 255, .08);
+  }
+
+  main,
+  .footer {
+    grid-column: 2;
+  }
+
+  main {
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  .hero {
+    margin: 0;
+    padding: 34px clamp(26px, 4vw, 58px) 30px;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(16, 23, 34, .12);
+    background: linear-gradient(120deg, #0d1827 0%, #173f74 68%, #244d77 100%);
+  }
+
+  .hero h2 {
+    max-width: 720px;
+    font-size: clamp(34px, 4vw, 58px);
+    line-height: .92;
+  }
+
+  .hero-grid {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .hero-callout {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .14);
+    box-shadow: none;
+  }
+
+  .section {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px clamp(26px, 4vw, 58px) 0;
+  }
+
+  .section-header {
+    margin-bottom: 14px;
+  }
+
+  .section-title {
+    font-size: 25px;
+    letter-spacing: -.035em;
+  }
+
+  .panel,
+  .kpi-card,
+  .logo-card,
+  .details-player-card,
+  .player-focus,
+  .teams-team-card,
+  .teams-member-card {
+    border-radius: 12px;
+    border-color: #dfe5eb;
+    box-shadow: 0 8px 22px rgba(16, 23, 34, .055);
+  }
+
+  .kpi-grid {
+    gap: 12px;
+  }
+
+  .kpi-card {
+    min-height: 132px;
+    padding: 17px;
+    background: #fff;
+  }
+
+  .ranking-table {
+    border-radius: 10px;
+  }
+
+  .ranking-table thead th {
+    background: #edf2f6;
+    color: #566579;
+    font-size: 10px;
+    letter-spacing: .12em;
+  }
+
+  .ranking-table tbody tr:hover {
+    background: #fffdf1;
+  }
+
+  .footer {
+    padding: 30px clamp(26px, 4vw, 58px);
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    background: #f4f6f8;
+  }
+
+  body::before,
+  body::after {
+    display: none;
+  }
+
+  .site-shell {
+    width: 100%;
+    padding: 0 0 28px;
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+    padding: 14px 16px;
+    border-radius: 0;
+    background: #101722;
+  }
+
+  .brand-title {
+    color: #fff;
+    font-size: 21px;
+  }
+
+  .nav-links {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    margin: 0;
+    padding-bottom: 2px;
+  }
+
+  .nav-link {
+    min-height: 38px;
+    padding: 8px 10px;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .nav-link:hover,
+  .nav-link.is-active {
+    border-bottom-color: var(--yellow);
+    background: rgba(255, 255, 255, .09);
+  }
+
+  .meta-pill {
+    align-self: center;
+    min-width: 0;
+    padding: 8px 10px;
+    border-radius: 7px;
+  }
+
+  .meta-label {
+    font-size: 8px;
+  }
+
+  .meta-value {
+    margin-top: 4px;
+    font-size: 10px;
+  }
+
+  .hero {
+    margin-top: 0;
+    border-radius: 0;
+    padding: 28px 16px;
+  }
+
+  .section {
+    padding: 24px 16px 0;
+  }
+
+  .panel,
+  .kpi-card,
+  .logo-card,
+  .details-player-card,
+  .player-focus,
+  .teams-team-card,
+  .teams-member-card {
+    border-radius: 10px;
+  }
+}
