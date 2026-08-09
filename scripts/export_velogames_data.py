@@ -342,7 +342,7 @@ def read_points_rules(points_sheet):
     return categories
 
 
-def read_details(details_sheet):
+def read_details(details_sheet, logo_map):
     player_rows = []
     course_blocks = get_course_blocks(details_sheet)
 
@@ -355,6 +355,8 @@ def read_details(details_sheet):
             results.append(
                 {
                     "course": get_canonical_course_name(str(block["name"])),
+                    "logo": logo_map.get(slugify(get_canonical_course_name(str(block["name"]))))
+                    or logo_map.get(slugify(str(block["name"]))),
                     "rank": details_sheet.cell(row, block["rankCol"]).value,
                     "points": clean_number(details_sheet.cell(row, block["pointsCol"]).value)
                     or 0,
@@ -395,7 +397,7 @@ def build_payload():
             "progression": progression,
         },
         "palmares": read_palmares_from_details(details_sheet, logo_map),
-        "details": read_details(details_sheet),
+            "details": read_details(details_sheet, logo_map),
         "pointsRules": read_points_rules(points_sheet),
     }
 

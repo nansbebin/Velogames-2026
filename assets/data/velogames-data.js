@@ -2,8 +2,8 @@ window.VELOGAMES_DATA = {
   "meta": {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
-    "lastUpdated": "2026-07-27T08:36:42",
-    "generatedAt": "2026-07-27T08:36:58",
+    "lastUpdated": "2026-07-28T08:55:48",
+    "generatedAt": "2026-08-09T09:45:29",
     "playersCount": 18,
     "coursesCount": 18,
     "playedCoursesCount": 12
@@ -1362,91 +1362,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 1,
           "points": 500
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 4,
           "points": 275
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 8,
           "points": 125
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 11,
           "points": 70
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 1,
           "points": 400
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": 4,
           "points": 220
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 7,
           "points": 150
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 8,
           "points": 285
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": 3,
           "points": 325
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": 6,
           "points": 175
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 6,
           "points": 175
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 3,
           "points": 880
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -1458,91 +1476,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 2,
           "points": 400
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 7,
           "points": 150
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 4,
           "points": 275
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 6,
           "points": 175
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 3,
           "points": 260
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": 2,
           "points": 320
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 10,
           "points": 85
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 9,
           "points": 235
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": 2,
           "points": 400
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 9,
           "points": 100
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 7,
           "points": 425
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -1554,91 +1590,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 11,
           "points": 70
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 11,
           "points": 70
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 9,
           "points": 100
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 3,
           "points": 325
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 10,
           "points": 68
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 2,
           "points": 400
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 11,
           "points": 155
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": 8,
           "points": 125
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 7,
           "points": 150
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 14,
           "points": 110
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -1650,91 +1704,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 10,
           "points": 85
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 5,
           "points": 225
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 3,
           "points": 325
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 5,
           "points": 225
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 6,
           "points": 140
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": 10,
           "points": 68
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 6,
           "points": 175
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 10,
           "points": 180
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": 5,
           "points": 225
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 11,
           "points": 70
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 13,
           "points": 140
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -1746,91 +1818,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 9,
           "points": 100
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 8,
           "points": 125
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 6,
           "points": 175
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 2,
           "points": 400
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 11,
           "points": 56
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 9,
           "points": 100
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 7,
           "points": 340
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 13,
           "points": 50
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 10,
           "points": 230
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -1842,91 +1932,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 4,
           "points": 275
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 12,
           "points": 60
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": 10,
           "points": 85
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": 9,
           "points": 100
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 5,
           "points": 225
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 16,
           "points": 90
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -1938,91 +2046,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 7,
           "points": 150
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 2,
           "points": 400
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 2,
           "points": 400
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 10,
           "points": 85
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 2,
           "points": 320
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": 3,
           "points": 260
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 5,
           "points": 225
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 12,
           "points": 130
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": 9,
           "points": 100
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": 1,
           "points": 500
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 14,
           "points": 40
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 6,
           "points": 520
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -2034,91 +2160,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 6,
           "points": 175
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 10,
           "points": 85
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 13,
           "points": 50
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 7,
           "points": 120
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": 1,
           "points": 400
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 8,
           "points": 125
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 4,
           "points": 600
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": 1,
           "points": 500
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": 11,
           "points": 70
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 8,
           "points": 125
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 18,
           "points": 80
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -2130,91 +2274,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 11,
           "points": 190
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -2226,91 +2388,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 3,
           "points": 325
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 9,
           "points": 100
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 10,
           "points": 85
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 12,
           "points": 60
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 4,
           "points": 220
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": 8,
           "points": 100
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 4,
           "points": 275
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 3,
           "points": 750
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": 7,
           "points": 150
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": 3,
           "points": 325
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 16,
           "points": 30
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 1,
           "points": 1300
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -2322,91 +2502,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 7,
           "points": 150
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 5,
           "points": 495
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 15,
           "points": 35
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 8,
           "points": 360
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -2418,91 +2616,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 5,
           "points": 225
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 3,
           "points": 325
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 5,
           "points": 225
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 4,
           "points": 275
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 5,
           "points": 180
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": 5,
           "points": 180
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 3,
           "points": 325
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 14,
           "points": 90
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": 2,
           "points": 400
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": 7,
           "points": 150
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 3,
           "points": 325
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 5,
           "points": 620
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -2514,91 +2730,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 6,
           "points": 175
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 13,
           "points": 50
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 7,
           "points": 150
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 9,
           "points": 80
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": 9,
           "points": 80
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 12,
           "points": 60
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 6,
           "points": 415
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": 4,
           "points": 275
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 2,
           "points": 400
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 4,
           "points": 750
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -2610,91 +2844,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 13,
           "points": 50
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 11,
           "points": 70
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 8,
           "points": 125
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": 11,
           "points": 56
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 13,
           "points": 50
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 13,
           "points": 110
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": 5,
           "points": 225
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 10,
           "points": 85
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 15,
           "points": 100
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -2706,91 +2958,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 8,
           "points": 125
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": "DNS",
           "points": 0
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 1,
           "points": 500
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 1,
           "points": 500
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 12,
           "points": 48
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": 7,
           "points": 120
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 11,
           "points": 70
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 1,
           "points": 1100
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": 4,
           "points": 275
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": 10,
           "points": 85
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 1,
           "points": 500
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 17,
           "points": 85
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -2802,91 +3072,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": 12,
           "points": 60
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": 1,
           "points": 500
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": 12,
           "points": 60
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": 9,
           "points": 100
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": 8,
           "points": 100
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": 6,
           "points": 140
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": 1,
           "points": 500
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": 2,
           "points": 885
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": 6,
           "points": 175
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": 8,
           "points": 125
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 12,
           "points": 60
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 9,
           "points": 295
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -2898,91 +3186,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": 4,
           "points": 275
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 2,
           "points": 1040
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }
@@ -2994,91 +3300,109 @@ window.VELOGAMES_DATA = {
       "results": [
         {
           "course": "Down Under",
+          "logo": "./assets/course-logos/Tour Down Under.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "UAE Tour",
+          "logo": "./assets/course-logos/UAE Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Paris-Nice",
+          "logo": "./assets/course-logos/Paris-Nice.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tirreno-Adriatico",
+          "logo": "./assets/course-logos/Tirreno–Adriatico.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Volta Catalunya",
+          "logo": "./assets/course-logos/Volta Catalunya.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Itzulia",
+          "logo": "./assets/course-logos/Itzulia Basque Country.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie",
+          "logo": "./assets/course-logos/Tour de Romandie.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Giro",
+          "logo": "./assets/course-logos/Giro.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Giro Women",
+          "logo": "./assets/course-logos/Giro Women.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour Auvergne Rhône Alpes",
+          "logo": "./assets/course-logos/Tour Auvergne Rhône Alpes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour de Suisse",
+          "logo": "./assets/course-logos/Tour de Suisse.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour de France",
+          "logo": "./assets/course-logos/Tour de France.png",
           "rank": 12,
           "points": 165
         },
         {
           "course": "Tour Femmes",
+          "logo": "./assets/course-logos/Tour de France Femmes avec Zwift.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Vuelta",
+          "logo": "./assets/course-logos/La Vuelta.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Renewi Tour",
+          "logo": "./assets/course-logos/Renewi Tour.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Tour of Britain",
+          "logo": "./assets/course-logos/Tour of Britain.webp",
           "rank": null,
           "points": 0
         },
         {
           "course": "Romandie Femmes",
+          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
           "rank": null,
           "points": 0
         },
         {
           "course": "Simac Ladies Tour",
+          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
           "rank": null,
           "points": 0
         }

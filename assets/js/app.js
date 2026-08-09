@@ -94,6 +94,51 @@ function getBadgeClass(rank) {
   return "";
 }
 
+function getCourseLastRanks(details) {
+  const lastRanks = new Map();
+  for (const player of details || []) {
+    for (const result of player.results || []) {
+      if (typeof result.rank !== "number") continue;
+      const current = lastRanks.get(result.course) || 0;
+      lastRanks.set(result.course, Math.max(current, result.rank));
+    }
+  }
+  return lastRanks;
+}
+
+function renderPlayerWinBadges(player, details, lastRanks) {
+  const playerDetail = (details || []).find((entry) => entry.name === player.name);
+  if (!playerDetail) return "";
+
+  const badges = playerDetail.results
+    .filter((result) => typeof result.rank === "number")
+    .map((result) => {
+      const type = result.rank === 1
+        ? "gold"
+        : result.rank === 2
+          ? "silver"
+          : result.rank === 3
+            ? "bronze"
+            : result.rank === lastRanks.get(result.course)
+              ? "last"
+              : null;
+      if (!type || !result.logo) return null;
+      return { ...result, type };
+    })
+    .filter(Boolean)
+    .sort((a, b) => {
+      const order = { gold: 1, silver: 2, bronze: 3, last: 4 };
+      return order[a.type] - order[b.type] || a.course.localeCompare(b.course, "fr");
+    });
+
+  return badges.length
+    ? `<span class="win-badges" aria-label="Courses remportées ou classement marquant">${badges.map((badge) => `
+        <span class="win-badge is-${badge.type}" title="${badge.course} : ${badge.rank}e place" tabindex="0">
+          <img src="${badge.logo}" alt="${badge.course}, ${badge.rank}e place">
+        </span>`).join("")}</span>`
+    : "";
+}
+
 async function loadData() {
   try {
     const response = await fetch(DATA_PATH, { cache: "no-store" });
@@ -198,6 +243,7 @@ function renderGlobalRanking(data) {
   const ranking = data.home.globalRanking;
   const maxPoints = Math.max(...ranking.map((player) => player.points), 1);
   const leaderPoints = ranking[0]?.points ?? 0;
+  const lastRanks = getCourseLastRanks(data.details);
 
   tbody.innerHTML = ranking
     .map((player, index) => {
@@ -206,7 +252,7 @@ function renderGlobalRanking(data) {
       <tr>
         <td><span class="rank-badge ${getBadgeClass(player.rank)}">${player.rank}</span></td>
         <td>
-          <span class="player-name">${player.name}</span>
+          <span class="player-name-line"><span class="player-name">${player.name}</span>${renderPlayerWinBadges(player, data.details, lastRanks)}</span>
           <div class="ranking-progress"><div class="ranking-progress-fill" style="width:${(player.points / maxPoints) * 100}%"></div></div>
         </td>
         <td class="points-cell">
