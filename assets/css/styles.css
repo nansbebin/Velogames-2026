@@ -1501,7 +1501,7 @@ img {
   }
 
   .ranking-progress-fill {
-    background: linear-gradient(90deg, #ff7a2b, #ff6a1a);
+    background: linear-gradient(90deg, #ffd33d, #f3b81b 28%, #376fbc 72%, #173f74);
     box-shadow: none;
   }
 
@@ -1598,7 +1598,7 @@ img {
   }
 
   .ranking-progress-fill {
-    background: linear-gradient(90deg, #ff7a2b, #ff6a1a);
+    background: linear-gradient(90deg, #ffd33d, #f3b81b 28%, #376fbc 72%, #173f74);
   }
 
   .points-main {
