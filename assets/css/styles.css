@@ -1409,6 +1409,208 @@ img {
   }
 }
 
+/* Ranking rows follow the wide, scan-friendly reference dashboard treatment. */
+@media (min-width: 761px) {
+  .ranking-panel {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .ranking-panel .panel-header {
+    padding: 0 0 12px;
+  }
+
+  .ranking-table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    table-layout: fixed;
+  }
+
+  .ranking-table thead th {
+    padding: 0 18px 8px;
+    border-bottom: 1px solid #dfe5eb;
+  }
+
+  .ranking-table thead th:first-child {
+    width: 92px;
+  }
+
+  .ranking-table thead th:nth-child(2) {
+    width: auto;
+  }
+
+  .ranking-table thead th:last-child {
+    width: 250px;
+  }
+
+  .ranking-table tbody td {
+    padding: 18px;
+    background: #fff;
+    border-top: 1px solid #dfe5eb;
+    border-bottom: 1px solid #dfe5eb;
+  }
+
+  .ranking-table tbody td:first-child {
+    border-left: 4px solid var(--yellow);
+    border-radius: 8px 0 0 8px;
+  }
+
+  .ranking-table tbody td:last-child {
+    border-right: 1px solid #dfe5eb;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .ranking-table tbody tr:hover {
+    transform: none;
+  }
+
+  .rank-badge {
+    width: 52px;
+    height: 52px;
+    font-size: 17px;
+    box-shadow: none;
+  }
+
+  .player-name-line {
+    gap: 12px;
+  }
+
+  .player-name {
+    font-size: 18px;
+    letter-spacing: -.02em;
+  }
+
+  .win-badges {
+    gap: 7px;
+  }
+
+  .win-badge {
+    width: 44px;
+    height: 53px;
+    padding: 6px;
+  }
+
+  .ranking-progress {
+    height: 13px;
+    margin-top: 16px;
+    background: #e7edf3;
+  }
+
+  .ranking-progress-fill {
+    background: linear-gradient(90deg, #ff7a2b, #ff6a1a);
+    box-shadow: none;
+  }
+
+  .points-cell {
+    padding: 12px 14px !important;
+    background: #f3f8fd !important;
+    border: 1px solid #d5e2ef !important;
+    border-radius: 8px !important;
+    text-align: right;
+  }
+
+  .points-main {
+    font-size: 28px;
+    line-height: 1;
+    color: #0c1830;
+    letter-spacing: -.04em;
+  }
+
+  .points-gap {
+    gap: 5px;
+    margin-top: 9px;
+    font-size: 10px;
+  }
+
+  .points-gap span {
+    width: 100%;
+    justify-content: flex-end;
+    padding: 5px 7px;
+    border: 1px solid #c3d9ef;
+    border-radius: 6px;
+    background: #e8f3ff;
+    color: #175487;
+  }
+
+  .points-gap span:first-child {
+    border-color: #efdf9a;
+    background: #fff9dc;
+    color: #80650b;
+  }
+
+  .points-gap-dot {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .ranking-panel {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .ranking-table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+  }
+
+  .ranking-table tbody td {
+    padding: 12px 9px;
+    background: #fff;
+    border-top: 1px solid #dfe5eb;
+    border-bottom: 1px solid #dfe5eb;
+  }
+
+  .ranking-table tbody td:first-child {
+    border-left: 3px solid var(--yellow);
+    border-radius: 7px 0 0 7px;
+  }
+
+  .ranking-table tbody td:last-child {
+    border-right: 1px solid #dfe5eb;
+    border-radius: 0 7px 7px 0;
+  }
+
+  .rank-badge {
+    width: 42px;
+    height: 42px;
+  }
+
+  .player-name {
+    font-size: 16px;
+  }
+
+  .win-badge {
+    width: 38px;
+    height: 46px;
+  }
+
+  .ranking-progress {
+    height: 10px;
+    margin-top: 12px;
+  }
+
+  .ranking-progress-fill {
+    background: linear-gradient(90deg, #ff7a2b, #ff6a1a);
+  }
+
+  .points-main {
+    font-size: 20px;
+  }
+
+  .points-gap span {
+    padding: 3px 4px;
+    font-size: 9px;
+  }
+}
+
 /* Shared operational dashboard layout: vertical navigation and restrained panels. */
 @media (min-width: 761px) {
   body {
@@ -1544,6 +1746,12 @@ img {
     max-width: 1500px;
     margin: 0 auto;
     padding: 30px clamp(26px, 4vw, 58px) 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    overflow: visible;
   }
 
   .section-header {
@@ -1555,7 +1763,7 @@ img {
     letter-spacing: -.035em;
   }
 
-  .panel,
+  .panel:not(.ranking-panel),
   .kpi-card,
   .logo-card,
   .details-player-card,
@@ -1678,9 +1886,15 @@ img {
 
   .section {
     padding: 24px 16px 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    overflow: visible;
   }
 
-  .panel,
+  .panel:not(.ranking-panel),
   .kpi-card,
   .logo-card,
   .details-player-card,
