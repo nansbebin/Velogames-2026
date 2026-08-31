@@ -2,67 +2,67 @@
   "meta": {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
-    "lastUpdated": "2026-08-10T08:31:40",
-    "generatedAt": "2026-08-10T08:31:51",
+    "lastUpdated": "2026-08-31T15:26:33",
+    "generatedAt": "2026-08-31T15:26:45",
     "playersCount": 18,
     "coursesCount": 18,
-    "playedCoursesCount": 13
+    "playedCoursesCount": 14
   },
   "home": {
     "globalRanking": [
       {
         "name": "Sacha R",
-        "points": 4520,
+        "points": 5120,
         "rank": 1
       },
       {
-        "name": "Pierre",
-        "points": 3740,
+        "name": "Nans",
+        "points": 4310,
         "rank": 2
       },
       {
         "name": "Mathis",
-        "points": 3688,
+        "points": 4028,
         "rank": 3
       },
       {
-        "name": "Nans",
-        "points": 3560,
+        "name": "Charles",
+        "points": 3975,
         "rank": 4
       },
       {
-        "name": "Robin",
-        "points": 3520,
+        "name": "Damien",
+        "points": 3910,
         "rank": 5
       },
       {
-        "name": "Quentin",
-        "points": 3225,
+        "name": "Pierre",
+        "points": 3870,
         "rank": 6
       },
       {
-        "name": "Damien",
-        "points": 3025,
+        "name": "Quentin",
+        "points": 3720,
         "rank": 7
       },
       {
-        "name": "Charles",
-        "points": 2875,
+        "name": "Robin",
+        "points": 3630,
         "rank": 8
       },
       {
-        "name": "Émilien",
-        "points": 2498,
+        "name": "Stella",
+        "points": 2700,
         "rank": 9
       },
       {
-        "name": "Stella",
-        "points": 2415,
+        "name": "Émilien",
+        "points": 2653,
         "rank": 10
       },
       {
         "name": "Agathe",
-        "points": 1683,
+        "points": 2098,
         "rank": 11
       },
       {
@@ -82,17 +82,17 @@
       },
       {
         "name": "Orlane",
-        "points": 1006,
+        "points": 1096,
         "rank": 15
       },
       {
         "name": "Ema",
-        "points": 890,
+        "points": 1070,
         "rank": 16
       },
       {
         "name": "Lilou",
-        "points": 240,
+        "points": 475,
         "rank": 17
       },
       {
@@ -105,17 +105,17 @@
       {
         "rank": 1,
         "name": "ÉTUDES",
-        "points": 2929.8
+        "points": 3407.8
       },
       {
         "rank": 2,
         "name": "SALES",
-        "points": 2193.86
+        "points": 2538.86
       },
       {
         "rank": 3,
         "name": "PRODUIT",
-        "points": 1938.33
+        "points": 2138.33
       }
     ],
     "teamBreakdown": [
@@ -123,24 +123,24 @@
         "name": "SALES",
         "members": [
           {
-            "name": "Quentin",
-            "total": 3225
-          },
-          {
             "name": "Damien",
-            "total": 3025
+            "total": 3910
           },
           {
-            "name": "Émilien",
-            "total": 2498
+            "name": "Quentin",
+            "total": 3720
           },
           {
             "name": "Stella",
-            "total": 2415
+            "total": 2700
+          },
+          {
+            "name": "Émilien",
+            "total": 2653
           },
           {
             "name": "Agathe",
-            "total": 1683
+            "total": 2098
           },
           {
             "name": "Lucie",
@@ -148,21 +148,21 @@
           },
           {
             "name": "Ema",
-            "total": 890
+            "total": 1070
           }
         ],
-        "total": 15357,
-        "average": 2193.86,
-        "leader": "Quentin",
-        "leaderPoints": 3225,
-        "leaderShare": 21.0
+        "total": 17772,
+        "average": 2538.86,
+        "leader": "Damien",
+        "leaderPoints": 3910,
+        "leaderShare": 22.0
       },
       {
         "name": "PRODUIT",
         "members": [
           {
             "name": "Sacha R",
-            "total": 4520
+            "total": 5120
           },
           {
             "name": "Guillemette",
@@ -173,41 +173,41 @@
             "total": 190
           }
         ],
-        "total": 5815,
-        "average": 1938.33,
+        "total": 6415,
+        "average": 2138.33,
         "leader": "Sacha R",
-        "leaderPoints": 4520,
-        "leaderShare": 77.73
+        "leaderPoints": 5120,
+        "leaderShare": 79.81
       },
       {
         "name": "ÉTUDES",
         "members": [
           {
-            "name": "Mathis",
-            "total": 3688
-          },
-          {
             "name": "Nans",
-            "total": 3560
+            "total": 4310
           },
           {
-            "name": "Robin",
-            "total": 3520
+            "name": "Mathis",
+            "total": 4028
           },
           {
             "name": "Charles",
-            "total": 2875
+            "total": 3975
+          },
+          {
+            "name": "Robin",
+            "total": 3630
           },
           {
             "name": "Orlane",
-            "total": 1006
+            "total": 1096
           }
         ],
-        "total": 14649,
-        "average": 2929.8,
-        "leader": "Mathis",
-        "leaderPoints": 3688,
-        "leaderShare": 25.18
+        "total": 17039,
+        "average": 3407.8,
+        "leader": "Nans",
+        "leaderPoints": 4310,
+        "leaderShare": 25.29
       }
     ],
     "progression": {
@@ -294,7 +294,7 @@
           "name": "Vuelta",
           "slug": "vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "played": false
+          "played": true
         },
         {
           "name": "Renewi Tour",
@@ -338,11 +338,11 @@
             2700,
             3580,
             3740,
-            3740,
-            3740,
-            3740,
-            3740,
-            3740
+            3870,
+            3870,
+            3870,
+            3870,
+            3870
           ]
         },
         {
@@ -361,11 +361,11 @@
             2400,
             2825,
             3025,
-            3025,
-            3025,
-            3025,
-            3025,
-            3025
+            3910,
+            3910,
+            3910,
+            3910,
+            3910
           ]
         },
         {
@@ -384,11 +384,11 @@
             1463,
             1573,
             1683,
-            1683,
-            1683,
-            1683,
-            1683,
-            1683
+            2098,
+            2098,
+            2098,
+            2098,
+            2098
           ]
         },
         {
@@ -407,11 +407,11 @@
             1718,
             1858,
             2498,
-            2498,
-            2498,
-            2498,
-            2498,
-            2498
+            2653,
+            2653,
+            2653,
+            2653,
+            2653
           ]
         },
         {
@@ -453,11 +453,11 @@
             745,
             835,
             890,
-            890,
-            890,
-            890,
-            890,
-            890
+            1070,
+            1070,
+            1070,
+            1070,
+            1070
           ]
         },
         {
@@ -476,11 +476,11 @@
             2610,
             3130,
             3225,
-            3225,
-            3225,
-            3225,
-            3225,
-            3225
+            3720,
+            3720,
+            3720,
+            3720,
+            3720
           ]
         },
         {
@@ -499,11 +499,11 @@
             2250,
             2330,
             2415,
-            2415,
-            2415,
-            2415,
-            2415,
-            2415
+            2700,
+            2700,
+            2700,
+            2700,
+            2700
           ]
         },
         {
@@ -545,11 +545,11 @@
             2420,
             3720,
             4520,
-            4520,
-            4520,
-            4520,
-            4520,
-            4520
+            5120,
+            5120,
+            5120,
+            5120,
+            5120
           ]
         },
         {
@@ -591,11 +591,11 @@
             2700,
             3320,
             3560,
-            3560,
-            3560,
-            3560,
-            3560,
-            3560
+            4310,
+            4310,
+            4310,
+            4310,
+            4310
           ]
         },
         {
@@ -614,11 +614,11 @@
             1685,
             2435,
             2875,
-            2875,
-            2875,
-            2875,
-            2875,
-            2875
+            3975,
+            3975,
+            3975,
+            3975,
+            3975
           ]
         },
         {
@@ -637,11 +637,11 @@
             771,
             871,
             1006,
-            1006,
-            1006,
-            1006,
-            1006,
-            1006
+            1096,
+            1096,
+            1096,
+            1096,
+            1096
           ]
         },
         {
@@ -660,11 +660,11 @@
             3323,
             3408,
             3688,
-            3688,
-            3688,
-            3688,
-            3688,
-            3688
+            4028,
+            4028,
+            4028,
+            4028,
+            4028
           ]
         },
         {
@@ -683,11 +683,11 @@
             2705,
             3000,
             3520,
-            3520,
-            3520,
-            3520,
-            3520,
-            3520
+            3630,
+            3630,
+            3630,
+            3630,
+            3630
           ]
         },
         {
@@ -729,11 +729,11 @@
             0,
             165,
             240,
-            240,
-            240,
-            240,
-            240,
-            240
+            475,
+            475,
+            475,
+            475,
+            475
           ]
         }
       ],
@@ -1055,15 +1055,15 @@
           "slug": "vuelta",
           "ranks": {
             "Sacha R": 1,
-            "Pierre": 2,
+            "Nans": 2,
             "Mathis": 3,
-            "Nans": 4,
-            "Robin": 5,
-            "Quentin": 6,
-            "Damien": 7,
-            "Charles": 8,
-            "Émilien": 9,
-            "Stella": 10,
+            "Charles": 4,
+            "Damien": 5,
+            "Pierre": 6,
+            "Quentin": 7,
+            "Robin": 8,
+            "Stella": 9,
+            "Émilien": 10,
             "Agathe": 11,
             "Sacha C": 12,
             "Lucie": 13,
@@ -1079,15 +1079,15 @@
           "slug": "renewi-tour",
           "ranks": {
             "Sacha R": 1,
-            "Pierre": 2,
+            "Nans": 2,
             "Mathis": 3,
-            "Nans": 4,
-            "Robin": 5,
-            "Quentin": 6,
-            "Damien": 7,
-            "Charles": 8,
-            "Émilien": 9,
-            "Stella": 10,
+            "Charles": 4,
+            "Damien": 5,
+            "Pierre": 6,
+            "Quentin": 7,
+            "Robin": 8,
+            "Stella": 9,
+            "Émilien": 10,
             "Agathe": 11,
             "Sacha C": 12,
             "Lucie": 13,
@@ -1103,15 +1103,15 @@
           "slug": "tour-of-britain",
           "ranks": {
             "Sacha R": 1,
-            "Pierre": 2,
+            "Nans": 2,
             "Mathis": 3,
-            "Nans": 4,
-            "Robin": 5,
-            "Quentin": 6,
-            "Damien": 7,
-            "Charles": 8,
-            "Émilien": 9,
-            "Stella": 10,
+            "Charles": 4,
+            "Damien": 5,
+            "Pierre": 6,
+            "Quentin": 7,
+            "Robin": 8,
+            "Stella": 9,
+            "Émilien": 10,
             "Agathe": 11,
             "Sacha C": 12,
             "Lucie": 13,
@@ -1127,15 +1127,15 @@
           "slug": "romandie-femmes",
           "ranks": {
             "Sacha R": 1,
-            "Pierre": 2,
+            "Nans": 2,
             "Mathis": 3,
-            "Nans": 4,
-            "Robin": 5,
-            "Quentin": 6,
-            "Damien": 7,
-            "Charles": 8,
-            "Émilien": 9,
-            "Stella": 10,
+            "Charles": 4,
+            "Damien": 5,
+            "Pierre": 6,
+            "Quentin": 7,
+            "Robin": 8,
+            "Stella": 9,
+            "Émilien": 10,
             "Agathe": 11,
             "Sacha C": 12,
             "Lucie": 13,
@@ -1151,15 +1151,15 @@
           "slug": "simac-ladies-tour",
           "ranks": {
             "Sacha R": 1,
-            "Pierre": 2,
+            "Nans": 2,
             "Mathis": 3,
-            "Nans": 4,
-            "Robin": 5,
-            "Quentin": 6,
-            "Damien": 7,
-            "Charles": 8,
-            "Émilien": 9,
-            "Stella": 10,
+            "Charles": 4,
+            "Damien": 5,
+            "Pierre": 6,
+            "Quentin": 7,
+            "Robin": 8,
+            "Stella": 9,
+            "Émilien": 10,
             "Agathe": 11,
             "Sacha C": 12,
             "Lucie": 13,
@@ -1308,11 +1308,11 @@
       "course": "Vuelta",
       "slug": "vuelta",
       "logo": "./assets/course-logos/La Vuelta.png",
-      "first": null,
-      "second": null,
-      "third": null,
-      "last": null,
-      "isPlayed": false
+      "first": "Charles",
+      "second": "Damien",
+      "third": "Nans",
+      "last": "Orlane",
+      "isPlayed": true
     },
     {
       "course": "Renewi Tour",
@@ -1358,7 +1358,7 @@
   "details": [
     {
       "name": "Pierre",
-      "total": 3740,
+      "total": 3870,
       "results": [
         {
           "course": "Down Under",
@@ -1441,8 +1441,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 12,
+          "points": 130
         },
         {
           "course": "Renewi Tour",
@@ -1472,7 +1472,7 @@
     },
     {
       "name": "Damien",
-      "total": 3025,
+      "total": 3910,
       "results": [
         {
           "course": "Down Under",
@@ -1555,8 +1555,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 2,
+          "points": 885
         },
         {
           "course": "Renewi Tour",
@@ -1586,7 +1586,7 @@
     },
     {
       "name": "Agathe",
-      "total": 1683,
+      "total": 2098,
       "results": [
         {
           "course": "Down Under",
@@ -1669,8 +1669,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 6,
+          "points": 415
         },
         {
           "course": "Renewi Tour",
@@ -1700,7 +1700,7 @@
     },
     {
       "name": "Émilien",
-      "total": 2498,
+      "total": 2653,
       "results": [
         {
           "course": "Down Under",
@@ -1783,8 +1783,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 11,
+          "points": 155
         },
         {
           "course": "Renewi Tour",
@@ -1897,7 +1897,7 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -1928,7 +1928,7 @@
     },
     {
       "name": "Ema",
-      "total": 890,
+      "total": 1070,
       "results": [
         {
           "course": "Down Under",
@@ -2011,8 +2011,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 10,
+          "points": 180
         },
         {
           "course": "Renewi Tour",
@@ -2042,7 +2042,7 @@
     },
     {
       "name": "Quentin",
-      "total": 3225,
+      "total": 3720,
       "results": [
         {
           "course": "Down Under",
@@ -2125,8 +2125,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 5,
+          "points": 495
         },
         {
           "course": "Renewi Tour",
@@ -2156,7 +2156,7 @@
     },
     {
       "name": "Stella",
-      "total": 2415,
+      "total": 2700,
       "results": [
         {
           "course": "Down Under",
@@ -2239,8 +2239,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 8,
+          "points": 285
         },
         {
           "course": "Renewi Tour",
@@ -2353,7 +2353,7 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -2384,7 +2384,7 @@
     },
     {
       "name": "Sacha R",
-      "total": 4520,
+      "total": 5120,
       "results": [
         {
           "course": "Down Under",
@@ -2467,8 +2467,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 4,
+          "points": 600
         },
         {
           "course": "Renewi Tour",
@@ -2581,7 +2581,7 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -2612,7 +2612,7 @@
     },
     {
       "name": "Nans",
-      "total": 3560,
+      "total": 4310,
       "results": [
         {
           "course": "Down Under",
@@ -2695,8 +2695,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 3,
+          "points": 750
         },
         {
           "course": "Renewi Tour",
@@ -2726,7 +2726,7 @@
     },
     {
       "name": "Charles",
-      "total": 2875,
+      "total": 3975,
       "results": [
         {
           "course": "Down Under",
@@ -2809,8 +2809,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 1,
+          "points": 1100
         },
         {
           "course": "Renewi Tour",
@@ -2840,7 +2840,7 @@
     },
     {
       "name": "Orlane",
-      "total": 1006,
+      "total": 1096,
       "results": [
         {
           "course": "Down Under",
@@ -2923,8 +2923,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 14,
+          "points": 90
         },
         {
           "course": "Renewi Tour",
@@ -2954,7 +2954,7 @@
     },
     {
       "name": "Mathis",
-      "total": 3688,
+      "total": 4028,
       "results": [
         {
           "course": "Down Under",
@@ -3037,8 +3037,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 7,
+          "points": 340
         },
         {
           "course": "Renewi Tour",
@@ -3068,7 +3068,7 @@
     },
     {
       "name": "Robin",
-      "total": 3520,
+      "total": 3630,
       "results": [
         {
           "course": "Down Under",
@@ -3151,8 +3151,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 13,
+          "points": 110
         },
         {
           "course": "Renewi Tour",
@@ -3265,7 +3265,7 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
+          "rank": "DNS",
           "points": 0
         },
         {
@@ -3296,7 +3296,7 @@
     },
     {
       "name": "Lilou",
-      "total": 240,
+      "total": 475,
       "results": [
         {
           "course": "Down Under",
@@ -3379,8 +3379,8 @@
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": null,
-          "points": 0
+          "rank": 9,
+          "points": 235
         },
         {
           "course": "Renewi Tour",
