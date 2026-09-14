@@ -2,22 +2,22 @@ window.VELOGAMES_DATA = {
   "meta": {
     "siteTitle": "Classement VELOGAMES - Saison 2026",
     "sourceFile": "Velogames Saison 2026 - Classements.xlsx",
-    "lastUpdated": "2026-08-31T15:26:33",
-    "generatedAt": "2026-08-31T15:26:45",
+    "lastUpdated": "2026-09-14T09:05:24",
+    "generatedAt": "2026-09-14T09:05:44",
     "playersCount": 18,
-    "coursesCount": 18,
+    "coursesCount": 14,
     "playedCoursesCount": 14
   },
   "home": {
     "globalRanking": [
       {
         "name": "Sacha R",
-        "points": 5120,
+        "points": 5015,
         "rank": 1
       },
       {
         "name": "Nans",
-        "points": 4310,
+        "points": 4445,
         "rank": 2
       },
       {
@@ -31,38 +31,38 @@ window.VELOGAMES_DATA = {
         "rank": 4
       },
       {
-        "name": "Damien",
-        "points": 3910,
+        "name": "Pierre",
+        "points": 3920,
         "rank": 5
       },
       {
-        "name": "Pierre",
-        "points": 3870,
+        "name": "Damien",
+        "points": 3775,
         "rank": 6
       },
       {
-        "name": "Quentin",
-        "points": 3720,
+        "name": "Robin",
+        "points": 3675,
         "rank": 7
       },
       {
-        "name": "Robin",
-        "points": 3630,
+        "name": "Quentin",
+        "points": 3640,
         "rank": 8
       },
       {
         "name": "Stella",
-        "points": 2700,
+        "points": 3015,
         "rank": 9
       },
       {
         "name": "Émilien",
-        "points": 2653,
+        "points": 2733,
         "rank": 10
       },
       {
         "name": "Agathe",
-        "points": 2098,
+        "points": 1793,
         "rank": 11
       },
       {
@@ -76,23 +76,23 @@ window.VELOGAMES_DATA = {
         "rank": 13
       },
       {
+        "name": "Ema",
+        "points": 1175,
+        "rank": 14
+      },
+      {
         "name": "Guillemette",
         "points": 1105,
-        "rank": 14
+        "rank": 15
       },
       {
         "name": "Orlane",
         "points": 1096,
-        "rank": 15
-      },
-      {
-        "name": "Ema",
-        "points": 1070,
         "rank": 16
       },
       {
         "name": "Lilou",
-        "points": 475,
+        "points": 370,
         "rank": 17
       },
       {
@@ -105,17 +105,17 @@ window.VELOGAMES_DATA = {
       {
         "rank": 1,
         "name": "ÉTUDES",
-        "points": 3407.8
+        "points": 3443.8
       },
       {
         "rank": 2,
         "name": "SALES",
-        "points": 2538.86
+        "points": 2536.0
       },
       {
         "rank": 3,
         "name": "PRODUIT",
-        "points": 2138.33
+        "points": 2103.33
       }
     ],
     "teamBreakdown": [
@@ -124,23 +124,23 @@ window.VELOGAMES_DATA = {
         "members": [
           {
             "name": "Damien",
-            "total": 3910
+            "total": 3775
           },
           {
             "name": "Quentin",
-            "total": 3720
+            "total": 3640
           },
           {
             "name": "Stella",
-            "total": 2700
+            "total": 3015
           },
           {
             "name": "Émilien",
-            "total": 2653
+            "total": 2733
           },
           {
             "name": "Agathe",
-            "total": 2098
+            "total": 1793
           },
           {
             "name": "Lucie",
@@ -148,21 +148,21 @@ window.VELOGAMES_DATA = {
           },
           {
             "name": "Ema",
-            "total": 1070
+            "total": 1175
           }
         ],
-        "total": 17772,
-        "average": 2538.86,
+        "total": 17752,
+        "average": 2536.0,
         "leader": "Damien",
-        "leaderPoints": 3910,
-        "leaderShare": 22.0
+        "leaderPoints": 3775,
+        "leaderShare": 21.27
       },
       {
         "name": "PRODUIT",
         "members": [
           {
             "name": "Sacha R",
-            "total": 5120
+            "total": 5015
           },
           {
             "name": "Guillemette",
@@ -173,18 +173,18 @@ window.VELOGAMES_DATA = {
             "total": 190
           }
         ],
-        "total": 6415,
-        "average": 2138.33,
+        "total": 6310,
+        "average": 2103.33,
         "leader": "Sacha R",
-        "leaderPoints": 5120,
-        "leaderShare": 79.81
+        "leaderPoints": 5015,
+        "leaderShare": 79.48
       },
       {
         "name": "ÉTUDES",
         "members": [
           {
             "name": "Nans",
-            "total": 4310
+            "total": 4445
           },
           {
             "name": "Mathis",
@@ -196,18 +196,18 @@ window.VELOGAMES_DATA = {
           },
           {
             "name": "Robin",
-            "total": 3630
+            "total": 3675
           },
           {
             "name": "Orlane",
             "total": 1096
           }
         ],
-        "total": 17039,
-        "average": 3407.8,
+        "total": 17219,
+        "average": 3443.8,
         "leader": "Nans",
-        "leaderPoints": 4310,
-        "leaderShare": 25.29
+        "leaderPoints": 4445,
+        "leaderShare": 25.81
       }
     ],
     "progression": {
@@ -295,30 +295,6 @@ window.VELOGAMES_DATA = {
           "slug": "vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
           "played": true
-        },
-        {
-          "name": "Renewi Tour",
-          "slug": "renewi-tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "played": false
-        },
-        {
-          "name": "Tour of Britain",
-          "slug": "tour-of-britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "played": false
-        },
-        {
-          "name": "Romandie Femmes",
-          "slug": "romandie-femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "played": false
-        },
-        {
-          "name": "Simac Ladies Tour",
-          "slug": "simac-ladies-tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "played": false
         }
       ],
       "players": [
@@ -338,11 +314,7 @@ window.VELOGAMES_DATA = {
             2700,
             3580,
             3740,
-            3870,
-            3870,
-            3870,
-            3870,
-            3870
+            3920
           ]
         },
         {
@@ -361,11 +333,7 @@ window.VELOGAMES_DATA = {
             2400,
             2825,
             3025,
-            3910,
-            3910,
-            3910,
-            3910,
-            3910
+            3775
           ]
         },
         {
@@ -384,11 +352,7 @@ window.VELOGAMES_DATA = {
             1463,
             1573,
             1683,
-            2098,
-            2098,
-            2098,
-            2098,
-            2098
+            1793
           ]
         },
         {
@@ -407,11 +371,7 @@ window.VELOGAMES_DATA = {
             1718,
             1858,
             2498,
-            2653,
-            2653,
-            2653,
-            2653,
-            2653
+            2733
           ]
         },
         {
@@ -429,10 +389,6 @@ window.VELOGAMES_DATA = {
             1296,
             1346,
             1576,
-            1621,
-            1621,
-            1621,
-            1621,
             1621,
             1621
           ]
@@ -453,11 +409,7 @@ window.VELOGAMES_DATA = {
             745,
             835,
             890,
-            1070,
-            1070,
-            1070,
-            1070,
-            1070
+            1175
           ]
         },
         {
@@ -476,11 +428,7 @@ window.VELOGAMES_DATA = {
             2610,
             3130,
             3225,
-            3720,
-            3720,
-            3720,
-            3720,
-            3720
+            3640
           ]
         },
         {
@@ -499,11 +447,7 @@ window.VELOGAMES_DATA = {
             2250,
             2330,
             2415,
-            2700,
-            2700,
-            2700,
-            2700,
-            2700
+            3015
           ]
         },
         {
@@ -520,10 +464,6 @@ window.VELOGAMES_DATA = {
             0,
             0,
             0,
-            190,
-            190,
-            190,
-            190,
             190,
             190,
             190
@@ -545,11 +485,7 @@ window.VELOGAMES_DATA = {
             2420,
             3720,
             4520,
-            5120,
-            5120,
-            5120,
-            5120,
-            5120
+            5015
           ]
         },
         {
@@ -567,10 +503,6 @@ window.VELOGAMES_DATA = {
             645,
             680,
             1040,
-            1105,
-            1105,
-            1105,
-            1105,
             1105,
             1105
           ]
@@ -591,11 +523,7 @@ window.VELOGAMES_DATA = {
             2700,
             3320,
             3560,
-            4310,
-            4310,
-            4310,
-            4310,
-            4310
+            4445
           ]
         },
         {
@@ -614,10 +542,6 @@ window.VELOGAMES_DATA = {
             1685,
             2435,
             2875,
-            3975,
-            3975,
-            3975,
-            3975,
             3975
           ]
         },
@@ -637,10 +561,6 @@ window.VELOGAMES_DATA = {
             771,
             871,
             1006,
-            1096,
-            1096,
-            1096,
-            1096,
             1096
           ]
         },
@@ -660,10 +580,6 @@ window.VELOGAMES_DATA = {
             3323,
             3408,
             3688,
-            4028,
-            4028,
-            4028,
-            4028,
             4028
           ]
         },
@@ -683,11 +599,7 @@ window.VELOGAMES_DATA = {
             2705,
             3000,
             3520,
-            3630,
-            3630,
-            3630,
-            3630,
-            3630
+            3675
           ]
         },
         {
@@ -705,10 +617,6 @@ window.VELOGAMES_DATA = {
             0,
             275,
             1315,
-            1675,
-            1675,
-            1675,
-            1675,
             1675,
             1675
           ]
@@ -729,11 +637,7 @@ window.VELOGAMES_DATA = {
             0,
             165,
             240,
-            475,
-            475,
-            475,
-            475,
-            475
+            370
           ]
         }
       ],
@@ -1058,114 +962,18 @@ window.VELOGAMES_DATA = {
             "Nans": 2,
             "Mathis": 3,
             "Charles": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Quentin": 7,
-            "Robin": 8,
+            "Pierre": 5,
+            "Damien": 6,
+            "Robin": 7,
+            "Quentin": 8,
             "Stella": 9,
             "Émilien": 10,
             "Agathe": 11,
             "Sacha C": 12,
             "Lucie": 13,
-            "Guillemette": 14,
-            "Orlane": 15,
-            "Ema": 16,
-            "Lilou": 17,
-            "Aude": 18
-          }
-        },
-        {
-          "course": "Renewi Tour",
-          "slug": "renewi-tour",
-          "ranks": {
-            "Sacha R": 1,
-            "Nans": 2,
-            "Mathis": 3,
-            "Charles": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Quentin": 7,
-            "Robin": 8,
-            "Stella": 9,
-            "Émilien": 10,
-            "Agathe": 11,
-            "Sacha C": 12,
-            "Lucie": 13,
-            "Guillemette": 14,
-            "Orlane": 15,
-            "Ema": 16,
-            "Lilou": 17,
-            "Aude": 18
-          }
-        },
-        {
-          "course": "Tour of Britain",
-          "slug": "tour-of-britain",
-          "ranks": {
-            "Sacha R": 1,
-            "Nans": 2,
-            "Mathis": 3,
-            "Charles": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Quentin": 7,
-            "Robin": 8,
-            "Stella": 9,
-            "Émilien": 10,
-            "Agathe": 11,
-            "Sacha C": 12,
-            "Lucie": 13,
-            "Guillemette": 14,
-            "Orlane": 15,
-            "Ema": 16,
-            "Lilou": 17,
-            "Aude": 18
-          }
-        },
-        {
-          "course": "Romandie Femmes",
-          "slug": "romandie-femmes",
-          "ranks": {
-            "Sacha R": 1,
-            "Nans": 2,
-            "Mathis": 3,
-            "Charles": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Quentin": 7,
-            "Robin": 8,
-            "Stella": 9,
-            "Émilien": 10,
-            "Agathe": 11,
-            "Sacha C": 12,
-            "Lucie": 13,
-            "Guillemette": 14,
-            "Orlane": 15,
-            "Ema": 16,
-            "Lilou": 17,
-            "Aude": 18
-          }
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "slug": "simac-ladies-tour",
-          "ranks": {
-            "Sacha R": 1,
-            "Nans": 2,
-            "Mathis": 3,
-            "Charles": 4,
-            "Damien": 5,
-            "Pierre": 6,
-            "Quentin": 7,
-            "Robin": 8,
-            "Stella": 9,
-            "Émilien": 10,
-            "Agathe": 11,
-            "Sacha C": 12,
-            "Lucie": 13,
-            "Guillemette": 14,
-            "Orlane": 15,
-            "Ema": 16,
+            "Ema": 14,
+            "Guillemette": 15,
+            "Orlane": 16,
             "Lilou": 17,
             "Aude": 18
           }
@@ -1309,56 +1117,16 @@ window.VELOGAMES_DATA = {
       "slug": "vuelta",
       "logo": "./assets/course-logos/La Vuelta.png",
       "first": "Charles",
-      "second": "Damien",
-      "third": "Nans",
+      "second": "Nans",
+      "third": "Damien",
       "last": "Orlane",
       "isPlayed": true
-    },
-    {
-      "course": "Renewi Tour",
-      "slug": "renewi-tour",
-      "logo": "./assets/course-logos/Renewi Tour.png",
-      "first": null,
-      "second": null,
-      "third": null,
-      "last": null,
-      "isPlayed": false
-    },
-    {
-      "course": "Tour of Britain",
-      "slug": "tour-of-britain",
-      "logo": "./assets/course-logos/Tour of Britain.webp",
-      "first": null,
-      "second": null,
-      "third": null,
-      "last": null,
-      "isPlayed": false
-    },
-    {
-      "course": "Tour de Romandie Femmes",
-      "slug": "tour-de-romandie-femmes",
-      "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-      "first": null,
-      "second": null,
-      "third": null,
-      "last": null,
-      "isPlayed": false
-    },
-    {
-      "course": "Simac Ladies Tour",
-      "slug": "simac-ladies-tour",
-      "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-      "first": null,
-      "second": null,
-      "third": null,
-      "last": null,
-      "isPlayed": false
     }
   ],
   "details": [
     {
       "name": "Pierre",
-      "total": 3870,
+      "total": 3920,
       "results": [
         {
           "course": "Down Under",
@@ -1441,38 +1209,14 @@ window.VELOGAMES_DATA = {
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": 12,
-          "points": 130
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
+          "rank": 10,
+          "points": 180
         }
       ]
     },
     {
       "name": "Damien",
-      "total": 3910,
+      "total": 3775,
       "results": [
         {
           "course": "Down Under",
@@ -1555,38 +1299,14 @@ window.VELOGAMES_DATA = {
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": 2,
-          "points": 885
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
+          "rank": 3,
+          "points": 750
         }
       ]
     },
     {
       "name": "Agathe",
-      "total": 2098,
+      "total": 1793,
       "results": [
         {
           "course": "Down Under",
@@ -1669,38 +1389,14 @@ window.VELOGAMES_DATA = {
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": 6,
-          "points": 415
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
+          "rank": 13,
+          "points": 110
         }
       ]
     },
     {
       "name": "Émilien",
-      "total": 2653,
+      "total": 2733,
       "results": [
         {
           "course": "Down Under",
@@ -1783,32 +1479,8 @@ window.VELOGAMES_DATA = {
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": 11,
-          "points": 155
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
+          "rank": 9,
+          "points": 235
         }
       ]
     },
@@ -1899,36 +1571,12 @@ window.VELOGAMES_DATA = {
           "logo": "./assets/course-logos/La Vuelta.png",
           "rank": "DNS",
           "points": 0
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
         }
       ]
     },
     {
       "name": "Ema",
-      "total": 1070,
+      "total": 1175,
       "results": [
         {
           "course": "Down Under",
@@ -2011,38 +1659,14 @@ window.VELOGAMES_DATA = {
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": 10,
-          "points": 180
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
+          "rank": 8,
+          "points": 285
         }
       ]
     },
     {
       "name": "Quentin",
-      "total": 3720,
+      "total": 3640,
       "results": [
         {
           "course": "Down Under",
@@ -2125,38 +1749,14 @@ window.VELOGAMES_DATA = {
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": 5,
-          "points": 495
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
+          "rank": 6,
+          "points": 415
         }
       ]
     },
     {
       "name": "Stella",
-      "total": 2700,
+      "total": 3015,
       "results": [
         {
           "course": "Down Under",
@@ -2239,32 +1839,8 @@ window.VELOGAMES_DATA = {
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": 8,
-          "points": 285
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
+          "rank": 4,
+          "points": 600
         }
       ]
     },
@@ -2355,36 +1931,12 @@ window.VELOGAMES_DATA = {
           "logo": "./assets/course-logos/La Vuelta.png",
           "rank": "DNS",
           "points": 0
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
         }
       ]
     },
     {
       "name": "Sacha R",
-      "total": 5120,
+      "total": 5015,
       "results": [
         {
           "course": "Down Under",
@@ -2467,32 +2019,8 @@ window.VELOGAMES_DATA = {
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": 4,
-          "points": 600
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
+          "rank": 5,
+          "points": 495
         }
       ]
     },
@@ -2583,36 +2111,12 @@ window.VELOGAMES_DATA = {
           "logo": "./assets/course-logos/La Vuelta.png",
           "rank": "DNS",
           "points": 0
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
         }
       ]
     },
     {
       "name": "Nans",
-      "total": 4310,
+      "total": 4445,
       "results": [
         {
           "course": "Down Under",
@@ -2695,32 +2199,8 @@ window.VELOGAMES_DATA = {
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": 3,
-          "points": 750
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
+          "rank": 2,
+          "points": 885
         }
       ]
     },
@@ -2811,30 +2291,6 @@ window.VELOGAMES_DATA = {
           "logo": "./assets/course-logos/La Vuelta.png",
           "rank": 1,
           "points": 1100
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
         }
       ]
     },
@@ -2925,30 +2381,6 @@ window.VELOGAMES_DATA = {
           "logo": "./assets/course-logos/La Vuelta.png",
           "rank": 14,
           "points": 90
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
         }
       ]
     },
@@ -3039,36 +2471,12 @@ window.VELOGAMES_DATA = {
           "logo": "./assets/course-logos/La Vuelta.png",
           "rank": 7,
           "points": 340
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
         }
       ]
     },
     {
       "name": "Robin",
-      "total": 3630,
+      "total": 3675,
       "results": [
         {
           "course": "Down Under",
@@ -3151,32 +2559,8 @@ window.VELOGAMES_DATA = {
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": 13,
-          "points": 110
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
+          "rank": 11,
+          "points": 155
         }
       ]
     },
@@ -3267,36 +2651,12 @@ window.VELOGAMES_DATA = {
           "logo": "./assets/course-logos/La Vuelta.png",
           "rank": "DNS",
           "points": 0
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
         }
       ]
     },
     {
       "name": "Lilou",
-      "total": 475,
+      "total": 370,
       "results": [
         {
           "course": "Down Under",
@@ -3379,32 +2739,8 @@ window.VELOGAMES_DATA = {
         {
           "course": "Vuelta",
           "logo": "./assets/course-logos/La Vuelta.png",
-          "rank": 9,
-          "points": 235
-        },
-        {
-          "course": "Renewi Tour",
-          "logo": "./assets/course-logos/Renewi Tour.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Tour of Britain",
-          "logo": "./assets/course-logos/Tour of Britain.webp",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Romandie Femmes",
-          "logo": "./assets/course-logos/Tour de Romandie Femmes.png",
-          "rank": null,
-          "points": 0
-        },
-        {
-          "course": "Simac Ladies Tour",
-          "logo": "./assets/course-logos/SIMAC Ladies Tour.png",
-          "rank": null,
-          "points": 0
+          "rank": 12,
+          "points": 130
         }
       ]
     }
